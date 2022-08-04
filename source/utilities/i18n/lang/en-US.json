@@ -537,7 +537,7 @@
   "home.privacydesc3": "We believe privacy is a right. We won't sell your data, ever.",
   "sharewithtwitter": "Share with Twitter",
   "home.warptitle": "Use the Internet fast-lane",
-  "home.warpdesc": "WARP+ subscriptions extend WARP by sending all of your Internet traffic over Cloudflare's optimized Internet routes which make thousands of websites 30% faster on average. WARP+ combines millions of Internet route measurements with Cloudflare’s private Internet backbone to deliver a better Internet directly to your device.",
+  "home.warpdesc": "In addition to the full WARP service, WARP+ subscribers get access to a larger network. More cities to connect to means you’re likely to be closer to a Cloudflare data center – which can reduce the latency between your device and Cloudflare and improve your browsing speed.",
   "home.warpdesc2": "Existing WARP+ subscribers can add additional devices to their plan at a discount.",
   "home.sharewarp": "Share WARP",
   "home.footertitle": "Brought to you by Cloudflare.",
