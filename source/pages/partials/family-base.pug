@@ -103,6 +103,23 @@ html(theme='light' lang=htmlWebpackPlugin.options.locale.code prefix="og: http:/
           a.Nav--link.Nav--link-active(href='/family/')
             span!=htmlWebpackPlugin.options.t('family.name')
 
+
+          .language-selector(
+            tabindex="3"
+            role="button"
+            data-ref="languageSelector")
+            .selector-label
+              include ../../media/globe.svg
+              span.chosen-language!=htmlWebpackPlugin.options.locale.label
+              include ../../media/caret.svg
+
+            .dropdown
+              each locale in htmlWebpackPlugin.options.locales.filter(locale => locale.code !== htmlWebpackPlugin.options.locale.code)
+                a.language(
+                  href="/" + locale.path + "family/"
+                  class={selected: htmlWebpackPlugin.options.locale.code === locale.code})
+                  | #{locale.label}
+
       .HeroSection
         .HeroSection--content
           .HeroSection--logo
