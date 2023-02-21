@@ -1,5 +1,3 @@
-// @import "mixins/media-query-variables"
-
 
 .light-on-dark
   color white
@@ -18,27 +16,12 @@
   height 1em
   overflow visible
   vertical-align -.125em
-  fill rgb( 65, 54, 128)
+  fill currentColor
 
 
 
   &.fa-w-10
     width .625em
-
-// svg:not(:root).svg-inline--fa
-//   overflow visible
-
-// .svg-inline--fa.fa-w-16
-//   width 1em
-
-// section[data-section]
-//   position relative
-
-//   .collapsed-top-margin
-//     margin-top 0
-
-//   .collapsed-bottom-margin
-//     margin-bottom 0
 
 [role="button"], .button
   cursor pointer
@@ -53,187 +36,99 @@
   font-family inherit
   font-size inherit
 
-// .button
-//   display inline-block
-//   appearance none
-//   background none
-//   border none
-//   padding .6em 1.5em
-//   font-weight 600
-//   font-family var(--sans-serif-fonts)
-//   letter-spacing .2em
-//   text-transform uppercase
-//   cursor pointer
-//   position relative
-//   text-decoration none
-//   border 3px solid transparent
-//   user-select none
-//   color black
-//   transition transform .1s ease-in-out
-//   -webkit-tap-highlight-color transparent
-
-//   .button-content
-//     display inline-block
-//     border-bottom 1px solid transparent
-//     transition border-bottom-color .1s ease-in-out
-
-//   &:hover
-//     transform translate3d(0, -1px, 0)
-//     outline none
-
-//     .button-content
-//       border-bottom-color currentColor
-
-//   &:focus
-//     outline none
-
-//   &:not(:hover):focus .button-content
-//     border-bottom-style dashed
-
-//   &:active
-//     transform translate3d(0, 1px, 0)
-
-//   &.primary, &.selected
-//     background black
-//     color white
-
-//     &:hover .button-content
-//       border-bottom-color white
-
-//   &.secondary
-//     border-color black
-
-//     &:hover .button-content
-//       border-bottom-color black
-
-//   &.secondary.inverted
-//     color white
-//     border-color white
-
-//     &:hover .button-content
-//       border-bottom-color white
-
 [theme="dark"] .language-selector
     .dropdown {
-      background: rgba(255,255,255, .12);
+      background-color: rgba(255,255,255, .12);
+      color: #fff;
       }
-.language-selector
-  padding .5em
-  border-radius 14em
-  font-size .8em
-  user-select none
-  position relative
-  display flex
 
-  &:focus
-    outline none
+[theme="light"] .language-selector
+    .dropdown {
+      background-color: #fff;
+      color: rgb(34,30,104);
+      }
 
-  &.dropdown-open
-    .dropdown
-      display flex
-      position: absolute;
-      right: 20px;
-      top: 70px;
+header::after
+  content unset !important
 
+.Header 
+  top 0
+
+  .language-selector
+    padding .5em
+    border-radius 14em
+    font-size .8em
+    user-select none
+    display flex
+
+    &:focus
+      outline none
+
+    &.dropdown-open
+      .dropdown
+        display flex
+        position: absolute;
+        right: 20px;
+        top: 70px;
+
+
+      .selector-label
+        opacity 1
+
+    @media mobileMaxWidthQuery
+      font-size 1em
+      top 12px
+      right 12px
 
     .selector-label
-      opacity 1
-
-  @media mobileMaxWidthQuery
-    font-size 1em
-    top 12px
-    right 12px
-
-  .selector-label
-    display flex
-    align-items center
-    justify-content flex-end
-    opacity .8
-    transition opacity .2s
-
-    &:hover
-      opacity 1
-
-    @media mobileMaxWidthQuery
-      font-size 2rem
-
-    .fa-globe
-      margin-right .5em
-
-    .fa-caret-down
-      margin-right .5em
-
-    .chosen-language
-      margin-right .5em
-      word-break keep-all
-
-  .dropdown
-    margin-top .5em
-    flex-flow column
-    text-align left
-    padding .2em 0.8em .2em .8em
-    display none
-    min-width: 155px;
-    float: right;
-
-    border-radius 3px;
-    background-color white;
-    box-shadow #ccc 0px 3px 4px;
-    transition  all 0.4s ease 0s;
-
-
-    .language
-      color inherit
-      text-decoration none
-      line-height 1.7
+      display flex
+      align-items center
+      justify-content flex-end
+      opacity .8
+      transition opacity .2s
 
       &:hover
-        text-decoration underline
+        opacity 1
 
-    @media mobileMaxWidthQuery
-      background rgba(0,0,0,.9)
-      font-size 2rem
+      @media mobileMaxWidthQuery
+        font-size 2rem
+
+      .fa-globe
+        margin-right .5em
+
+      .fa-caret-down
+        margin-right .5em
+
+      .chosen-language
+        margin-right .5em
+        word-break keep-all
+
+    .dropdown
+      margin-top .5em
+      flex-flow column
+      text-align left
       padding .2em 0.8em .2em .8em
+      display none
+      min-width: 155px;
+      float: right;
+
+      border-radius 3px;
+      box-shadow #ccc 0px 3px 4px;
+      transition  all 0.4s ease 0s;
+
 
       .language
-        line-height 2
+        color inherit
+        text-decoration none
+        line-height 1.7
 
-.message
-  &.center
-    text-align center
-    .message-content
-      display inline-block
+        &:hover
+          text-decoration underline
 
-.message-content
-  border-radius 3px
-  background rgba(0,0,0,0.6)
-  color white
-  padding 1rem 1.5rem
-  font-size .8em
-  line-height 1.6
+      @media mobileMaxWidthQuery
+        background rgba(0,0,0,.9)
+        font-size 2rem
+        padding .2em 0.8em .2em .8em
 
-p.collapsed-margins
-  margin 0
-
-ul, ol
-  @media mobileMaxWidthQuery
-    margin-left 0
-    padding-left 1em
-
-  > li + li
-    margin-top .5em
-
-  li > ul, li > ol
-    margin-top .5em
-
-.tc
-  text-align: center
-
-// @import hero
-// @import explanation
-// @import setup
-// @import share
-// @import faq
-// @import footer
-// @import help
-// @import purge-cache
+        .language
+          line-height 2

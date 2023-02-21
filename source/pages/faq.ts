@@ -1,4 +1,6 @@
 import "../styles/base.styl";
+import "../styles/index.css";
+import "../styles/nav.styl";
 
 import SweetScroll from "sweet-scroll";
 

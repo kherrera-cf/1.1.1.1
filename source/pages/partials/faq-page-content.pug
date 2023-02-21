@@ -7,21 +7,7 @@ mixin render(input)
     #{input.tag}!=input.content
 
 .hero
-  .language-selector(
-  tabindex="3"
-  role="button"
-  data-ref="languageSelector")
-    .selector-label
-      include ../../media/globe.svg
-      span.chosen-language!=htmlWebpackPlugin.options.locale.label
-      include ../../media/caret.svg
-
-    .dropdown
-      each locale in htmlWebpackPlugin.options.locales.filter(locale => locale.code !== htmlWebpackPlugin.options.locale.code)
-        a.language(
-          href="/" + locale.path + "faq/"
-          class={selected: htmlWebpackPlugin.options.locale.code === locale.code})
-          | #{locale.label}
+  include ./nav.pug
 
   a(href='/')
     include ../../media/logo.svg
