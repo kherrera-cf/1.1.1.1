@@ -7,23 +7,19 @@
   "hero.description": "You are one step away from browsing a faster, more private Internet",
   "hero.getStarted": "Install",
   "hero.info": "More Info",
-
   "explanation.dnsHeader": "DNS: Internet’s Directory",
   "explanation.dnsExplanation": "Nearly everything on the Internet starts with a DNS request. DNS is the Internet’s directory. Click on a link, open an app, send an email and the first thing your device does is ask the directory: <strong class=\"subtle\">Where can I find this?</strong>",
   "explanation.dnsSlowInsecure": "Unfortunately, by default, DNS is usually slow and insecure. Your ISP, and anyone else listening in on the Internet, can see every site you visit and every app you use — even if their content is encrypted. Creepily, some DNS providers sell data about your Internet activity or use it to target you with ads.",
   "explanation.dnsAlternative": "We think that’s gross. If you do too, now there’s an alternative: <strong class=\"code\">1.1.1.1</strong>",
-
   "explanation.privacyHeader": "Privacy First: Guaranteed.",
   "explanation.privacyExplanation": "We’re rethinking the 1983-era DNS protocol. <strong class=\"code\">1.1.1.1</strong> supports encrypted DNS as well as DNS over HTTPS.",
   "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">We will never sell your data or use it to target ads.</span> Period.",
   "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">We will never log your IP address</span> (the way other companies identify you). And we’re not just saying that. We’ve retained a big 4 accounting firm to audit our assertions about our systems annually to ensure that we're doing what we say.",
   "explanation.privacyConclusion": "Frankly, we don’t want to know what you do on the Internet—it’s none of our business—and we’ve taken the technical steps to ensure we can’t.",
-
   "explanation.performanceHeader": "Faster than anything else.",
   "explanation.fastestDNS": "We’ve built 1.1.1.1 to be the Internet’s fastest DNS directory. Don’t take our word for it. The independent DNS monitor <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a> ranks 1.1.1.1 the fastest DNS service in the world.",
   "explanation.speedContinued": "Since nearly everything you do on the Internet starts with a DNS request, choosing the fastest DNS directory across all your devices will accelerate almost everything you do online.",
   "explanation.timeStamp": "* March, 2020",
-
   "instructions": {
     "header": "Setup on {{device}}",
     "explanation": "Setting up <strong>1.1.1.1</strong> takes two minutes and requires no technical skill or special software. Even if you’re a computer novice, pick your device below for an easy-to-follow setup guide.",
@@ -31,7 +27,10 @@
     "questions": "Still have questions? Visit our <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">Community Forum</a>",
     "mac-os": {
       "steps": [
-        { "tag": "li", "content": "Open System Preferences." },
+        {
+          "tag": "li",
+          "content": "Open System Preferences."
+        },
         {
           "tag": "li",
           "content": "Search for <strong>DNS Servers</strong> and select it from the dropdown."
@@ -84,7 +83,10 @@
           "tag": "li",
           "content": "Select <strong>Internet Protocol Version 4</strong> (or Version 6 if desired)."
         },
-        { "tag": "li", "content": "Click <strong>Properties</strong>." },
+        {
+          "tag": "li",
+          "content": "Click <strong>Properties</strong>."
+        },
         {
           "tag": "li",
           "content": "Write down any existing DNS server entries for future reference."
@@ -119,7 +121,10 @@
           "tag": "li",
           "content": "Click <strong>OK</strong>, then <strong>Close</strong>."
         },
-        { "tag": "li", "content": "Restart your browser." },
+        {
+          "tag": "li",
+          "content": "Restart your browser."
+        },
         {
           "tag": "li",
           "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"
@@ -267,7 +272,10 @@
           "tag": "li",
           "content": "In the <strong>DNS 2</strong> field, enter <strong class=\"code\">1.0.0.1</strong> (This is for redundancy.)"
         },
-        { "tag": "li", "content": "Tap <strong>Save</strong>." },
+        {
+          "tag": "li",
+          "content": "Tap <strong>Save</strong>."
+        },
         {
           "tag": "li",
           "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"
@@ -331,12 +339,10 @@
     },
     "downloadmobile": "Download the mobile app"
   },
-
   "share.header": "✌️✌️ Share a faster, privacy-first Internet with your friends.",
   "share.emailSubject": "✌️✌️ Browse a faster, more private internet — 1.1.1.1 DNS Resolver",
   "share.emailBody": "“1.1.1.1” makes internet browsing faster and more private. Check out https://1.1.1.1 for more info and how to setup your device in less than two minutes!",
   "share.tweetBody": "✌️✌️ Fast, safe, and private internet is here. Setup the 1.1.1.1 DNS Resolver in less than two minutes.",
-
   "faq.whosBehindThis": "Who’s behind this?",
   "faq.partnership": "<strong class=\"code\">1.1.1.1</strong> is a partnership between Cloudflare and APNIC.",
   "faq.network": "Cloudflare runs one of the world’s largest, fastest networks. APNIC is a non-profit organization managing IP address allocation for the Asia Pacific and Oceania regions.",
@@ -346,7 +352,6 @@
   "faq.integrationDocs": "By using DNS over HTTPS (DoH) you can transparently offer enhanced security to your customers while improving the speed of your devices. Even better, you can do it at no cost, both in terms of licensing and customer’s <a href=\"https://developers.cloudflare.com/1.1.1.1/privacy/\" target=\"_blank\">privacy</a>. Learn more about 1.1.1.1 and our DNS over HTTPS (DoH) support in our <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">Developer Docs</a>.",
   "faq.warpVsDNS": "Is Warp replacing the 1.1.1.1 DNS service?",
   "faq.warpVsDNSAnswer": "No, Cloudflare deeply believes in the value of free, fast, and private DNS and intends to provide the 1.1.1.1 DNS service for the forseeable future. Warp is an additional feature which augments our mobile apps but will always remain optional.",
-
   "faqpage.header": "Frequently Asked Questions",
   "faqpage.general": "General",
   "faqpage.whatIsQ": "What is 1.1.1.1?",
@@ -593,5 +598,9 @@
   "beta.mac.instructions": "macOS installation Instructions",
   "beta.windows.instructions": "Windows Installation instructions",
   "teams.devices.title": "New: use WARP with your team",
-  "teams.devices.description": "Bring the power of WARP to your business by integrating WARP with Gateway. Enroll user devices in your organization and protect your remote workforce from threats online."
+  "teams.devices.description": "Bring the power of WARP to your business by integrating WARP with Gateway. Enroll user devices in your organization and protect your remote workforce from threats online.",
+  "faq": "FAQ",
+  "terms": "Terms",
+  "privacyPolicy": "Privacy Policy",
+  "purgeCache": "Purge Cache"
 }

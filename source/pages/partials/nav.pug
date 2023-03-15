@@ -13,7 +13,7 @@ header.Header
 
     each item in navItems
       a.Nav--link(
-        href=htmlWebpackPlugin.options.locale.path === '' ? item.path : '/' + htmlWebpackPlugin.options.locale.path.slice(0, -1) + item.path
+        href=htmlWebpackPlugin.options.localizePath(item.path)
         class={'Nav--link-active': item.path === pagePath}
       )
         span!=htmlWebpackPlugin.options.t(item.text)
@@ -30,6 +30,6 @@ header.Header
       .dropdown
         each locale in htmlWebpackPlugin.options.locales.filter(locale => locale.code !== htmlWebpackPlugin.options.locale.code)
           a.language(
-            href="/" + locale.path + (pagePath || '/').slice(1)
+            href=htmlWebpackPlugin.options.normalizePath(locale, pagePath || '/')
             class={selected: htmlWebpackPlugin.options.locale.code === locale.code})
             | #{locale.label}
