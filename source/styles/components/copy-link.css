@@ -2,8 +2,7 @@
   text-decoration: none;
   color: inherit;
   --underline-size: -0.16em;
-  --box-shadow: 0 0 0 var(--focus-shadow-size) var(--focus-shadow-color),
-    inset 0 var(--underline-size) rgba(var(--color-rgb), 0.5); /* Workaround for Safari bug - https://bugs.webkit.org/show_bug.cgi?id=185940 */
+  --box-shadow: 0 0 0 var(--focus-shadow-size) var(--focus-shadow-color), inset 0 var(--underline-size) rgba(var(--color-rgb), 0.5); /* Workaround for Safari bug - https://bugs.webkit.org/show_bug.cgi?id=185940 */
   box-shadow: var(--box-shadow);
   transition: color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -41,10 +40,6 @@
 .CopyLink--small {
   color: rgb(34, 30, 104);
   font-size: 0.625em;
-}
-
-.CopyLink-with-margin--small {
-  margin-right: 5em;
 }
 
 @media (max-width: 768px) {
