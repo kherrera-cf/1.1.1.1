@@ -197,7 +197,7 @@ const locales = [
   {
     path: "id-ID/",
     code: "id-ID",
-    label: "Indonesian",
+    label: "Indonesia",
   },
 ];
 
