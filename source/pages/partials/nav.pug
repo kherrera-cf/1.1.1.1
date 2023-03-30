@@ -1,6 +1,8 @@
 block PrimaryNavigation
-  - var navItems = [{'text': 'warp.nav.name', 'path': '/'},{'text': 'dns', 'path': '/dns/'},{'text': 'family.name', 'path': '/family/'}];
-  
+  - var navItems = [{'text': 'dns', 'path': '/dns/'},{'text': 'family.name', 'path': '/family/'}];
+  - if(pagePath!=='/'){ navItems.unshift({'text': 'warp.nav.name', 'path': '/'}) }
+  - if(pagePath==='/beta/'){ navItems.push({'text': 'beta.name', 'path': '/beta/'}) }
+
 header.Header
   nav.Nav
     a.Nav--link(href='https://cloudflare.com', target='_blank', rel='noopener')
