@@ -588,7 +588,7 @@
   "home.overviewdesc1" : "Lorsque le réseau Internet a été conçu, les ordinateurs n'avaient rien de mobile. Ils étaient situés dans des bureaux, à côté de datacenters. Internet a évolué, mais les décisions prises il y a 30 ans rendent votre expérience plus lente et moins sécurisée.",
   "home.overviewdesc2" : "Le service 1.1.1.1 avec WARP remplace la connexion entre votre appareil et Internet par un protocole moderne et optimisé.",
   "learnmore" : "En savoir plus",
-  "downloadnow" : "Télécharger maintenant",
+  "downloadnow" : "Télécharger",
   "home.desktop.title" : "Désormais disponible pour macOS et Windows",
   "home.desktop.description" : "<p>De nos jours, des millions d'utilisateurs sécurisent les connexions Internet de leur téléphone à l'aide de l'application WARP.</p><p>Nous avons étendu cette même protection aux utilisateurs de macOS et de Windows.</p>",
   "home.performancetitle" : "Une solution appuyée sur un réseau gigantesque.",
@@ -601,7 +601,7 @@
   "home.privacydesc3" : "Nous considérons que la confidentialité est un droit. Nous ne vendrons jamais vos données.",
   "sharewithtwitter" : "Partager sur Twitter",
   "home.warptitle" : "Empruntez la voie rapide sur Internet",
-  "home.warpdesc" : "Les abonnements WARP+ étendent les fonctionnalités de WARP en acheminant l'ensemble de votre trafic Internet sur les itinéraires optimisés de Cloudflare. Des milliers de sites web bénéficient ainsi d'une vitesse accrue de 30 % en moyenne. WARP+ allie des millions de mesures d'itinéraires Internet à l'infrastructure web privée de Cloudflare afin de proposer un Internet meilleur directement à votre appareil.",
+  "home.warpdesc" : "En plus du service WARP complet, les abonnés WARP+ ont accès à un réseau plus vaste. Un panel plus large de villes auxquelles se connecter implique de plus grandes chances de vous trouver à proximité d'un datacenter Cloudflare, soit une situation capable de réduire la latence entre votre appareil et le réseau Cloudflare, tout en améliorant votre vitesse de navigation.",
   "home.warpdesc2" : "Les abonnés WARP+ existants bénéficient d'un tarif réduit pour ajouter des appareils supplémentaires à leur offre.",
   "home.sharewarp" : "Partager WARP",
   "home.footertitle" : "Une solution proposée par Cloudflare.",
@@ -657,5 +657,9 @@
   "beta.mac.instructions" : "Instructions d'installation pour macOS",
   "beta.windows.instructions" : "Instructions d'installation pour Windows",
   "teams.devices.title" : "Nouveau : utilisez WARP avec votre équipe",
-  "teams.devices.description" : "Offrez la puissance de WARP à votre entreprise en intégrant le service à Gateway. Inscrivez les appareils des utilisateurs de votre entreprise et protégez vos effectifs en télétravail contre les menaces en ligne."
+  "teams.devices.description" : "Offrez la puissance de WARP à votre entreprise en intégrant le service à Gateway. Inscrivez les appareils des utilisateurs de votre entreprise et protégez vos effectifs en télétravail contre les menaces en ligne.",
+  "faq" : "FAQ",
+  "terms" : "Conditions",
+  "privacyPolicy" : "Politique de confidentialité",
+  "purgeCache" : "Purge du cache"
 }

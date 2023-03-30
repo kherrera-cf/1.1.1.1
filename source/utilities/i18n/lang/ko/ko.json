@@ -601,7 +601,7 @@
   "home.privacydesc3" : "Cloudflare는 개인정보보호가 옳다고 믿습니다. 여러분의 데이터를 절대 판매하지 않을 것입니다.",
   "sharewithtwitter" : "Twitter로 공유",
   "home.warptitle" : "인터넷 고속 차선 사용",
-  "home.warpdesc" : "WARP+ 구독은 평균적으로 수천 개의 웹 사이트 속도를 30% 개선하는 Cloudflare의 최적화된 인터넷 라우팅을 통해 모든 인터넷 트래픽을 전송하여 WARP를 확장합니다. WARP+는 수백만 개의 인터넷 라우팅 측정을 Cloudflare의 비공개 인터넷 백본과 결합하여 여러분의 장치에 개선된 인터넷을 제공합니다.",
+  "home.warpdesc" : "WARP+ 구독자는 모든 WARP 서비스와 함께 규모가 더 큰 네트워크에 액세스할 수 있습니다. 연결할 수 있는 도시가 더 많다면 Cloudflare 데이터 센터와 더 가까이 있을 확률이 높다는 것입니다. 이 경우 장치와 Cloudflare 사이의 대기 시간을 줄이고 브라우징 속도를 개선할 수 있습니다.",
   "home.warpdesc2" : "기존 WARP+ 구독자는 할인된 가격으로 요금제에 추가 장치를 추가할 수 있습니다.",
   "home.sharewarp" : "WARP 공유",
   "home.footertitle" : "Cloudflare가 여러분에게 제공합니다.",
@@ -657,5 +657,9 @@
   "beta.mac.instructions" : "macOS 설치 지침",
   "beta.windows.instructions" : "Windows 설치 지침",
   "teams.devices.title" : "신규: 팀과 함께 WARP 사용",
-  "teams.devices.description" : "WARP과 Gateway를 통합하여 WARP의 성능을 비즈니스에 도입하세요. 사용자 장치를 조직에 등록하고 온라인 위협으로부터 원격 근무자를 보호하세요."
+  "teams.devices.description" : "WARP과 Gateway를 통합하여 WARP의 성능을 비즈니스에 도입하세요. 사용자 장치를 조직에 등록하고 온라인 위협으로부터 원격 근무자를 보호하세요.",
+  "faq" : "FAQ",
+  "terms" : "약관",
+  "privacyPolicy" : "개인정보 취급방침",
+  "purgeCache" : "캐시 삭제"
 }

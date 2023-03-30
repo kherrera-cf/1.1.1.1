@@ -7,6 +7,7 @@ const upstreamLocales = [
   "zh-hans",
   "ja-jp",
   "ko-kr",
+  'it-it'
 ];
 
 const isAbsoluteUrl = (url: string) =>

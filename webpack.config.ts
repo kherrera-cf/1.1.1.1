@@ -199,6 +199,26 @@ const locales = [
     code: "id-ID",
     label: "Indonesia",
   },
+  {
+    path: "fa-IR/",
+    code: "fa-IR",
+    label: "فارسی",
+  },
+  {
+    path: "it-IT/",
+    code: "it-IT",
+    label: "Italiano",
+  },
+  {
+    path: "pl-PL/",
+    code: "pl-PL",
+    label: "Polski",
+  },
+  {
+    path: "ru-RU/",
+    code: "ru-RU",
+    label: "Русский",
+  },
 ];
 
 // HACK: For many many reasons, Pug, html-loader, and html-webpack-plugin are incompatible.

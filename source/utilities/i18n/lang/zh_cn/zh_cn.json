@@ -601,7 +601,7 @@
   "home.privacydesc3" : "我们相信隐私是一种权利。我们永远不会出售您的数据。",
   "sharewithtwitter" : "通过 Twitter 分享",
   "home.warptitle" : "使用 Internet 快车道",
-  "home.warpdesc" : "WARP+ 订阅扩展 WARP 的功能，将您的所有 Internet 流量通过 Cloudflare 的优化路由发送，使数以千计的网站速度平均加快 30%。WARP+ 将数以百万计的 Internet 路由测量数据与 Cloudflare 的专用 Internet 骨干网结合起来，直接向您的设备提供更好的 Internet。",
+  "home.warpdesc" : "除了全套 WARP 服务外，WARP+ 订阅用户也能使用更大的网络。更多城市可连接意味着您可能更接近其中一个 Cloudflare 数据中心，从而减少您的设备与 Cloudflare 之间的延迟，提高浏览速度。",
   "home.warpdesc2" : "现有 WARP+ 订阅用户可按优惠价格在其计划中添加更多设备。",
   "home.sharewarp" : "分享 WARP",
   "home.footertitle" : "由 Cloudflare 为您提供",
@@ -657,5 +657,9 @@
   "beta.mac.instructions" : "macOS 安装说明",
   "beta.windows.instructions" : "Windows 安装说明",
   "teams.devices.title" : "新：为您的团队使用 WARP",
-  "teams.devices.description" : "整合 WARP 和 Gateway，为您的企业带来 WARP 的力量。注册组织中的用户设备，保护远程员工免受在线威胁侵害。"
+  "teams.devices.description" : "整合 WARP 和 Gateway，为您的企业带来 WARP 的力量。注册组织中的用户设备，保护远程员工免受在线威胁侵害。",
+  "faq" : "常见问题",
+  "terms" : "条款",
+  "privacyPolicy" : "隐私政策",
+  "purgeCache" : "清除缓存"
 }

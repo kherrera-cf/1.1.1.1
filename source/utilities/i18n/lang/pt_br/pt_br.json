@@ -413,7 +413,7 @@
   "faqpage.ipv6Q" : "O 1.1.1.1 é compatível com IPv6?",
   "faqpage.ipv6A" : "Sim, o 1.1.1.1 é totalmente compatível com IPv6.",
   "faqpage.clearCacheQ" : "Como posso limpar o cache de DNS do 1.1.1.1?",
-  "faqpage.clearCacheA" : "Você pode atualizar o cache do DNS do 1.1.1.1 para nomes de domínio usando a <a href='https://cloudflare-dns.com/purge-cache/' target='_blank'>ferramenta para limpar cache</a>. Você precisa digitar o nome de domínio, escolher o tipo(ou tipos) de registro DNS e clicar no botão &quot;Limpar cache&quot;.",
+  "faqpage.clearCacheA" : "Você pode atualizar o cache do DNS do 1.1.1.1 para nomes de domínio usando a <a href='https://cloudflare-dns.com/purge-cache/' target='_blank'>ferramenta para limpar cache</a>. Você precisa digitar o nome de domínio, escolher o tipo(ou tipos) de registro de DNS e clicar no botão &quot;Limpar cache&quot;.",
   "faqpage.insideChinaQ" : "O 1.1.1.1 funciona na China?",
   "faqpage.insideChinaA" : "Na verdade. Você pode configurar seu DNS para apontar para o 1.1.1.1, mas ele não chegará a um de nossos data centers na China. Em vez disso, a solicitação será roteada para um de nossos data centers fora da China Continental.",
   "faqpage.devDocsQ" : "Onde posso encontrar os documentos de desenvolvedor do 1.1.1.1?",
@@ -601,7 +601,7 @@
   "home.privacydesc3" : "Acreditamos que a privacidade é um direito. Nunca venderemos seus dados.",
   "sharewithtwitter" : "Compartilhe no Twitter",
   "home.warptitle" : "Use a faixa rápida da internet",
-  "home.warpdesc" : "As assinaturas WARP+ estendem o WARP enviando todo o seu tráfego da internet pelas rotas de internet otimizadas da Cloudflare, que tornam milhares de sites 30% mais rápidos, em média. O WARP+ combina milhões de medições de rotas da internet com o backbone de internet privado da Cloudflare para fornecer uma internet melhor diretamente no seu dispositivo.",
+  "home.warpdesc" : "Além do serviço WARP completo, os assinantes WARP+ obtêm acesso a uma rede maior. Mais cidades para se conectar significa que você provavelmente estará mais perto de um data center da Cloudflare – o que pode reduzir a latência entre seu dispositivo e a Cloudflare e melhorar sua velocidade de navegação.",
   "home.warpdesc2" : "Os assinantes que já possuem WARP+ podem adicionar dispositivos extras ao seu plano com desconto.",
   "home.sharewarp" : "Compartilhar WARP",
   "home.footertitle" : "Trazido a você pela Cloudflare.",
@@ -657,5 +657,9 @@
   "beta.mac.instructions" : "Instruções de instalação para macOS",
   "beta.windows.instructions" : "Instruções de instalação para Windows",
   "teams.devices.title" : "Novidade: use o WARP com sua equipe",
-  "teams.devices.description" : "Traga o poder do WARP para a sua empresa integrando o WARP com o Gateway. Registre dispositivos de usuário em sua organização e proteja sua força de trabalho remota contra ameaças on-line."
+  "teams.devices.description" : "Traga o poder do WARP para a sua empresa integrando o WARP com o Gateway. Registre dispositivos de usuário em sua organização e proteja sua força de trabalho remota contra ameaças on-line.",
+  "faq" : "Perguntas frequentes",
+  "terms" : "Termos",
+  "privacyPolicy" : "Política de privacidade",
+  "purgeCache" : "Limpar Cache"
 }

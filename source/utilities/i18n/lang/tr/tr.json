@@ -601,7 +601,7 @@
   "home.privacydesc3" : "Gizliliğin bir hak olduğuna inanırız. Verilerinizi asla satmayız.",
   "sharewithtwitter" : "Twitter'da paylaşın",
   "home.warptitle" : "İnternet hızlı şeridini kullanın",
-  "home.warpdesc" : "WARP+ abonelikleri, tüm İnternet trafiğinizi Cloudflare'ın binlerce web sitesini ortalama %30 daha hızlı hale getiren optimize edilmiş İnternet yolları üzerinden göndererek WARP'ı genişletir. WARP+, doğrudan cihazınıza daha iyi bir İnternet sunmak için milyonlarca İnternet rota ölçümünü Cloudflare'ın özel İnternet omurgasıyla birleştirir.",
+  "home.warpdesc" : "Tam WARP hizmetine ek olarak, WARP+ aboneleri daha büyük bir ağa erişim kazanır. Bağlanacak daha çok şehir, bir Cloudflare veri merkezine daha yakın olma olasılığı taşıdığınız anlamına gelir; bu da cihazınızla Cloudflare arasındaki gecikmeyi azaltabilir ve gezinme hızınızı iyileştirebilir.",
   "home.warpdesc2" : "Mevcut WARP+ aboneleri planlarına indirimli olarak ek cihazlar ekleyebilir.",
   "home.sharewarp" : "WARP paylaşın",
   "home.footertitle" : "Size Cloudflare tarafından sunulmaktadır.",
@@ -657,5 +657,9 @@
   "beta.mac.instructions" : "macOS Kurulum Talimatları",
   "beta.windows.instructions" : "Windows Kurulum Talimatları",
   "teams.devices.title" : "Yeni: WARP'ı ekibinizle birlikte kullanın",
-  "teams.devices.description" : "WARP'ı Gateway ile entegre ederek WARP'ın gücünü işinize getirin. Kullanıcı cihazlarını kuruluşunuza kaydedin ve uzaktaki iş gücünüzü çevrimiçi tehditlerden koruyun."
+  "teams.devices.description" : "WARP'ı Gateway ile entegre ederek WARP'ın gücünü işinize getirin. Kullanıcı cihazlarını kuruluşunuza kaydedin ve uzaktaki iş gücünüzü çevrimiçi tehditlerden koruyun.",
+  "faq" : "Sık sorulan sorular",
+  "terms" : "Şartlar",
+  "privacyPolicy" : "Gizlilik Politikası",
+  "purgeCache" : "Önbelleği Temizle"
 }

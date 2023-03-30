@@ -601,7 +601,7 @@
   "home.privacydesc3" : "Creemos que la privacidad es un derecho. No venderemos tus datos, nunca.",
   "sharewithtwitter" : "Compartir en Twitter",
   "home.warptitle" : "Utiliza la ruta más rápida de Internet",
-  "home.warpdesc" : "Las suscripciones a WARP+ amplían WARP enviando todo tu tráfico de Internet por las rutas de Internet optimizadas de Cloudflare, que agilizan un 30 % miles sitios web, en promedio. WARP+ combina millones de mediciones de rutas de Internet con la red troncal de Internet privada de Cloudflare para mejorar la conexión de Internet directamente en tu dispositivo.",
+  "home.warpdesc" : "Además del servicio integral WARP, los suscriptores de WARP+ pueden acceder a una red más amplia. La ventaja de conectarte a más ciudades te permite estar más cerca de un centro de datos de Cloudflare, lo que puede reducir la latencia entre tu dispositivo y Cloudflare y mejorar tu velocidad de navegación.",
   "home.warpdesc2" : "Los suscriptores de WARP+ pueden añadir dispositivos adicionales a su plan con descuentos.",
   "home.sharewarp" : "Compartir WARP",
   "home.footertitle" : "Tecnología de Cloudflare a tu disposición.",
@@ -657,5 +657,9 @@
   "beta.mac.instructions" : "Instrucciones de instalación de macOS",
   "beta.windows.instructions" : "Instrucciones de instalación de Windows",
   "teams.devices.title" : "Novedad: utiliza WARP con tu equipo",
-  "teams.devices.description" : "Aprovecha la eficacia de WARP en negocio integrando WARP con Gateway. Registra los dispositivos de los usuarios de tu organización y protege a tus usuarios remotos de las amenazas en línea."
+  "teams.devices.description" : "Aprovecha la eficacia de WARP en negocio integrando WARP con Gateway. Registra los dispositivos de los usuarios de tu organización y protege a tus usuarios remotos de las amenazas en línea.",
+  "faq" : "Preguntas frecuentes",
+  "terms" : "Condiciones",
+  "privacyPolicy" : "Política de privacidad",
+  "purgeCache" : "Depurar caché"
 }

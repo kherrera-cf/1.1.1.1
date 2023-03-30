@@ -601,7 +601,7 @@
   "home.privacydesc3" : "Wij geloven dat privacy een recht is. We verkopen uw gegevens nooit.",
   "sharewithtwitter" : "Delen met Twitter",
   "home.warptitle" : "Gebruik de snelle internetverbinding",
-  "home.warpdesc" : "WARP+ abonnementen breiden WARP uit door al uw internetverkeer over Cloudflare's geoptimaliseerde internetroutes te sturen die duizenden websites gemiddeld 30% sneller maken. WARP+ combineert miljoenen internet routemetingen met Cloudflare's private internet backbone om een beter internet direct aan uw apparaat te leveren.",
+  "home.warpdesc" : "In aanvulling op de volledige WARP-service, ontvangen WARP+-abonnees toegang tot een groter netwerk. Doordat er meer steden beschikbaar zijn om mee te verbinden, is de kans groter dat u zich dichter bij een datacenter van Cloudflare zult bevinden – wat vertragingen tussen uw apparaat en Cloudflare vermindert en uw internetsnelheid verhoogt.",
   "home.warpdesc2" : "Bestaande WARP+ abonnees kunnen met korting extra apparaten aan hun plan toevoegen.",
   "home.sharewarp" : "WARP delen",
   "home.footertitle" : "Aangeboden door Cloudflare.",
@@ -657,5 +657,9 @@
   "beta.mac.instructions" : "macOS installatie-instructies",
   "beta.windows.instructions" : "Windows Installatie-instructies",
   "teams.devices.title" : "Nieuw: gebruik WARP met je team",
-  "teams.devices.description" : "Breng de kracht van WARP naar uw bedrijf door WARP te integreren met Gateway. Registreer gebruikersapparaten in uw organisatie en bescherm uw externe medewerkers tegen online bedreigingen."
+  "teams.devices.description" : "Breng de kracht van WARP naar uw bedrijf door WARP te integreren met Gateway. Registreer gebruikersapparaten in uw organisatie en bescherm uw externe medewerkers tegen online bedreigingen.",
+  "faq" : "Veelgestelde vragen",
+  "terms" : "Voorwaarden",
+  "privacyPolicy" : "Privacybeleid",
+  "purgeCache" : "Cache opschonen"
 }

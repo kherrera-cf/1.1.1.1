@@ -601,7 +601,7 @@
   "home.privacydesc3" : "我們相信隱私是一種權利。我們永遠不會銷售您的資料。",
   "sharewithtwitter" : "在 Twitter 上分享",
   "home.warptitle" : "使用網路快車道",
-  "home.warpdesc" : "WARP+ 訂閱擴展了 WARP 的能力，它經由 Cloudflare 最佳化網路路由傳送您的網際網路流量，讓數以千計的網站的平均速度加快 30%。WARP+ 將成千上萬的網路路由測量與 Cloudflare 的私有網路主幹相結合，直接為您的設備提供更好的網路。",
+  "home.warpdesc" : "除了完整的 WARP 服務以外，WARP+ 訂閱者還能夠存取更大型的網路。能夠連線到更多的城市，意味著您可能更靠近 Cloudflare 資料中心，因而能夠減少您的裝置與 Cloudflare 之間的延遲，並提升您的瀏覽速度。",
   "home.warpdesc2" : "現有的 WARP+ 訂閱者可以用折扣價來新增其他設備到計劃中。",
   "home.sharewarp" : "分享 WARP",
   "home.footertitle" : "由 Cloudflare 為您提供。",
@@ -657,5 +657,9 @@
   "beta.mac.instructions" : "macOS 安裝說明",
   "beta.windows.instructions" : "Windows 安裝說明",
   "teams.devices.title" : "新消息：在團隊中使用 WARP",
-  "teams.devices.description" : "經由 Warp 與 Gateway 的整合，將 Warp 的功能帶入到您的企業。註冊使用者的設備於公司，以保護遠距工作團隊免受網路的威脅。"
+  "teams.devices.description" : "經由 Warp 與 Gateway 的整合，將 Warp 的功能帶入到您的企業。註冊使用者的設備於公司，以保護遠距工作團隊免受網路的威脅。",
+  "faq" : "常見問題集",
+  "terms" : "條款",
+  "privacyPolicy" : "隱私權原則",
+  "purgeCache" : "清除快取"
 }

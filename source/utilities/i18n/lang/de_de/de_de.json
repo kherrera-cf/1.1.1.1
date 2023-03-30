@@ -601,7 +601,7 @@
   "home.privacydesc3" : "Unserer Ansicht nach ist Privatsphäre ein grundlegendes Recht. Wir werden Ihre Daten niemals verkaufen. Niemals.",
   "sharewithtwitter" : "Teilen mit Twitter",
   "home.warptitle" : "Nutzen Sie die Überholspur im Internet",
-  "home.warpdesc" : "WARP+-Abonnements erweitern WARP, indem sie Ihren gesamten Internet-Traffic über die optimierten Internet-Routen von Cloudflare leiten, die Tausende von Websites im Durchschnitt 30 % schneller machen. WARP+ kombiniert Millionen von Internet-Routenmessungen mit dem privaten Internet-Backbone von Cloudflare, um ein besseres Internet direkt auf Ihrem Gerät bereitzustellen.",
+  "home.warpdesc" : "Neben dem vollständigen WARP-Service erhalten WARP+-Abonnenten Zugang zu einem größeren Netzwerk. Wenn dieses mehr Städte umfasst, steigt auch die Wahrscheinlichkeit, sich in geringerer Entfernung zu einem Cloudflare-Rechenzentrum zu befinden. Dadurch lässt sich die Latenz bei der Kommunikation zwischen einem Gerät und Cloudflare erhöhen und das Surfen beschleunigen.",
   "home.warpdesc2" : "Bestehende WARP+ Abonnenten können ihrem Tarif weitere Geräte zu einem vergünstigten Preis hinzuzufügen.",
   "home.sharewarp" : "WARP teilen",
   "home.footertitle" : "Cloudflare macht's möglich.",
@@ -657,5 +657,9 @@
   "beta.mac.instructions" : "macOS: Installationsanweisungen",
   "beta.windows.instructions" : "Windows: Installationsanweisungen",
   "teams.devices.title" : "Neu: Verwenden Sie WARP mit Ihrem Team",
-  "teams.devices.description" : "Nutzen Sie die Vorteile von WARP in Ihrem Unternehmen durch die Integration von WARP mit Gateway. Registrieren Sie Benutzergeräte in Ihrem Unternehmen und schützen Sie Ihre Mitarbeiter vor Online-Bedrohungen."
+  "teams.devices.description" : "Nutzen Sie die Vorteile von WARP in Ihrem Unternehmen durch die Integration von WARP mit Gateway. Registrieren Sie Benutzergeräte in Ihrem Unternehmen und schützen Sie Ihre Mitarbeiter vor Online-Bedrohungen.",
+  "faq" : "FAQ",
+  "terms" : "Allgemeinen Geschäftsbedingungen von Cloudflare zu",
+  "privacyPolicy" : "Datenschutzrichtlinie",
+  "purgeCache" : "Purge Cache"
 }

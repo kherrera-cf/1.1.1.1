@@ -601,7 +601,7 @@
   "home.privacydesc3" : "当社は、プライバシーは権利だと考えています。お客様のデータを売ることは決してありません。",
   "sharewithtwitter" : "Twitterでシェアする",
   "home.warptitle" : "インターネットの高速レーンを利用",
-  "home.warpdesc" : "WARP+を利用されますと、お客様のインターネットトラフィックをすべてCloudflareの最適化されたインターネットルートで送ることによってWARPを拡大適用し、何千ものWebサイトを平均30%高速化します。WARP+は、何百万ものインターネットルートの測定値とCloudflareのプライベートインターネットバックボーンとを組み合わせ、より良いインターネットをお客様のデバイスに直接お届けします。",
+  "home.warpdesc" : "WARP+をサブスクライブすると、WARPサービスをフルに活用できるだけでなく、より大規模なネットワークへのアクセスも可能になります。接続する都市が多ければ、ユーザーとCloudflareデータセンターが近い可能性が高くなりますから、ユーザーデバイスとCloudflareの間の遅延が減って、ブラウジングが速くなります。",
   "home.warpdesc2" : "WARP+をお使いのお客様は、現行プランにデバイスを割引料金で追加することができます。",
   "home.sharewarp" : "WARPを共有",
   "home.footertitle" : "Cloudflareがお届けします。",
@@ -657,5 +657,9 @@
   "beta.mac.instructions" : "macOSへのインストール方法",
   "beta.windows.instructions" : "Windowsへのインストール方法",
   "teams.devices.title" : "新：チームでWARPを利用",
-  "teams.devices.description" : "WARPとGatewayと統合して、WARPの力をビジネスに。お客様の会社のユーザーデバイスを登録して、リモートワーカーをオンラインの脅威から保護しましょう。"
+  "teams.devices.description" : "WARPとGatewayと統合して、WARPの力をビジネスに。お客様の会社のユーザーデバイスを登録して、リモートワーカーをオンラインの脅威から保護しましょう。",
+  "faq" : "よくある質問",
+  "terms" : "用語",
+  "privacyPolicy" : "プライバシーポリシー",
+  "purgeCache" : "キャッシュをパージ"
 }

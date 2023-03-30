@@ -601,7 +601,7 @@
   "home.privacydesc3" : "Kami percaya bahwa privasi itu hak. Kami tidak akan pernah menjual data Anda.",
   "sharewithtwitter" : "Berbagi dengan Twitter",
   "home.warptitle" : "Menggunakan jalur cepat Internet",
-  "home.warpdesc" : "Berlangganan WARP+ meningkatkan WARP dengan mengirim semua lalu lintas Internet Anda melalui rute Internet yang dioptimalkan oleh Cloudflare yang akan membuat ribuan situs web menjadi rata-rata 30% lebih cepat diakses. WARP+ menggabungkan jutaan pengukuran rute Internet dengan tulang punggung Internet privat dari Cloudflare untuk memberikan Internet yang lebih baik secara langsung ke perangkat Anda.",
+  "home.warpdesc" : "Selain layanan WARP yang lengkap, pelanggan WARP+ akan mendapatkan akses ke jaringan yang lebih luas. Semakin banyak kota yang terhubung, berarti Anda akan semakin lebih dekat ke pusat data Cloudflare – yang dapat mengurangi latensi antara perangkat Anda dan Cloudflare serta meningkatkan kecepatan penjelajahan Anda.",
   "home.warpdesc2" : "Pelanggan WARP+ yang telah ada dapat menambahkan perangkat tambahan ke paket mereka dengan potongan harga.",
   "home.sharewarp" : "Berbagi WARP",
   "home.footertitle" : "Dipersembahkan oleh Cloudflare.",
@@ -657,5 +657,9 @@
   "beta.mac.instructions" : "Petunjuk Instalasi macOS",
   "beta.windows.instructions" : "Petunjuk Instalasi Windows",
   "teams.devices.title" : "Baru: gunakan WARP dengan tim Anda",
-  "teams.devices.description" : "Berikan kekuatan WARP untuk bisnis Anda dengan mengintegrasikan WARP dengan Gateway. Daftarkan perangkat pengguna di organisasi Anda dan lindungi tenaga kerja jarak jauh Anda dari ancaman online."
+  "teams.devices.description" : "Berikan kekuatan WARP untuk bisnis Anda dengan mengintegrasikan WARP dengan Gateway. Daftarkan perangkat pengguna di organisasi Anda dan lindungi tenaga kerja jarak jauh Anda dari ancaman online.",
+  "faq" : "Pertanyaan Umum",
+  "terms" : "Syarat",
+  "privacyPolicy" : "Kebijakan Privasi",
+  "purgeCache" : "Cache Pembersihan"
 }
