@@ -42,6 +42,10 @@
   font-size: 0.625em;
 }
 
+html[class="dir-rtl"] .CopyLink--small {
+  direction: rtl;
+}
+
 @media (max-width: 768px) {
   .CopyLink-with-margin--small {
     display: block;

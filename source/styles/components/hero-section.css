@@ -42,6 +42,10 @@
   margin-right: auto;
 }
 
+html[class="dir-rtl"] .HeroSection--title-wrapper {
+  direction: rtl;
+}
+
 .HeroSection--title {
   font-size: 2.5em;
   font-weight: 700;

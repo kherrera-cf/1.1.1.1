@@ -5,6 +5,11 @@
   text-align: left;
 }
 
+html[class="dir-rtl"] .SectionCopy {
+  direction: rtl;
+  text-align: unset;
+}
+
 .SectionCopy.SectionCopy-is-right {
   justify-content: flex-end;
 }
@@ -45,6 +50,11 @@
   .SectionCopy.SectionCopy-is-centered {
     width: 23em;
     text-align: left;
+  }
+
+  html[class="dir-rtl"] .SectionCopy,
+  html[class="dir-rtl"] .SectionCopy.SectionCopy-is-centered {
+    text-align: unset;
   }
 
   .SectionCopy.SectionCopy-is-centered .SectionCopy--title,

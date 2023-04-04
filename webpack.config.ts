@@ -255,6 +255,7 @@ const pugLoaders = locales.map((locale) => {
                 normalizePath,
                 formatURL,
                 NODE_ENV: environment,
+                isRTL: ['fa-IR'].includes(locale.code)
               },
             },
           },
