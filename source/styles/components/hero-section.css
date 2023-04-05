@@ -128,3 +128,7 @@ html[class="dir-rtl"] .HeroSection--title-wrapper {
     margin-bottom: 1em;
   }
 }
+
+html[class="dir-rtl"] .family-page .HeroSection--content {
+  direction: rtl;
+}

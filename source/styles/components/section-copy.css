@@ -63,3 +63,11 @@ html[class="dir-rtl"] .SectionCopy {
     margin-right: auto;
   }
 }
+
+html[class="dir-rtl"] .SectionCopy .share-buttons {
+  direction: ltr;
+}
+
+html[class="dir-rtl"] .family-page .SectionCopy .SectionCopy--description {
+  margin-right: unset;
+}
