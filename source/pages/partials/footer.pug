@@ -1,11 +1,11 @@
 section(data-section="footer")
   .content
-    a.footer-logo(href="/") 1.1.1.1
-    span &nbsp; &nbsp; &nbsp;
-    a(href="/faq/") FAQ
+    a.footer-logo(href=htmlWebpackPlugin.options.localizePath("/"))!=htmlWebpackPlugin.options.t('warp.nav.name')
     span &nbsp; &nbsp;
-    a(href="https://www.cloudflare.com/website-terms/") Terms
+    a(href=htmlWebpackPlugin.options.localizePath("/faq/"))!=htmlWebpackPlugin.options.t('faq')
     span &nbsp; &nbsp;
-    a(href="https://www.cloudflare.com/privacypolicy/") Privacy Policy
+    a(href=htmlWebpackPlugin.options.localizePath('https://www.cloudflare.com/website-terms/').toLowerCase())!=htmlWebpackPlugin.options.t('terms')
     span &nbsp; &nbsp;
-    a(href="/purge-cache/") Purge Cache
+    a(href=htmlWebpackPlugin.options.localizePath('https://www.cloudflare.com/privacypolicy/').toLowerCase())!=htmlWebpackPlugin.options.t('privacyPolicy')
+    span &nbsp; &nbsp;
+    a(href=htmlWebpackPlugin.options.localizePath("/purge-cache/"))!=htmlWebpackPlugin.options.t('purgeCache')

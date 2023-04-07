@@ -1,8 +1,12 @@
-import '../styles/base.styl'
+import "../styles/index.css";
+import "../styles/base.styl";
+import "../styles/nav.styl";
 
-import SweetScroll from 'sweet-scroll'
-import { logoBanner } from './console'
-import initInstructionPicker from './instruction-picker'
+import SweetScroll from 'sweet-scroll';
+import { logoBanner } from './console';
+import initInstructionPicker from './instruction-picker';
+
+import "./language-selector";
 
 function isElementPartiallyInViewport (element: HTMLElement) {
   const { left, top, height, width } = element.getBoundingClientRect()
@@ -29,16 +33,7 @@ function init () {
     slideshow: ref('slideshow'),
     setupSection: ref('setup'),
     statsChart: ref('statsChart'),
-    languageSelector: ref('languageSelector')
   }
-
-  document.addEventListener('click', (event) => {
-    if (event.target === $el.languageSelector || $el.languageSelector.contains(<Node>event.target)) {
-      $el.languageSelector.classList.toggle('dropdown-open')
-    } else {
-      $el.languageSelector.classList.toggle('dropdown-open', false)
-    }
-  })
 
   initInstructionPicker()
 

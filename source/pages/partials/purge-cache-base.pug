@@ -1,5 +1,5 @@
 doctype html
-html(lang=htmlWebpackPlugin.options.locale.code prefix="og: http://ogp.me/ns#")
+html(class={'dir-rtl': htmlWebpackPlugin.options.isRTL} lang=htmlWebpackPlugin.options.locale.code prefix="og: http://ogp.me/ns#")
   head
     title=htmlWebpackPlugin.options.t('title')
     meta(charset="utf-8")

@@ -5,6 +5,11 @@
   text-align: left;
 }
 
+html[class="dir-rtl"] .SectionCopy {
+  direction: rtl;
+  text-align: unset;
+}
+
 .SectionCopy.SectionCopy-is-right {
   justify-content: flex-end;
 }
@@ -47,9 +52,22 @@
     text-align: left;
   }
 
+  html[class="dir-rtl"] .SectionCopy,
+  html[class="dir-rtl"] .SectionCopy.SectionCopy-is-centered {
+    text-align: unset;
+  }
+
   .SectionCopy.SectionCopy-is-centered .SectionCopy--title,
   .SectionCopy.SectionCopy-is-centered .SectionCopy--description {
     margin-left: 0;
     margin-right: auto;
   }
+}
+
+html[class="dir-rtl"] .SectionCopy .share-buttons {
+  direction: ltr;
+}
+
+html[class="dir-rtl"] .family-page .SectionCopy .SectionCopy--description {
+  margin-right: unset;
 }

@@ -1,507 +1,665 @@
 {
-  "title": "1.1.1.1 — İnternetin En Hızlı, Gizlilik Öncelikli DNS Çözümleyicisi",
-  "description": "✌️✌️ Daha hızlı, daha gizli bir internette gezinin.",
-  "hero.introducing": "Karşınızda",
-  "hero.description": "Daha hızlı, daha gizli bir internette gezinmekten sadece iki dakika uzaktasınız",
-  "hero.getStarted": "Yükle",
-  "hero.info": "Daha Fazla Bilgi",
+  "title" : "1.1.1.1 — İnternetin En Hızlı, Gizlilik Öncelikli DNS Çözümleyicisi",
+  "description" : "✌️✌️ Daha hızlı, daha gizli bir internette gezinin.",
+  "warp.nav.name" : "1.1.1.1",
+  "warp.title" : "1.1.1.1 — İnternet erişiminizi daha hızlı hale getiren ücretsiz uygulama.",
+  "warp.description" : "Telefonunuzun İnternet'ini daha hızlı, gizli ve güvenilir hale getiren ücretsiz uygulamayı yükleyin.",
+  "hero.description" : "Daha hızlı, daha gizli bir İnternet'te gezinmekten bir adım uzaktasınız",
+  "hero.getStarted" : "Yükle",
+  "hero.info" : "Daha Fazla Bilgi",
+  "explanation.dnsHeader" : "DNS: İnternet Dizini",
+  "explanation.dnsExplanation" : "İnternet'teki neredeyse her şey bir DNS isteği başlar. DNS, İnternet'in dizinidir. Bir bağlantıya tıkladığınızda, bir uygulama açtığınızda, bir e-posta gönderdiğinizde cihazınızın yaptığı ilk şey dizine sormaktır: <strong class=\"subtle\">Bunu nerede bulabilirim?</strong>",
+  "explanation.dnsSlowInsecure" : "Maalesef varsayılan olarak DNS genellikle yavaş ve güvensizdir. İnternet hizmet sağlayıcınız ve internette dinleme yapabilecek diğer herkes ziyaret ettiğiniz her siteyi ve kullandığınız her uygulamayı görebilir - içerikleri şifreli olsa bile. Ürkütücü bir şekilde bazı DNS sağlayıcıları İnternet faaliyetlerinize ilişkin verileri satar veya bunları sizi reklam hedefi yapmak için kullanır.",
+  "explanation.dnsAlternative" : "Bizce bu iğrenç. Sizce de öyleyse, artık bir alternatif var: <strong class=\"code\">1.1.1.1</strong>",
+  "explanation.privacyHeader" : "Önce Gizlilik: Güvence Altında.",
+  "explanation.privacyExplanation" : "1983-era DNS protokolünü tekrar düşünüyoruz. <strong class=\"code\">1.1.1.1</strong> şifreli DNS’in yanı sıra DNS üzerinden HTTPS'yi destekler.",
+  "explanation.privacyGuaranteeData" : "<span class=\"mobile-emphasis\">Verilerinizi asla satmayacağız veya reklam hedefi olarak kullanmayacağız.</span> Nokta.",
+  "explanation.privacyGuaranteeLogs" : "<span class=\"mobile-emphasis\">IP adresinizi asla kayıtlı tutmayacağız</span> (diğer şirketlerin sizi tanımlamak üzere yaptığı gibi). Ve bunu laf olsun diye söylemiyoruz. Sistemimizin bu söylediğimizi yerine getirdiğinden emin olmak için sistemlerimizi yıllık olarak denetlemek üzere 4 büyük muhasebe firması ile çalışıyoruz.",
+  "explanation.privacyConclusion" : "Açıkçası internette ne yaptığınızı bilmek istemiyoruz - bizi ilgilendirmez - ve bilemememizi sağlaması için gereken teknik adımları attık.",
+  "explanation.performanceHeader" : "Diğer her şeyden daha hızlı.",
+  "explanation.fastestDNS" : "1.1.1.1’i İnternet'in en hızlı DNS dizini olacak şekilde kurduk. Bunu sadece biz söylemiyoruz. Bağımsız DNS monitörü <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a> 1.1.1.1’i dünyanın en hızlı DNS servisi seçti.",
+  "explanation.speedContinued" : "İnternette yaptığınız neredeyse her şey bir DNS isteğiyle başladığı için tüm cihazlarınızda en hızlı DNS dizinini seçmek internette yaptığınız neredeyse her şeyin hızını artıracaktır.",
+  "explanation.timeStamp" : "* Mart, 2020",
+  "instructions" : {
+    "header" : "{{device}} üstünde kurulum",
+    "explanation" : "<strong>1.1.1.1</strong> kurulumu iki dakika sürer ve teknik beceri veya özel bir yazılım gerektirmez. Bilgisayar konusunda acemi olsanız bile kolay takip edilen kurulum rehberi için cihazınızı aşağıdan seçin.",
+    "debug" : "İnternet bağlantınız hakkında daha fazla bilgi mi arıyorsunuz? <a target=\"_blank\" href=\"./help\">Hata ayıklama</a> sayfamıza göz atın.",
+    "questions" : "Hala sorularınız mı var? <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">Topluluk Forum</a>'umuzu ziyaret edin",
+    "mac-os" : {
+      "steps" : [
+      {
+        "tag" : "li",
+        "content" : "Açık Sistem Tercihleri."
+      },
 
-  "explanation.dnsHeader": "DNS: İnternet Dizini",
-  "explanation.dnsExplanation": "İnternetteki neredeyse her şey bir DNS talebiyle başlar. DNS, İnternetin dizinidir. Bir bağlantıya tıkladığınızda, bir uygulama açtığınızda, bir e-posta gönderdiğinizde cihazınızın yaptığı ilk şey dizine sormaktır: <strong class=\"subtle\">Bunu nerede bulabilirim?</strong>",
-  "explanation.dnsSlowInsecure": "Maalesef varsayılan olarak DNS genellikle yavaş ve güvensizdir. İnternet sağlayıcınız ve interneti gizlice dinleyen herkes ziyaret ettiğiniz her siteyi ve kullandığınız her uygulamayı içerikleri şifreli olsa bile görebilir. Ürkütücü bir şekilde bazı DNS sağlayıcıları İnternet faaliyetlerinize ilişkin verileri satar veya bunları sizi reklam hedefi yapmak için kullanır.",
-  "explanation.dnsAlternative": "Bizce bu iğrenç. Sizce de öyleyse artık bir alternatif var: <strong class=\"code\">1.1.1.1</strong>",
+      {
+        "tag" : "li",
+        "content" : "<strong>DNS Sunucuları</strong> arayın ve açılır menüden seçin."
+      },
 
-  "explanation.privacyHeader": "Önce Gizlilik: Garantili.",
-  "explanation.privacyExplanation": "1983 yıllarındaki DNS protokolünü tekrar düşünüyoruz. <strong class=\"code\">1.1.1.1</strong> şifreli DNS’nin yanı sıra HTTPS üzerinden DNS’yi destekliyor.",
-  "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">Verilerinizi asla satmayacağız veya reklam hedefi olarak kullanmayacağız.</span> Nokta.",
-  "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">IP adresinizi asla kayıtlı tutmayacağız</span> (diğer şirketlerin sizi tanımlamak üzere yaptığı gibi). Bunu laf olsun diye söylemiyoruz. Sistemlerimizin bu söylediğimizi yerine getirdiğinden emin olmak için yıllık olarak sistemlerimizi denetlemek üzere KPMG bulunduruyoruz.",
-  "explanation.privacyConclusion": "Açıkçası internette ne yaptığınızı bilmek istemiyoruz; bu bizi ilgilendirmez ve bunu sağlaması için gereken teknik adımları attık.",
+      {
+        "tag" : "li",
+        "content" : "DNS Sunucusu eklemek için <strong>+</strong> düğmesine tıklayın ve <strong class=\"code\">1.1.1.1</strong> girin."
+      },
 
-  "explanation.performanceHeader": "Diğer her şeyden daha hızlı.",
-  "explanation.fastestDNS": "1.1.1.1’i internetin en hızlı DNS dizini olacak şekilde kurduk. Bunu sadece biz söylemiyoruz. Bağımsız DNS monitörü <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a>, 1.1.1.1’i dünyanın en hızlı DNS servisi seçti.",
-  "explanation.speedContinued": "İnternette yaptığınız neredeyse her şey bir DNS talebiyle başladığı için tüm cihazlarınızda en hızlı DNS dizinini seçmek internette yaptığınız neredeyse her şeyin hızını artıracaktır.",
+      {
+        "tag" : "li",
+        "content" : "<strong>+</strong>'ya tekrar tıklayın ve <strong class=\"code\">1.0.0.1</strong> girin (Bu yedeklilik içindir.)"
+      },
 
-  "instructions": {
-    "header": "{{device}} üzerinde kurulum",
-    "explanation": "<strong>1.1.1.1</strong> kurulumu iki dakika sürer ve teknik beceri veya özel bir yazılım gerektirmez. Bilgisayar konusunda acemi olsanız bile kolay takip edilen kurulum rehberi için cihazınızı aşağıdan seçin.",
-    "debug": "İnternet bağlantınız hakkında daha fazla bilgi mi arıyorsunuz? <a target=\"_blank\" href=\"./help\">Hata ayıklama sayfamıza</a> göz atın.",
-    "questions": "Hâlâ sorularınız mı var? <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">Topluluk Forumumuzu</a> ziyaret edin.",
-    "mac-os": {
-      "steps": [
-        { "tag": "li", "content": "Açık Sistem Tercihleri." },
-        {
-          "tag": "li",
-          "content": "<strong>DNS Sunucularını</strong> arayın ve açılır menüden seçin."
-        },
-        {
-          "tag": "li",
-          "content": "DNS Sunucusu eklemek için <strong>+</strong> düğmesine tıklayın ve <strong class=\"code\">1.1.1.1</strong> girin"
-        },
-        {
-          "tag": "li",
-          "content": "<strong>+</strong>’e tekrar tıklayın ve <strong class=\"code\">1.0.0.1</strong> girin (Bu alternatiftir.)"
-        },
-        {
-          "tag": "li",
-          "content": "<strong>+</strong>’e tekrar tıklayın ve <strong class=\"code\">2606:4700:4700::1111</strong> girin (Bu alternatiftir.)"
-        },
-        {
-          "tag": "li",
-          "content": "<strong>+</strong>’e tekrar tıklayın ve <strong class=\"code\">2606:4700:4700::1001</strong> girin (Bu alternatiftir.)"
-        },
-        {
-          "tag": "li",
-          "content": "<strong>Tamam</strong> ve ardından <strong>Uygula</strong> üzerine tıklayın."
-        },
-        {
-          "tag": "li",
-          "content": "Hazırsınız! Cihazınız artık daha hızlı, daha gizli DNS sunucularına sahip ✌️✌️"
-        }
-      ]
+      {
+        "tag" : "li",
+        "content" : "<strong>+</strong>’ya tekrar tıklayın ve <strong class=\"code\">2606:4700:4700::1111 </strong> girin (Bu yedeklilik içindir.)"
+      },
+
+      {
+        "tag" : "li",
+        "content" : "<strong>*</strong>’ya tekrar tıklayın ve <strong class=\"code\">2606:4700:4700::1001</strong> girin (Bu yedeklilik içindir.)"
+      },
+
+      {
+        "tag" : "li",
+        "content" : "<strong>Tamam</strong>’a tıklayın, ardından <strong>Uygula</strong>’ya tıklayın."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "Hazırsınız! Cihazınız artık daha hızlı, daha gizli DNS sunucularına sahip ✌️✌️"
+      }]
     },
-    "windows": {
-      "steps": [
+    "windows" : {
+      "steps" : [
+      {
+        "tag" : "li",
+        "content" : "Başlat menüsüne tıklayın, ardından <strong>Denetim Masası</strong>'na tıklayın."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "<strong>Ağ ve İnternet</strong>’e tıklayın."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "<strong>Bağdaştırıcı Seçeneklerini Değiştir</strong>’e tıklayın."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "Bağlı olduğunuz Kablosuz ağa sağ tıklayın, ardından <strong>Özellikler</strong>’e tıklayın."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "<strong>İnternet Protokolü Sürüm 4</strong>'ü seçin (veya isterseniz Sürüm 6’yı seçebilirsiniz)."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "<strong>Özellikler</strong>’e tıklayın."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "Gelecekte başvurmak için her türlü mevcut DNS sunucusu girişlerini yazın."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "<strong>Aşağıdaki DNS Sunucu Adreslerini Kullan</strong>’a tıklayın."
+      },
+
+      {
+        "tag" : "li",
+        "children" : [
         {
-          "tag": "li",
-          "content": "Başlat menüsüne tıklayın, ardından <strong>Kontrol Paneli</strong> üzerine tıklayın."
+          "tag" : "span",
+          "content" : "Bu adresleri 1.1.1.1 DNS adresleriyle değiştirin:"
         },
+
         {
-          "tag": "li",
-          "content": "<strong>Ağ ve İnternet</strong> üzerine tıklayın."
-        },
-        {
-          "tag": "li",
-          "content": "<strong>Adaptör Ayarlarını Değiştir</strong> üzerine tıklayın."
-        },
-        {
-          "tag": "li",
-          "content": "Bağlı olduğunuz Kablosuz ağa sağ tıklayın, ardından <strong>Özellikler</strong> üzerine tıklayın."
-        },
-        {
-          "tag": "li",
-          "content": "<strong>İnternet Protokol Sürümü 4</strong> (veya isterseniz Sürüm 6’yı seçebilirsiniz)."
-        },
-        {
-          "tag": "li",
-          "content": "<strong>Özellikler</strong> üzerine tıklayın."
-        },
-        {
-          "tag": "li",
-          "content": "Gelecekte başvurmak için her türlü mevcut DNS sunucu girişlerini yazın."
-        },
-        {
-          "tag": "li",
-          "content": "<strong>Aşağıdaki DNS Sunucu Adreslerini Kullan</strong> üzerine tıklayın."
-        },
-        {
-          "tag": "li",
-          "children": [
-            {
-              "tag": "span",
-              "content": "Bu adresleri 1.1.1.1 DNS adresleriyle değiştirin:"
-            },
-            {
-              "tag": "ul",
-              "children": [
-                {
-                  "tag": "li",
-                  "content": "IPv4 için: <strong class=\"code\">1.1.1.1</strong> ve <strong class=\"code\">1.0.0.1</strong>"
-                },
-                {
-                  "tag": "li",
-                  "content": "IPv6 için: <strong class=\"code\">2606:4700:4700::1111</strong> ve <strong class=\"code\">2606:4700:4700::1001</strong>"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "tag": "li",
-          "content": "<strong>Tamam</strong> ve ardından <strong>Kapat</strong> üzerine tıklayın."
-        },
-        { "tag": "li", "content": "Tarayıcınızı yeniden başlatın." },
-        {
-          "tag": "li",
-          "content": "Hazırsınız! Cihazınız artık daha hızlı, daha gizli DNS sunucularına sahip ✌️✌️"
-        }
-      ]
+          "tag" : "ul",
+          "children" : [
+          {
+            "tag" : "li",
+            "content" : "IPv4 için: <strong class=\"code\">1.1.1.1</strong> ve <strong class=\"code\">1.0.0.1</strong>"
+          },
+
+          {
+            "tag" : "li",
+            "content" : "IPv6 için: <strong class=\"code\">2606:4700:4700::1111</strong> ve <strong class=\"code\">2606:4700:4700::1001</strong>"
+          }]
+        }]
+      },
+
+      {
+        "tag" : "li",
+        "content" : "<strong>Tamam</strong>’a tıklayın, ardından <strong>Kapat</strong>’a tıklayın."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "Tarayıcınızı yeniden başlatın."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "Hazırsınız! Cihazınız artık daha hızlı, daha gizli DNS sunucularına sahip ✌️✌️"
+      }]
     },
-    "linux": {
-      "notice": "Bu adımlar Ubuntu için olsa da, çoğu Linux dağıtımları, DNS ayarlarını Ağ Yöneticisi aracılığıyla yapılandırır. Alternatif olarak DNS ayarlarınız <code class=\"inline\">/etc/resolv.conf</code>’da belirlenebilir.",
-      "steps": [
+    "linux" : {
+      "notice" : "Bu adımlar Ubuntu için olsa da, çoğu Linux dağıtımları, DNS ayarlarını Ağ Yöneticisi aracılığıyla yapılandırır. Alternatif olarak DNS ayarlarınız <code class=\"inline\">/etc/resolv.conf</code>’da belirlenebilir.",
+      "steps" : [
+      {
+        "content" : "Sol menü çubuğundaki Uygulamalar <i class=\"fas fa-th\"></i> simgesine tıklayın.",
+        "tag" : "li"
+      },
+
+      {
+        "content" : "<strong>Ayarlar</strong>’a tıklayın, ardından <strong>Ağ</strong>'a tıklayın.",
+        "tag" : "li"
+      },
+
+      {
+        "content" : "Sağ kısımda internet bağlantınızı bulun, ardından <i class=\"fas fa-cog\"></i> alet simgesine tıklayın.",
+        "tag" : "li"
+      },
+
+      {
+        "content" : "DNS ayarlarınızı görüntülemek için <strong>IPv4 </strong> veya <strong>IPv6</strong> sekmesine tıklayın.",
+        "tag" : "li"
+      },
+
+      {
+        "content" : "DNS girişindeki “Otomatik” değiştirme düğmesini <strong>Kapalı</strong> olarak ayarların.",
+        "tag" : "li"
+      },
+
+      {
+        "children" : [
         {
-          "content": "Sol menü çubuğundaki Uygulamalar <i class=\"fas fa-th\"></i> simgesine tıklayın.",
-          "tag": "li"
+          "tag" : "span",
+          "content" : "DNS girişleri alanına 1.1.1.1 DNS adresleri belirtin:"
         },
+
         {
-          "content": "<strong>Ayarlar</strong> ve ardından <strong>Ağ</strong> üzerine tıklayın.",
-          "tag": "li"
-        },
-        {
-          "content": "Sağ kısımda internet bağlantınızı bulun, ardından araç/dişli <i class=\"fas fa-cog\"></i> simgesine tıklayın.",
-          "tag": "li"
-        },
-        {
-          "content": "DNS ayarlarınızı görüntülemek için <strong>IPv4</strong> veya <strong>IPv6</strong> sekmesine tıklayın.",
-          "tag": "li"
-        },
-        {
-          "content": "DNS girişindeki “Otomatik” düğmesini <strong>Kapalı</strong> olarak ayarların.",
-          "tag": "li"
-        },
-        {
-          "children": [
-            {
-              "tag": "span",
-              "content": "DNS girişleri alanına 1.1.1.1 DNS adreslerini girin:"
-            },
-            {
-              "tag": "ul",
-              "children": [
-                {
-                  "tag": "li",
-                  "content": "IPv4 için: <strong class=\"code\">1.1.1.1</strong> ve <strong class=\"code\">1.0.0.1</strong>"
-                },
-                {
-                  "tag": "li",
-                  "content": "IPv6 için: <strong>2606:4700:4700::1111,2606:4700:4700::1001</strong>"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "content": "<strong>Uygula</strong> üzerine tıklayın ve ardından tarayıcınızı yeniden başlatın.",
-          "tag": "li"
-        },
-        {
-          "content": "Hazırsınız! Cihazınız artık daha hızlı, daha gizli DNS sunucularına sahip ✌️✌️",
-          "tag": "li"
-        }
-      ]
+          "tag" : "ul",
+          "children" : [
+          {
+            "tag" : "li",
+            "content" : "IPv4 için: <strong class=\"code\">1.1.1.1</strong> ve <strong class=\"code\">1.0.0.1</strong>"
+          },
+
+          {
+            "tag" : "li",
+            "content" : "IPv6 için: <strong>2606:4700:4700::1111,2606:4700:4700::1001</strong>"
+          }]
+        }]
+      },
+
+      {
+        "content" : "<strong>Uygula</strong>’ya tıklayın ve ardından tarayıcınızı yeniden başlatın.",
+        "tag" : "li"
+      },
+
+      {
+        "content" : "Hazırsınız! Cihazınız artık daha hızlı, daha gizli DNS sunucularına sahip ✌️✌️",
+        "tag" : "li"
+      }]
     },
-    "iphone": {
-      "steps": [
-        {
-          "tag": "li",
-          "content": "iPhone’unuzun ana ekranından <strong>Ayarlar</strong> uygulamasını açın."
-        },
-        {
-          "tag": "li",
-          "content": "<strong>Wi-Fi</strong> üzerine ve ardından listeden tercih ettiğiniz ağa dokunun."
-        },
-        {
-          "tag": "li",
-          "content": "<strong>DNS’yi Yapılandır</strong> ve ardından <strong>Manuel</strong> üzerine dokunun."
-        },
-        {
-          "tag": "li",
-          "content": "Mevcut girişler varsa <strong>-</strong> düğmesine ve her birinin yanındaki <strong>Sil</strong> üzerine dokunun."
-        },
-        {
-          "tag": "li",
-          "content": "<strong>+ Sunucu Ekle</strong> düğmesine dokunun ve ardından <strong class=\"code\">1.1.1.1</strong> yazın."
-        },
-        {
-          "tag": "li",
-          "content": "<strong>+ Sunucu Ekle</strong> düğmesine tekrar dokunun, ardından <strong class=\"code\">1.0.0.1</strong> yazın. Bu alternatiftir."
-        },
-        {
-          "tag": "li",
-          "content": "<strong>+ Sunucu Ekle</strong> düğmesine tekrar dokunun, ardından <strong class=\"code\">2606:4700:4700::1111</strong> yazın. Bu alternatiftir."
-        },
-        {
-          "tag": "li",
-          "content": "<strong>+ Sunucu Ekle</strong> düğmesine tekrar dokunun, ardından <strong class=\"code\">2606:4700:4700::1001</strong> yazın. Bu alternatiftir."
-        },
-        {
-          "tag": "li",
-          "content": "Sağ üst kısımdaki <strong>Kaydet</strong> düğmesine dokunun."
-        },
-        {
-          "tag": "li",
-          "content": "Hazırsınız! Cihazınız artık daha hızlı, daha gizli DNS sunucularına sahip ✌️✌️"
-        }
-      ]
+    "iphone" : {
+      "steps" : [
+      {
+        "tag" : "li",
+        "content" : "iPhone’unuzun ana ekranından <strong>Ayarlar</strong> uygulamasını açın."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "<strong>Wi-Fi</strong>'a dokunun ve ardından listeden tercih ettiğiniz ağa dokunun."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "<strong>DNS’i Ayarla</strong>’ya dokunun, ardından <strong>Elle</strong>’ye dokunun."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "Mevcut girişler varsa <strong>-</strong> düğmesine ve her birinin yanındaki <strong>Sil</strong>'e dokunun."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "<strong>+ Sunucu Ekle</strong> düğmesine dokunun, ardından <strong class=\"code\">1.1.1.1</strong> yazın."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "<strong>+ Sunucu Ekle</strong> düğmesine tekrar dokunun, ardından <strong class=\"code\">1.0.0.1</strong> yazın. Bu yedeklilik içindir."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "<strong>+ Sunucu Ekle</strong> düğmesine tekrar dokunun, ardından <strong class=\"code\">2606:4700:4700::1111</strong> yazın. Bu yedeklilik içindir."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "<strong>+ Sunucu Ekle</strong> düğmesine tekrar dokunun, ardından <strong class=\"code\">2606:4700:4700::1001</strong> yazın. Bu yedeklilik içindir."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "Sağ üst kısımdaki <strong>Kaydet</strong> düğmesine dokunun."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "Hazırsınız! Cihazınız artık daha hızlı, daha gizli DNS sunucularına sahip ✌️✌️"
+      }]
     },
-    "android": {
-      "message": "Android, kişiye özel DNS sunucuları kullanmak için statik IP gerektirir. Bu kurulum, yönlendirici cihazınızda ek kurulum gerektirerek ağınızın, ağa yeni cihazlar ekleme stratejisini etkiler. Bunun yerine <button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">yönlendiricinizin DNS</button>’ini yapılandırmanızı öneririz. Bu, ağınızdaki tüm cihazlarınıza 1.1.1.1 DNS’nin tam hız ve gizlilik avantajlarını verecektir.",
-      "steps": [
-        {
-          "tag": "li",
-          "content": "Android uygulama listenizden <strong>Ayarlar</strong> uygulamasını açın."
-        },
-        {
-          "tag": "li",
-          "content": "<strong>Kablosuz ve ağlar</strong> bölümünün altında <strong>Wi-Fi</strong>’a dokunun,"
-        },
-        {
-          "tag": "li",
-          "content": "Bir içerik menüsü belirene kadar listede tercih ettiğiniz ağa<b> </b>basılı tutun."
-        },
-        {
-          "tag": "li",
-          "content": "<strong>Ağı düzenle</strong>ve ardından <strong>Gelişmiş seçenekler</strong> üzerine dokunun."
-        },
-        {
-          "tag": "li",
-          "content": "<strong>Gelişmiş seçenekler</strong> ve ardından <strong>IP Ayarları</strong> üzerine dokunun."
-        },
-        {
-          "tag": "li",
-          "content": "<strong>Dinamiği</strong> <strong>Statik</strong> olarak değiştirin."
-        },
-        {
-          "tag": "li",
-          "content": "Yönlendirici yapılandırmanızı kullanarak cihazınızın IP adresini ve ağ geçidini girin."
-        },
-        {
-          "tag": "li",
-          "content": "<strong>DNS</strong> alanına dokunun ve ardından alandaki rakamı silin."
-        },
-        {
-          "tag": "li",
-          "content": "<strong>DNS 1</strong> alanına <strong class=\"code\">1.1.1.1</strong> girin."
-        },
-        {
-          "tag": "li",
-          "content": "<strong>DNS 2</strong> alanına <strong class=\"code\">1.0.0.1</strong> girin (Bu alternatiftir.)"
-        },
-        { "tag": "li", "content": "<strong>Kaydet</strong> üzerine dokunun." },
-        {
-          "tag": "li",
-          "content": "Hazırsınız! Cihazınız artık daha hızlı, daha gizli DNS sunucularına sahip ✌️✌️"
-        }
-      ]
+    "android" : {
+      "message" : "Android, kişiye özel DNS sunucuları kullanmak için statik IP gerektirir. Bu kurulum, yönlendirici cihazınızda ilave kurulum gerektirerek ağınızın ağa yeni cihazlar ekleme stratejisini etkiler. Bunun yerine <button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">yönlendiricinizin DNS</button>’ini yapılandırmanızı öneririz. Bu, ağınızdaki tüm cihazlarınıza 1.1.1.1 DNS’in tam hız ve gizlilik avantajlarını verecektir.",
+      "steps" : [
+      {
+        "tag" : "li",
+        "content" : "Android uygulama listenizden <strong>Ayarlar</strong> uygulamasını açın."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "<strong>Kablosuz ve ağlar</strong> bölümünün altında <strong>Wi-Fi</strong>’a dokunun,"
+      },
+
+      {
+        "tag" : "li",
+        "content" : "Bir içerik menüsü belirene kadar listede tercih ettiğiniz ağa{b> <b}basılı tutun."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "<strong>Ağı Düzenle</strong> ve ardından <strong>Gelişmiş seçenekler</strong>’e dokunun."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "<strong>Gelişmiş seçenekler</strong>'e ve ardından <strong>IP Ayarları</strong>’na dokunun."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "<strong>Dinamik</strong>'i <strong>Statik</strong> olarak değiştirin."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "Yönlendirici yapılandırmanızı kullanarak cihazınızın IP adresini ve ağ geçidini girin."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "<strong>DNS</strong> alanına dokunun ve ardından alandaki rakamı silin."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "<strong>DNS 1 </strong> alanına <strong class=\"code\">1.1.1.1</strong> girin."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "<strong>DNS 2</strong> alanına <strong class=\"code\">1.0.0.1</strong> girin (Bu yedeklilik içindir.)"
+      },
+
+      {
+        "tag" : "li",
+        "content" : "<strong>Kaydet</strong>’e dokunun."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "Hazırsınız! Cihazınız artık daha hızlı, daha gizli DNS sunucularına sahip ✌️✌️"
+      }]
     },
-    "router": {
-      "message": "Yönlendirici yapılandırmanız farklılık gösterebilir. Daha fazla bilgi için kılavuzunuza başvurun.",
-      "steps": [
+    "router" : {
+      "message" : "Yönlendirici yapılandırmanız farklılık gösterebilir. Daha fazla bilgi için kılavuzunuza danışın.",
+      "steps" : [
+      {
+        "tag" : "li",
+        "content" : "Tercih edilen kablosuz ağınıza bağlanın."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "Yönlendiricinizin ağ geçidi IP adresini tarayıcınıza girin."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "İstenirse kullanıcı adı ve parolanızı girin. Bu bilgiler yönlendiricide etiketlenebilir."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "Yönlendiricinizin yapılandırma sayfasından <strong>DNS sunucu</strong> ayarlarınızın yerini bulun."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "Gelecekte başvurmak için her türlü mevcut DNS sunucusu girişlerini yazın."
+      },
+
+      {
+        "tag" : "li",
+        "children" : [
         {
-          "tag": "li",
-          "content": "Tercih ettiğiniz kablosuz ağa bağlanın."
+          "tag" : "span",
+          "content" : "Bu adresleri 1.1.1.1 DNS adresleriyle değiştirin:"
         },
+
         {
-          "tag": "li",
-          "content": "Yönlendiricinizin ağ geçidi IP adresini tarayıcınıza girin."
-        },
-        {
-          "tag": "li",
-          "content": "İstenirse kullanıcı adı ve parolanızı girin. Bu bilgiler yönlendirici üzerine etiketlenebilir."
-        },
-        {
-          "tag": "li",
-          "content": "Yönlendirici yapılandırma sayfanızdan <strong>DNS sunucusu</strong> ayarlarının yerini bulun."
-        },
-        {
-          "tag": "li",
-          "content": "Gelecekte başvurmak için her türlü mevcut DNS sunucu girişlerini yazın."
-        },
-        {
-          "tag": "li",
-          "children": [
-            {
-              "tag": "span",
-              "content": "Bu adresleri 1.1.1.1 DNS adresleriyle değiştirin:"
-            },
-            {
-              "tag": "ul",
-              "children": [
-                {
-                  "tag": "li",
-                  "content": "IPv4 için: <strong class=\"code\">1.1.1.1</strong> ve <strong class=\"code\">1.0.0.1</strong>"
-                },
-                {
-                  "tag": "li",
-                  "content": "IPv6 için: <strong class=\"code\">2606:4700:4700::1111</strong> ve <strong class=\"code\">2606:4700:4700::1001</strong>"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "tag": "li",
-          "content": "Ayarlarınızı kaydedin, ardından tarayıcınızı yeniden başlatın."
-        },
-        {
-          "tag": "li",
-          "content": "Hazırsınız! Cihazınız artık daha hızlı, daha gizli DNS sunucularına sahip ✌️✌️"
-        }
-      ]
+          "tag" : "ul",
+          "children" : [
+          {
+            "tag" : "li",
+            "content" : "IPv4 için: <strong class=\"code\">1.1.1.1</strong> ve <strong class=\"code\">1.0.0.1</strong>"
+          },
+
+          {
+            "tag" : "li",
+            "content" : "IPv6 için: <strong class=\"code\">2606:4700:4700::1111</strong> ve <strong class=\"code\">2606:4700:4700::1001</strong>"
+          }]
+        }]
+      },
+
+      {
+        "tag" : "li",
+        "content" : "Ayarlarınızı kaydedin, ardından tarayıcınızı yeniden başlatın."
+      },
+
+      {
+        "tag" : "li",
+        "content" : "Hazırsınız! Cihazınız artık daha hızlı, daha gizli DNS sunucularına sahip ✌️✌️"
+      }]
     },
-    "downloadmobile": "Mobil uygulamayı indirin"
+    "downloadmobile" : "Mobil uygulamayı indirin."
+  },
+  "share.header" : "✌️✌️ Daha hızlı, gizlilik öncelikli interneti arkadaşlarınızla paylaşın.",
+  "share.emailSubject" : "✌️✌️ Daha hızlı, daha gizli bir internette gezinin — 1.1.1.1 DNS Çözümleyicisi",
+  "share.emailBody" : "“1.1.1.1” internette gezinmeyi daha hızlı ve gizli kılıyor. Daha fazla bilgi ve iki dakikadan kısa sürede cihazınızın kurulumunu nasıl yapacağınızı öğrenmek için https://1.1.1.1 sayfasına göz atın!",
+  "share.tweetBody" : "✌️✌️ Hızlı, güvenli ve gizli bir internet burada. 1.1.1.1'in Kurulumu İki dakikadan kısa bir sürede DNS Çözümleyici.",
+  "faq.whosBehindThis" : "Bunun arkasında kim var?",
+  "faq.partnership" : "<strong class=\"code\">1.1.1.1</strong>, bir Cloudflare ve APNIC ortaklığıdır.",
+  "faq.network" : "Cloudflare, dünyanın en büyük ve en hızlı ağlarından birini işletmektedir. APNIC, Asya Pasifik ve Okyanusya bölgelerinde IP adres yerleşimlerini yöneten kar amacı gütmeyen bir kuruluştur.",
+  "faq.networkContinued" : "Cloudflare’ın ağı vardı. APNIC’nin IP adresi vardı (1.1.1.1). İkimiz de daha iyi bir internet inşa etme misyonu konusunda motive idik. Her bir kuruluşun motivasyonları hakkında ilgili yayınlardan daha fazla bilgi edinebilirsiniz: <a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflare Blog</a> / <a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">APNIC Blog</a>. Daha fazla bilgi için <a href=\"https://cloudflare.com/learning/dns/what-is-1.1.1.1/\" target=\"_blank\">1.1.1.1 Nedir?</a> bölümüne bakın.",
+  "faq.canIintegrate" : "1.1.1.1 ile entegre olabilir miyim?",
+  "faq.integrationInfo" : "Eğer gizlilik öncelikli, hızlı, modern bir DNS servisi kurmak isteyen bir tarayıcı, işletim sistemi, uygulama, yönlendirici veya VPN üreticisi iseniz <strong class=\"subtle\">evet!</strong>",
+  "faq.integrationDocs" : "DNS üzerinden HTTPS (DoH) kullanarak müşterilerinize şeffaf bir biçimde gelişmiş güvenlik sunarken cihazlarının hızını da artırabilirsiniz. Daha da iyisi, bunu hem ruhsat hem de müşterilerin <a href=\"https://developers.cloudflare.com/1.1.1.1/privacy/\" target=\"_blank\">gizliliği</a> bakımından masraf ödemeden yapabilirsiniz. 1.1.1.1 ve DNS üzerinden HTTPS (DoH) desteğimiz hakkında <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">Geliştirici Belgelerimiz</a>’den ayrıntılı bilgi edinebilirsiniz.",
+  "faq.warpVsDNS" : "Warp, DNS servisi 1.1.1.1'in yerini alıyor mu?",
+  "faq.warpVsDNSAnswer" : "Hayır, Cloudflare ücretsiz, hızlı ve gizli DNS'in önemine derinden inanır ve 1.1.1.1'i sunmayı amaçlar. Öngörülebilir gelecek için DNS hizmeti. Warp, mobil uygulamalarımızı zenginleştiren ancak her zaman isteğe bağlı kalacak olan ek bir özelliktir.",
+  "faqpage.header" : "Sık Sorulan Sorular",
+  "faqpage.general" : "Genel",
+  "faqpage.whatIsQ" : "1.1.1.1 nedir?",
+  "faqpage.whatIsA1" : "Cloudflare.com gibi bir uygulamayı ziyaret etmek istediğinizde bilgisayarınızın uygulamayı yükleyebilmek için sizi hangi sunucuya bağlaması gerektiğini bilmesi gerekir. Bilgisayarlar bu isimden adres çevirisini nasıl yapacağını bilmediği için, bunu yapmasını özel bir sunucudan ister.",
+  "faqpage.whatIsA2" : "Bu özel sunucu, DNS yinelemeli çözümleyici olarak adlandırılır. Çözümleyicinin işi, cloudflare.com için 2400:cb00:2048:1::c629:d7a2 gibi belirli bir adın adresini bulmak ve onu isteyen bilgisayara geri göndermektir.",
+  "faqpage.whatIsA3" : "Bilgisayarlar, IP adresi tarafından tanımlanan belirli DNS çözümleyicileriyle konuşmak üzere yapılandırılmıştır. Genellikle yapılandırılma, evinizde veya kablosuz internetteyseniz sizin İnternet Servis Sağlayıcınız (ISP) tarafından yönetilir (Comcast veya AT&T gibi), ofis internetine bağlıysanız da ağ yöneticiniz tarafından yönetilir. Bilgisayarınızın konuştuğu yapılandırılmış DNS çözümleyicisini kendiniz de değiştirebilirsiniz.",
+  "faqpage.whatDoDNSQ" : "DNS çözümleyicileri ne yapar?",
+  "faqpage.whatDoDNSA1" : "Çözümleyiciler bir alan adının adresini nasıl bulacağını nereden bilir? Üstten geriye doğru çalışırlar.",
+  "faqpage.whatDoDNSA2" : "Her çözümleyici, alan adlarının sonundaki görünmez '.'yı nasıl (ör. cloudflare.com.) bulacağını bilir. Dünyanın dört bir yanında ‘.’ dosyasının sunuculuğunu yapan <a href='http://www.root-servers.org/' target='_blank'>yüzlerce sunucu</a> vardır. Cloudflare de <a href='https://www.internic.net/domain/root.zone' target='_blank'>o dosyayı</a>, <a href='https://blog.cloudflare.com/f-root/' target='_blank'>ISC ortaklığı</a> aracılığıyla dünya çapındaki tüm sunucularında barındırır. Çözümleyiciler <a href='https://www.internic.net/domain/named.root' target='_blank'>bu sunucuların IP adreslerini bilmek üzere sabit kodlandırılmışlardır</a>.",
+  "faqpage.whatDoDNSA3" : "Çözümleyici, zincirdeki bir sonraki linkin nerede bulunacağını TLD veya alan sonundaki kök sunuculardan birine sorar. .com veya .org bir TLD örneğidir. Neyse ki kök sunucular, tüm TLD sunucularının konumlarını saklar ve böylece, DNS çözümleyicinin gidip soracağı bir sonraki IP adresini verir.",
+  "faqpage.whatDoDNSA4" : "Ardından çözümleyici, TLD sunucularına aradığı alanı örneğin .com'a cloudflare.com'u nerede bulacağını sorabilir. TLD, kendisini kullanan her alanın konumunu içeren dosyayı barındırır. Çözümleyici, nihai IP adresine sahip olduğunda, bilgisayarın sorusunu yanıtlar.",
+  "faqpage.whatDoDNSA5" : "Tüm bu sisteme yani bilgiyi barındıran sunucular (bunlara otoriter DNS denir) ve bilgi arayan sunuculara (DNS çözümleyicileri) Alan Adı Sistemi (Domain Name System - DNS) adı verilir. DNS, internetin Google Haritalar programı gibidir. Yerlerin adlarını adres olarak tercüme eder ve böylece siz oraya nasıl gideceğinizi öğrenirsiniz.",
+  "faqpage.ipv6Q" : "1.1.1.1’in IPv6 desteği var mı?",
+  "faqpage.ipv6A" : "Evet 1.1.1.1’in IPv6 desteği var.",
+  "faqpage.clearCacheQ" : "1.1.1.1’in DNS önbelleğini nasıl temizleyebilirim?",
+  "faqpage.clearCacheA" : "1.1.1.1 alan adları içi <a href='https://cloudflare-dns.com/purge-cache/' target='_blank'>ön bellek temizlik aracı</a>'nı kullanarak DNS önbelleğini temizleyebilirsiniz. Alan adını girmeniz, DNS kayıt türü (veya türlerini) seçmeniz ve ‘Önbelleği Temizle’ düğmesine basmanız gerekir.",
+  "faqpage.insideChinaQ" : "1.1.1.1 Çin’de çalışır mı?",
+  "faqpage.insideChinaA" : "Tam olarak değil. DNS’inizi 1.1.1.1’e göre yapılandırabilirsiniz ancak, Çin’deki veri merkezlerimizden birine ulaşmayacaktır. İstek, bunun yerine, Çin sınırları dışındaki veri merkezlerimizden birine yönelecektir.",
+  "faqpage.devDocsQ" : "1.1.1.1 geliştirici dosyalarını nereden bulabilirim?",
+  "faqpage.devDocsA" : "Buradan",
+  "faqpage.mobileApp" : "Mobil Uygulama",
+  "faqpage.mobileAppWorkQ" : "Mobil uygulama nasıl çalışır?",
+  "faqpage.mobileAppWorkA" : "Uygulama, mobil telefonunuzun içindeki diğer tüm uygulamaların DNS isteklerini bu çözümleyicinin adresine göndermesini isteyen yerel bir çözümleyici çalıştırır. DNS istekleri yerel çözümleyiciye ulaştığında bunları şifreler ve 1.1.1.1’e gönderir.",
+  "faqpage.vpnQ" : "1.1.1.1 uygulaması bir VPN midir?",
+  "faqpage.vpnA" : "Hayır. VPN uygulaması tüm ağ trafiğinize vekillik eder. 1.1.1.1 uygulaması sadece mobil telefonunuzun DNS trafiğinin üzerine yazar ve onu güvenliği kılar.",
+  "faqpage.dnsLogsQ" : "DNS günlükleri nelerdir?",
+  "faqpage.dnsLogsA" : "iOS’taki DNS günlükleri, telefonunuzun sorduğu tüm DNS sorularını içerir. Uygulamalarınız ve mobil tarayıcınız genellikle bu DNS sorularını oluşturur.",
+  "faqpage.logsForQ" : "Konsol günlükleri ne içindir?",
+  "faqpage.logsForA" : "Konsol günlükleri, Cloudflare’in bağlantınızdaki hataları ayıklaması için vardır.",
+  "faqpage.suggestQ" : "İyileştirme önerisinde nasıl bulunabilirim?",
+  "faqpage.suggestA" : "Tüm önerilerinizi okuyoruz. Uygulamadayken telefonu sallayarak iyileştirme önerilerinizi gönderebilirsiniz. Alternatif olarak, uygulama menüsüne gidip “Yardım” üzerine dokunarak geribildirim gönderebilirsiniz.",
+  "faqpage.diffDnsTlsQ" : "DNS over TLS ve DNS over HTTPS kullanmak arasındaki fark nedir?",
+  "faqpage.diffDnsTlsA1" : "DNS over TLS ve DNS over HTTPS’nin her ikisi de telefondan sade DNS sorguları şifreler.",
+  "faqpage.diffDnsTlsA2" : "DNS over HTTPS, port 443 kullanırken, DNS over TLS, port 853 kullanır. Bazı ağlarda bu portlardan biri blokeli olabilir. Eğer port 443 blokeli ise DNS over TLS kullanmanız gerekir. Eğer port 853 blokeli ise DNS over HTTPS kullanmanız gerekir. Bazı durumlarda DNS over TLS, DNS over HTTPS’den daha hızlı veya tam tersi olabilir.",
+  "faqpage.bugQ" : "Nasıl hata raporu gönderebilirim?",
+  "faqpage.bugA" : "Uygulamayı sallayarak hata raporu gönderebilirsiniz. Bunu yaptığınızda, uygulama, hata raporu ile birlikte bir ekran görüntüsü ve konsol günlüklerini ekler. Konsol günlükleri, bağlantınızdaki hatayı ayıklamanıza ve genel uygulama deneyiminizi iyileştirmenize yardımcı olur.",
+  "faqpage.internetStoppedQ" : "1.1.1.1 uygulamasını kullanırken internet bağlantısı kesildi. Ne yapmalıyım?",
+  "faqpage.internetStoppedA" : "Böyle bir durum söz konusu olursa, uygulamayı kapatıp uygulama ana sayfasındaki düğmeyi kullanarak uygulamayı tekrar açmayı deneyin. Sorun devam ederse, uygulamayı devre dışı bırakın ve bize bir hata raporu gönderin.",
+  "faqpage.appStuckQ" : "1.1.1.1 uygulaması ‘BAĞLANIYOR’ veya ‘YENİDEN SÜRDÜRÜLÜYOR’ olarak takılı kaldı. Ne yapmalıyım?",
+  "faqpage.appStuckA1" : "Bu, ağ bağlantınız geçici olarak sekteye uğradığında veya veri bağlantınız 1.1.1.1’in bağlantılarını engellediğinde olur.",
+  "faqpage.appStuckList" : [
+  {
+    "tag" : "li",
+    "content" : "Uygulamayı ana sayfasındaki düğmeyi kullanarak devre dışı bırakın."
   },
 
-  "share.header": "✌️✌️ Daha hızlı, gizlilik öncelikli interneti arkadaşlarınızla paylaşın.",
-  "share.emailSubject": "✌️✌️ Daha hızlı, daha gizli bir internette gezinin — 1.1.1.1 DNS Çözümleyici",
-  "share.emailBody": "“1.1.1.1” internette gezinmeyi daha hızlı ve daha gizli kılıyor. Daha fazla bilgi edinmek ve cihazınızı iki dakikadan daha kısa sürede nasıl kuracağınızı öğrenmek için https://1.1.1.1 sayfasına göz atın.",
-  "share.tweetBody": "✌️✌️ Hızlı, güvenli ve gizli bir internet burada. 1.1.1.1 DNS Çözümleyiciyi iki dakikadan kısa bir sürede kurun.",
+  {
+    "tag" : "li",
+    "content" : "iOS Ayarları uygulamasını açın ve Ayarlar > Genel > Sıfırla’ya gidin."
+  },
 
-  "faq.whosBehindThis": "Bunun arkasında kim var?",
-  "faq.partnership": "<strong class=\"code\">1.1.1.1</strong>, bir Cloudflare ve APNIC ortaklığıdır.",
-  "faq.network": "Cloudflare, dünyanın en büyük ve en hızlı ağlarından birini işletmektedir. APNIC, Asya Pasifik ve Okyanusya bölgelerinde IP adres yerleşimlerini yöneten, kâr amacı gütmeyen bir kuruluştur.",
-  "faq.networkContinued": "Cloudflare’in ağı vardı. APNIC’nin IP adresi vardı (1.1.1.1). Her ikimiz de daha iyi bir internet inşa etme misyonu konusunda motive idik. Her bir kuruluşun motivasyonları hakkında ilgili yayınlardan daha fazla bilgi edinebilirsiniz: <a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflare Blog</a> / <a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">APNIC Blog</a>. Daha fazla bilgi için: <a href=\"https://cloudflare.com/learning/dns/what-is-1.1.1.1/\" target=\"_blank\">1.1.1.1 nedir?</a>",
-  "faq.canIintegrate": "1.1.1.1 ile entegre olabilir miyim?",
-  "faq.integrationInfo": "Gizlilik öncelikli, hızlı, modern bir DNS servisi kurmak isteyen bir tarayıcı, işletim sistemi, uygulama, yönlendirici veya VPN üreticisiyseniz <strong class=\"subtle\">evet!</strong>",
-  "faq.integrationDocs": "HTTPS üzerinden DNS (DoH) kullanarak müşterilerinize şeffaf bir biçimde gelişmiş güvenlik sunarken cihazlarının hızını da artırabilirsiniz. Daha da iyisi, bunu hem ruhsat hem de müşterilerin <a href=\"https://developers.cloudflare.com/1.1.1.1/commitment-to-privacy/privacy-policy/privacy-policy/\" target=\"_blank\">gizliliği</a> bakımından masraf ödemeden yapabilirsiniz. 1.1.1.1 ve HTTPS üzerinden DNS (DoH) desteğimiz hakkında <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">Geliştirici Belgelerimiz</a>’den ayrıntılı bilgi edinebilirsiniz.",
+  {
+    "tag" : "li",
+    "content" : "Ağ Ayarlarını Sıfırla’ya dokunun."
+  },
 
-  "faqpage.header": "Sık Sorulan Sorular",
-  "faqpage.general": "Genel",
-  "faqpage.whatIsQ": "1.1.1.1 nedir?",
-  "faqpage.whatIsA1": "Cloudflare.com gibi bir uygulamayı ziyaret etmek istediğinizde bilgisayarınızın uygulamayı yükleyebilmek için sizi hangi sunucuya bağlaması gerektiğini bilmesi gerekir. Bilgisayarlar bu isimden adres çevirisini nasıl yapacağını bilmediği için bunu yapmasını özel bir sunucudan ister.",
-  "faqpage.whatIsA2": "Bu özel sunucu, DNS yinelemeli çözümleyici olarak adlandırılır. Bu çözümleyicinin görevi, belirli bir ad için adresi bulmaktır, örneğin cloudflare.com için 2400:cb00:2048:1::c629:d7a2 gibi ve bu adresi isteyen bilgisayara vermektir.",
-  "faqpage.whatIsA3": "Bilgisayarlar, IP adresi tarafından tanımlanan belirli DNS çözümleyicilerle konuşmak üzere yapılandırılmıştır. Genellikle yapılandırılma, evinizde veya kablosuz internetteyseniz İnternet Servis Sağlayıcınız (ISP) tarafından yönetilir (Comcast veya AT&amp;T gibi), ofis internetine bağlıysanız da ağ yöneticiniz tarafından yönetilir. Bilgisayarınızın konuştuğu yapılandırılmış DNS çözümleyiciyi kendiniz de değiştirebilirsiniz.",
-  "faqpage.whatDoDNSQ": "DNS çözümleyiciler ne yapar?",
-  "faqpage.whatDoDNSA1": "Çözümleyiciler bir alan adının adresini nasıl bulacağını nereden bilir? Üstten geriye doğru çalışırlar.",
-  "faqpage.whatDoDNSA2": "Her çözümleyici, alan adlarının sonundaki görünmez ‘.’ işaretini (ör. cloudflare.com.) nasıl bulacağını bilir. Dünyanın dört bir yanında ‘.’ dosyasının sunuculuğunu yapan <a href='http://www.root-servers.org/' target='_blank'>yüzlerce sunucu</a> vardır. Cloudflare de <a href='https://www.internic.net/domain/root.zone' target='_blank'>o dosyayı</a>, <a href='https://blog.cloudflare.com/f-root/' target='_blank'>ISC ortaklığı</a> aracılığıyla dünya çapındaki tüm sunucularında barındırır. Çözümleyiciler <a href='https://www.internic.net/domain/named.root' target='_blank'>bu sunucuların IP adreslerini bilmek üzere sabit kodlandırılmıştır</a>.",
-  "faqpage.whatDoDNSA3": "Çözümleyici, zincirdeki, TLD veya alan sonundaki bir sonraki bağlantının nerede bulunabileceğini kök sunuculardan birine sorar. .com veya .org, TLD örnekleridir. Neyse ki kök sunucular, tüm TLD sunucularının konumlarını saklar ve böylece, DNS çözümleyicinin gidip soracağı bir sonraki IP adresini verir.",
-  "faqpage.whatDoDNSA4": "Ardından, çözümleyici, TLD sunucularına, örneğin çözümleyicinin .com’a cloudflare.com’u nerede bulacağını sorması gibi, aradığı alanı nerede bulacağını sorar. TLD, kendisini kullanan her alanın konumunu içeren dosyayı barındırır. Çözümleyici, nihai IP adresine sahip olduğunda, bilgisayarın sorusunu yanıtlar.",
-  "faqpage.whatDoDNSA5": "Tüm bu sisteme, bilgiyi barındıran sunuculara (bunlara belirleyici DNS denir) ve bilgi arayan sunuculara (DNS çözümleyiciler) Alan Adı Sistemi (Domain Name System - DNS) adı verilir. DNS, internetin Google Haritalar programı gibidir. Yerlerin adlarını adres olarak tercüme eder ve böylece siz oraya nasıl gideceğinizi öğrenirsiniz.",
-  "faqpage.ipv6Q": "1.1.1.1’in IPv6 desteği var mı?",
-  "faqpage.ipv6A": "Evet 1.1.1.1’in IPv6 desteği var.",
-  "faqpage.clearCacheQ": "1.1.1.1’in DNS önbelleğini nasıl temizleyebilirim?",
-  "faqpage.clearCacheA": "1.1.1.1’in alan adları DNS önbelleğini <a href='https://cloudflare-dns.com/purge-cache/' target='_blank'>önbellek temizlik aracını</a> kullanarak yenileyebilirsiniz. Alan adını girmeniz, DNS kayıt türü (veya türlerini) seçmeniz ve “Önbelleği Temizle” düğmesine basmanız gerekir.",
-  "faqpage.insideChinaQ": "1.1.1.1 Çin’de çalışır mı?",
-  "faqpage.insideChinaA": "Tam olarak değil. DNS’nizi 1.1.1.1’e göre yapılandırabilirsiniz; ancak, Çin’deki veri merkezlerimizden birine ulaşmayacaktır. Talep, bunun yerine, Çin sınırları dışındaki veri merkezlerimizden birine yönelecektir.",
-  "faqpage.devDocsQ": "1.1.1.1 geliştirici dosyalarını nereden bulabilirim?",
-  "faqpage.devDocsA": "Buradan",
-  "faqpage.mobileApp": "Mobil Uygulama",
-  "faqpage.mobileAppWorkQ": "Mobil uygulama nasıl çalışır?",
-  "faqpage.mobileAppWorkA": "Uygulama, mobil telefonunuzun içindeki diğer tüm uygulamaların DNS isteklerini bu çözümleyici adresine göndermesini isteyen yerel bir çözümleyiciyi çalıştırır. DNS istekleri yerel çözümleyiciye ulaştığında bunları şifreler ve 1.1.1.1’e gönderir.",
-  "faqpage.vpnQ": "1.1.1.1 uygulaması bir VPN midir?",
-  "faqpage.vpnA": "Hayır. VPN uygulaması tüm ağ trafiğinize vekillik eder. 1.1.1.1 uygulaması sadece mobil telefonunuzun DNS trafiğinin üzerine yazar ve onu güvenliği kılar.",
-  "faqpage.dnsLogsQ": "DNS girişleri nelerdir?",
-  "faqpage.dnsLogsA": "iOS’taki DNS girişleri, telefonunuzun sorduğu tüm DNS sorularını içerir. Uygulamalarınız ve mobil tarayıcınız genellikle bu DNS sorularını oluşturur.",
-  "faqpage.logsForQ": "Konsol girişleri ne içindir?",
-  "faqpage.logsForA": "Konsol girişleri, Cloudflare’in bağlantınızdaki hataları ayıklaması için vardır.",
-  "faqpage.suggestQ": "İyileştirme önerisinde nasıl bulunabilirim?",
-  "faqpage.suggestA": "Tüm önerilerinizi okuyoruz. Uygulamadayken telefonu sallayarak iyileştirme önerilerinizi gönderebilirsiniz. Alternatif olarak, uygulama menüsüne gidip “Yardım” üzerine dokunarak geri bildirim gönderebilirsiniz.",
-  "faqpage.diffDnsTlsQ": "TLS üzerinden DNS ve HTTPS üzerinden DNS kullanmak arasındaki fark nedir?",
-  "faqpage.diffDnsTlsA1": "TLS üzerinden DNS ve HTTPS üzerinden DNS’nin her ikisi de telefondan sadece DNS sorgularını şifreler.",
-  "faqpage.diffDnsTlsA2": "HTTPS üzerinden DNS, bağlantı noktası 443’ü kullanırken, TLS üzerinden DNS, bağlantı noktası 853’ü kullanır. Bazı ağlarda bu bağlantı noktalarından biri bloke edilmiş olabilir. Eğer bağlantı noktası 443 blokeli ise TLS üzerinden DNS kullanmanız gerekir. Eğer bağlantı noktası 853 blokeli ise HTTPS üzerinden DNS kullanmanız gerekir. Bazı durumlarda TLS üzerinden DNS, HTTPS üzerinden DNS’den daha hızlı veya tam tersi olabilir.",
-  "faqpage.bugQ": "Hata raporunu nasıl gönderebilirim?",
-  "faqpage.bugA": "Uygulamayı sallayarak hata raporu gönderebilirsiniz. Bunu yaptığınızda, uygulama, hata raporu ile birlikte bir ekran görüntüsü ve konsol girişlerini ekler. Konsol girişleri, bağlantınızdaki hatayı ayıklamanıza ve genel uygulama deneyiminizi iyileştirmenize yardımcı olur.",
-  "faqpage.internetStoppedQ": "1.1.1.1 uygulamasını kullanırken internet bağlantısı kesildi. Ne yapmalıyım?",
-  "faqpage.internetStoppedA": "Böyle bir durum söz konusu olursa, uygulamayı kapatıp, uygulama ana sayfasındaki düğmeyi kullanarak uygulamayı tekrar açmayı deneyin. Sorun devam ederse, uygulamayı devre dışı bırakın ve bize bir hata raporu gönderin.",
-  "faqpage.appStuckQ": "1.1.1.1 uygulaması “BAĞLANIYOR” veya “YENİDEN SÜRDÜRÜLÜYOR” olarak takılı kaldı. Ne yapmalıyım?",
-  "faqpage.appStuckA1": "Bu, ağ bağlantınız geçici olarak sekteye uğradığında veya veri bağlantınız 1.1.1.1’in bağlantılarını engellediğinde olur.",
-  "faqpage.appStuckList": [
-    {
-      "tag": "li",
-      "content": "Uygulamayı ana sayfasındaki düğmeyi kullanarak devre dışı bırakın."
-    },
-    {
-      "tag": "li",
-      "content": "iOS Ayarları uygulamasını açın ve Ayarlar > Genel > Sıfırla sekmesine gidin."
-    },
-    {
-      "tag": "li",
-      "content": "Ağ Ayarlarını Sıfırla üzerine dokunun."
-    },
-    {
-      "tag": "li",
-      "content": "Cihazınızı yeniden başlatın; Wifi bağlantınız olduğundan emin olun."
-    },
-    {
-      "tag": "li",
-      "content": "Uygulamayı tekrar bağlamayı deneyin."
-    }
-  ],
-  "faqpage.appStuckA2": "Bu işlem bağlanmanıza olanak tanımazsa, 1.1.1.1 uygulamasını devre dışı bırakın ve bize bir hata raporu gönderin.",
-  "faqpage.cannotClickQ": "VPN yüklemesi iletişim kutusunda Tamam’a tıklayamıyorum. Ne yapmalıyım?",
-  "faqpage.cannotClickA": "Tamam düğmesine tıklayamıyorsanız, iletişim kutusunun üstünde başka bir uygulama olabilir. Bu soruna yol açtığı bilinen bazı uygulamalar arasında Lux Brightness, Night Mode, Twilight ve FileManager vardır. Bu sorunu önlemek için soruna yol açabilecek tüm uygulamaları kapatın veya kaldırın.",
-  "faqpage.appenabledQ": "Uygulamayı açık unuttum ama bir süre sonra kapandığını fark ettim. Ne oldu?",
-  "faqpage.appenabledA1": "Telefonunuz uygulamayı devre dışı bırakarak pil durumunu yönetmeye çalışıyor. Örneğin Huawei cihazlarının çoğu, agresif hafıza ve güç yönetimleri ile tanınır.",
-  "faqpage.appenabledA2": "Bunu aşağıdaki adımları izleyerek düzeltebilirsiniz:",
-  "faqpage.appenabledList": [
-    {
-      "tag": "li",
-      "content": "Telefonunuzda “Ayarlar” sekmesine gidin."
-    },
-    {
-      "tag": "li",
-      "content": "“İleri Düzey” seçeneğini seçin"
-    },
-    {
-      "tag": "li",
-      "content": "“Pil Yöneticisi” seçeneğini seçin"
-    },
-    {
-      "tag": "li",
-      "content": "“Korunan Uygulamalar” sekmesini açın"
-    },
-    {
-      "tag": "li",
-      "content": "1.1.1.1 uygulaması için “Ekran kapatıldıktan sonra, uygulamaların çalışmaya devam etmesine izin ver” seçeneğini seçebilirsiniz."
-    }
-  ],
-  "faqpage.persistentnotificationQ": "1.1.1.1 uygulaması için neden kalıcı bir bildirim var?",
-  "faqpage.persistentnotificationA1": "Android 8 veya üstü kullanıyorsanız 1.1.1.1 uygulaması için “DNS sorgularınız gizli ve daha hızlı” yazan kalıcı bir bildirim görürsünüz.",
-  "faqpage.persistentnotificationA2": "Bu Android OS (8.0+) tarafından arka plan aktivitesi olan tüm uygulamalar için zorunlu kılınmıştır.",
-  "faqpage.persistentnotificationA3": "Telefonunuzdaki önemli bildirimlerle karışıklığa yol açmaması için bildirimin önceliğini “Düşük” olarak ayarlıyoruz.",
-  "faqpage.persistentnotificationA4": "Bildirimi gizlemek için yapabileceğiniz bir şey var. Bunu yaptığınızda 1.1.1.1 uygulamasından diğer bildirimleri almanız da engellenecektir. Ama işte yöntemi:",
-  "faqpage.persistentnotificationList": [
-    {
-      "tag": "li",
-      "content": "Ayarlarınıza gidin."
-    },
-    {
-      "tag": "li",
-      "content": "Uygulamalar ve Bildirimler."
-    },
-    {
-      "tag": "li",
-      "content": "Uygulamalar listesinden 1.1.1.1 uygulama ayarını açın."
-    },
-    {
-      "tag": "li",
-      "content": "“Bildirimler” seçeneğine dokunun ve devre dışı bırakın."
-    }
-  ],
-  "faqpage.disablednotificationQ": "1.1.1.1 uygulaması bildirimini devre dışı bıraktım ama şimdi “1.1.1.1 pil kullanıyor” diyen başka bir bildirim görüyorum. Endişelenmeli miyim? Bunu nasıl kaldırabilirim?",
-  "faqpage.disablednotificationA1": "Endişelenmenize gerek yok. Uygulamanın bildirimini devre dışı bıraktığınız için Android OS şimdi başka bir bildirim göndererek pil kullanımı hakkında uyarıyor ama çok fazla pil harcadığı için değil, arka planda çalıştığı için (bu durumda tüm DNS sorgularınızın güvenliğini sağlıyor!).",
-  "faqpage.disablednotificationA2": "Bunu şu şekilde kaldırabilirsiniz:",
-  "faqpage.disablednotificationList": [
-    {
-      "tag": "li",
-      "content": "Bildirim değişip bir çubuk gösterene kadar üzerine basılı tutun."
-    },
-    {
-      "tag": "li",
-      "content": "Çubuğa dokunun ve gri renge döndüğünden emin olun."
-    },
-    {
-      "tag": "li",
-      "content": "Bildirimi devre dışı bırakmak için “Bitti” seçeneğini seçin."
-    }
-  ],
-  "faqpage.vpnprofileQ": "VPN profilini ekleyemiyorum. Nasıl düzeltebilirim?",
-  "faqpage.vpnprofileA1": "Muhtemelen “Her Zaman Açık” ayarı etkinleştirilmiş olan başka bir VPN kullanıyorsunuz. Lütfen bunu devre dışı bırakın ve 1.1.1.1’i etkinleştirin.",
-  "faqpage.vpnprofileA2": "Aşağıdaki adımları izleyerek o sayfaya gidebilirsiniz:",
-  "faqpage.vpnprofileList": [
-    {
-      "tag": "li",
-      "content": "Ayarlar"
-    },
-    {
-      "tag": "li",
-      "content": "Ağ ve İnternet"
-    },
-    {
-      "tag": "li",
-      "content": "Gelişmiş"
-    },
-    {
-      "tag": "li",
-      "content": "VPN"
-    },
-    {
-      "tag": "li",
-      "content": "1.1.1.1 için araç düğmesi"
-    },
-    {
-      "tag": "li",
-      "content": "1.1.1.1 için “Her Zaman Açık”ı etkinleştirin"
-    }
-  ]
+  {
+    "tag" : "li",
+    "content" : "Cihazınızı yeniden başlatın; Wifi bağlantınız olduğundan emin olun."
+  },
+
+  {
+    "tag" : "li",
+    "content" : "Uygulamayı tekrar bağlamayı deneyin."
+  }],
+  "faqpage.appStuckA2" : "Eğer bu işlem sonucunda bağlantı yeniden kurulamazsa, 1.1.1.1 uygulamasını devre dışı bırakın ve bize bir hata raporu gönderin.",
+  "faqpage.cannotClickQ" : "VPN yükleme diyaloğunda Tamam’a tıklayamıyorum. Ne yapmalıyım?",
+  "faqpage.cannotClickA" : "Tamam düğmesini tıklayamıyorsanız, diyalog kutusunun üstünde başka bir uygulama olabilir. Bu soruna yol açtığı bilinen bazı uygulamalar arasında Lux Brightness, Night Mode, Twilight ve FileManager vardır. Bu sorunu önlemek için, bu soruna yol açabilecek tüm uygulamaları kapatın veya silin.",
+  "faqpage.appenabledQ" : "Uygulamayı açık unuttum ama bir süre sonra kapandığını fark ettim. Ne oldu?",
+  "faqpage.appenabledA1" : "Telefonunuz uygulamayı devre dışı bırakarak pil durumunu yönetmeye çalışıyor. Örneğin Huawei cihazlarının çoğu, agresif bellek ve güç yönetimleri ile tanınır.",
+  "faqpage.appenabledA2" : "Bunu aşağıdaki adımları izleyerek düzeltebilirsiniz:",
+  "faqpage.appenabledList" : [
+  {
+    "tag" : "li",
+    "content" : "Telefonunuzda ‘Ayarlar’a gidin."
+  },
+
+  {
+    "tag" : "li",
+    "content" : "‘İleri Düzey’i seçin"
+  },
+
+  {
+    "tag" : "li",
+    "content" : "‘Pil Yöneticisi’ni seçin"
+  },
+
+  {
+    "tag" : "li",
+    "content" : "‘Korunan Uygulamalar’ı açın"
+  },
+
+  {
+    "tag" : "li",
+    "content" : "“Ekran, 1.1.1.1 uygulaması için kapatıldıktan sonra, uygulamaların çalışmaya devam etmesine izin ver” seçeneğini seçebilirsiniz."
+  }],
+  "faqpage.persistentnotificationQ" : "Neden 1.1.1.1 uygulaması için kalıcı bir bildirim var?",
+  "faqpage.persistentnotificationA1" : "Android 8 veya üstünü kullanıyorsanız, 1.1.1.1 uygulamasından \"DNS sorgularınız gizli ve daha hızlı\" diyen kalıcı bir bildirim göreceksiniz.",
+  "faqpage.persistentnotificationA2" : "Bu, Android OS (8.0+) tarafında arka planda etkinliğe sahip tüm uygulamalar için gereklidir.",
+  "faqpage.persistentnotificationA3" : "Telefonunuzdaki diğer önemli bildirimleri etkilememesi için bildirimin önceliğini “Düşük” olarak belirledik.",
+  "faqpage.persistentnotificationA4" : "Bildirimi gizlemek için yapabileceğiniz bir şey var. Bunun, 1.1.1.1 uygulamasından diğer bildirimleri almanızı engelleyeceğini unutmayın. Ama işte buyurun:",
+  "faqpage.persistentnotificationList" : [
+  {
+    "tag" : "li",
+    "content" : "Ayarlara gidin."
+  },
+
+  {
+    "tag" : "li",
+    "content" : "Uygulamalar ve Bildirimler."
+  },
+
+  {
+    "tag" : "li",
+    "content" : "Uygulamalar listesinden 1.1.1.1 uygulama ayarını açın."
+  },
+
+  {
+    "tag" : "li",
+    "content" : "“Bildirimler” üzerine dokunun ve devre dışı bırakın."
+  }],
+  "faqpage.disablednotificationQ" : "1.1.1.1 uygulaması için bildirimi devre dışı bıraktım ama şimdi “1.1.1.1 pil kullanıyor” diyen başka bir bildirim görüyorum. Endişelenmeli miyim? Nasıl kaldırabilirim?",
+  "faqpage.disablednotificationA1" : "Endişelenmeyin. Uygulama için bildirimi devre dışı bıraktığınızdan, Android işletim sistemi artık çok fazla pil tükettiği için değil, arka planda çalıştığı için pil kullanımı hakkında sizi uyaran başka bir bildirim gönderiyor (bu durumda, tüm DNS sorgularınızı güvence altına alıyor!).",
+  "faqpage.disablednotificationA2" : "Bunu nasıl kaldırabileceğiniz aşağıda açıklanmıştır:",
+  "faqpage.disablednotificationList" : [
+  {
+    "tag" : "li",
+    "content" : "Bildirim değişene ve bir değiştirme düğmesi gösterene kadar uzun basın."
+  },
+
+  {
+    "tag" : "li",
+    "content" : "Gri olduğundan emin olarak değiştirme düğmesine dokunun."
+  },
+
+  {
+    "tag" : "li",
+    "content" : "Bildirimi devre dışı bırakmak için “Bitti”yi seçin."
+  }],
+  "faqpage.vpnprofileQ" : "VPN profilini ekleyemiyorum. Nasıl düzeltebilirim?",
+  "faqpage.vpnprofileA1" : "Muhtemelen \"Her Zaman Açık\" ayarları etkin olan başka bir VPN kullanıyorsunuzdur. Lütfen bunu devre dışı bırakın ve 1.1.1.1'i etkinleştirin.",
+  "faqpage.vpnprofileA2" : "Aşağıdaki adımları atarak o sayfaya gidebilirsiniz:",
+  "faqpage.vpnprofileList" : [
+  {
+    "tag" : "li",
+    "content" : "Ayarlar"
+  },
+
+  {
+    "tag" : "li",
+    "content" : "Ağ ve İnternet"
+  },
+
+  {
+    "tag" : "li",
+    "content" : "Gelişmiş ayarlar"
+  },
+
+  {
+    "tag" : "li",
+    "content" : "VPN"
+  },
+
+  {
+    "tag" : "li",
+    "content" : "1.1.1.1 için çark düğmesi"
+  },
+
+  {
+    "tag" : "li",
+    "content" : "1.1.1.1 için “Her Zaman Açık”ı etkinleştirin"
+  }],
+  "subscribe" : "Abone Ol",
+  "appstore" : "App Store",
+  "googleplay" : "Google Play",
+  "windows" : "Windows (beta)",
+  "macos" : "macOS (beta)",
+  "windows.comingsoon" : "Windows <br> (Yakında)",
+  "macos.comingsoon" : "macOS <br> (Yakında)",
+  "downloadfor.windows" : "Windows",
+  "downloadfor.macos" : "macOS için <br> <span style='font-size: 14px'>indirin</span>",
+  "windows.installationinstructions" : "Windows Kurulum Talimatları",
+  "macos.installationinstructions" : "macOS Kurulum Talimatları",
+  "linux.installationinstructions" : "Linux Kurulum Talimatları",
+  "home.herotitle" : "İnternet erişiminizi daha güvenli hale getiren ücretsiz uygulama.",
+  "home.herosubtitle" : "Artık daha fazla cihaz için kullanılabilir.",
+  "home.overviewtitle" : "Daha güvenli bir İnternet'ten bir tık uzaktasınız.",
+  "home.overviewdesc1" : "İnternet kurulduğunda bilgisayarlar mobil değildi. Veri merkezlerinin yanındaki ofislerde bulunuyordu. İnternet değişti, ancak 30 yıl önce yapılan varsayımlar, deneyiminizi daha yavaş ve daha az güvenli hale getiriyor.",
+  "home.overviewdesc2" : "WARP ile 1.1.1.1, cihazınız ve İnternet arasındaki bağlantıyı modern, optimize edilmiş bir protokolle değiştirir.",
+  "learnmore" : "Daha Fazla Bilgi",
+  "downloadnow" : "Şimdi İndirin",
+  "home.desktop.title" : "Artık macOS ve Windows için kullanılabilir.",
+  "home.desktop.description" : "<p>Milyonlarca insan bugün WARP uygulamasıyla telefonlarının İnternet bağlantılarını güvence altına alıyor</p><p>Aynı korumayı macOS ve Windows'u kapsayacak biçimde genişlettik.</p>",
+  "home.performancetitle" : "Büyük bir ağ üzerine inşa edilmiştir.",
+  "home.performancedesc1" : "WARP, 1.1.1.1'i Dünya'nın en hızlı <a class='CopyLink' href='https://www.dnsperf.com/#!dns-resolvers' target='_blank' rel='noreferrer'>DNS çözümleyicisi</a> yapan aynı ağ üzerine kurulmuştur.",
+  "home.performancedesc2" : "WARP ile bağlantınız, yaşadığınız ve gittiğiniz her yerde hızlı ve güvenilirdir.",
+  "home.performancedate" : "Ekim, 2020",
+  "home.privacytitle" : "Hızlı. Ücretsiz. Gizli.",
+  "home.privacydesc1" : "İnternet servis sağlayıcınız, kullandığınız her siteyi ve uygulamayı, şifreli olsalar bile görebilir. Hatta bazı sağlayıcılar bu verileri satar veya sizi reklamların hedefi olarak kullanır.",
+  "home.privacydesc2" : "WARP ile 1.1.1.1, cihazınızdan ayrılan trafiğin daha fazlasını şifreleyerek hiç kimsenin sizi gözetlememesini sağlar.",
+  "home.privacydesc3" : "Gizliliğin bir hak olduğuna inanırız. Verilerinizi asla satmayız.",
+  "sharewithtwitter" : "Twitter'da paylaşın",
+  "home.warptitle" : "İnternet hızlı şeridini kullanın",
+  "home.warpdesc" : "Tam WARP hizmetine ek olarak, WARP+ aboneleri daha büyük bir ağa erişim kazanır. Bağlanacak daha çok şehir, bir Cloudflare veri merkezine daha yakın olma olasılığı taşıdığınız anlamına gelir; bu da cihazınızla Cloudflare arasındaki gecikmeyi azaltabilir ve gezinme hızınızı iyileştirebilir.",
+  "home.warpdesc2" : "Mevcut WARP+ aboneleri planlarına indirimli olarak ek cihazlar ekleyebilir.",
+  "home.sharewarp" : "WARP paylaşın",
+  "home.footertitle" : "Size Cloudflare tarafından sunulmaktadır.",
+  "home.footerdesc1" : "<a class='CopyLink' href='https://cloudflare.com' target='_blank'>Cloudflare</a> 25 milyondan fazla İnternet sahibine güvenlik ve performans sağlar—ve şimdi bu teknoloji geri kalanlar tarafından kullanılabilir.",
+  "home.footerdesc2mobile" : "Bekleme listesindeki yerinizi almak için 1.1.1.1 uygulamasını edinin.",
+  "home.footerdesc2desktop" : "Bekleme listesindeki yerinizi almak için telefonunuzun uygulama mağazasında “1.1.1.1”i arayın.",
+  "home.subscribe.title" : "Erken erişim için kaydolun",
+  "home.subscribe.description" : "macOS ve Windows istemcileri kullanıma sunulduğunda haberdar olmak için abone olun.",
+  "dns" : "DNS",
+  "family.name" : "Aileler",
+  "family.for" : "Aileler için",
+  "family.herotitle" : "Ev İnternet'iniz için ücretsiz koruma.",
+  "family.section.performance.description" : "<p>Ailelerle 1.1.1.1, internet bağlantınızı daha hızlı hale getirmek için dünyadaki en hızlı genel DNS çözümleyicisini kullanır</p><p>Bunun için bizim sözümüzle yetinmeyin. Bağımsız DNS izleyicisi DNSPerf, 1.1.1.1'i dünyanın en hızlı DNS hizmeti olarak değerlendirmektedir. İnternette yaptığınız hemen hemen her şey bir DNS isteğiyle başladığından, tüm cihazlarınızda en hızlı DNS dizinini seçmek, çevrimiçi yaptığınız hemen hemen her şeyi hızlandıracaktır</p>",
+  "family.section.protection.title" : "Ev İnternet bağlantılarını kötü amaçlı yazılımlardan koruma",
+  "family.section.protection.description" : "<p>Evde internet kullanımının artması nedeniyle, ailenizi tehlikeli ve kötü niyetli sitelerden korumak hiç bu kadar önemli olmamıştı.</p><p>Aileler için 1.1.1.1, Cloudflare'ın kurumsal ürünlerine güç sağlayan aynı site kategorizasyonu ve filtreleme teknolojisi üzerine kurulmuştur. Ev İnternet ağınızdaki içeriği filtrelemek için Cloudflare'ın İnternet zekasını kullanır</p>",
+  "family.section.adultcontent.title" : "Yetişkin içerik filtreleme",
+  "family.section.adultcontent.description" : "<p>Her zaman açık olan içerik denetimleriyle yetişkinlere uygun içeriği ağınızdaki çocuklardan uzak tutun</p>",
+  "family.section.malware.title" : "Otomatik olarak kötü amaçlı yazılım koruması",
+  "family.section.malware.description" : "<p>Saldırganlar genellikle normal görünen sitelerde ve e-postalarda zararlı kodları gizler. Bu saldırılar, ailenizin özel bilgilerinin yanlış ellere geçmesine neden olabilir</p><p>Aileler için 1.1.1.1, evinizdeki Wi-Fi ağınıza kötü amaçlı yazılımlara karşı koruma katmanı ekleyerek bilinen kötü amaçlı sitelere erişimi otomatik olarak engeller.</p>",
+  "family.section.privacy.title" : "Güvenli. Gizli. Ücretsiz.",
+  "family.section.privacy.description" : "<p>İnternete bağlanan her cihazın bir DNS çözümleyiciye ihtiyacı vardır, ancak bunlar genellikle yavaştır ve gizliliğinize saygı göstermezler.</p><p>Aileler için 1.1.1.1, herkesin kullanması için ücretsiz olan, gizlilik öncelikli bir DNS çözümleyicidir. Cloudflare, ailenizin tarama verilerini asla satmaz veya paylaşmaz.</p>",
+  "family.section.privacy.link" : "Daha Fazla Bilgi",
+  "family.section.setup.title" : "Şimdi başlayın",
+  "family.section.setup.description" : "Aileler için 1.1.1.1 iki seçeneğe sahiptir: biri yalnızca kötü amaçlı yazılımları engeller, diğeri ise hem kötü amaçlı yazılımları hem de yetişkinlere yönelik içeriği engeller. Ev İnternet yönlendiricinizdeki IP adresi ayarlarını değiştirerek kurabilirsiniz.",
+  "family.section.setup.malware.title" : "Yalnızca Kötü Amaçlı Yazılım Engelleme",
+  "family.section.setup.malware.description" : "<p>Yönlendiricinizin DNS'ini şu şekilde değiştirin:</p><ul><li>1.1.1.3</li><li>1.0.0.2</li></ul><p class='install-instructions'>Kurmaya hazır mısınız?<a href='https://developers.cloudflare.com/1.1.1.1/1.1.1.1-for-families/setup-instructions/' class='CopyLink' target='_blank'>Kurulum talimatları sayasında</a> her cihaz için kolay bir kılavuz bulacaksınız.</p>",
+  "family.section.setup.all.title" : "Kötü Amaçlı Yazılım ve Yetişkin İçeriği Birlikte Engelleme",
+  "family.section.setup.all.description" : "<p>Yönlendiricinizin DNS'ini şu şekilde değiştirin:</p><ul><li>1.1.1.3</li><li>1.0.0.2</li></ul><p class='install-instructions'>Kurmaya hazır mısınız?<a href='https://developers.cloudflare.com/1.1.1.1/1.1.1.1-for-families/setup-instructions/' class='CopyLink' target='_blank'>Kurulum talimatları sayasında</a> her cihaz için kolay bir kılavuz bulacaksınız.</p>",
+  "family.cloudflare.tagline" : "Her İnternet kullanıcısına hız, güvenilirlik ve performans sunuyor.",
+  "family.share.tweet.body" : "Ev İnternet bağlantımızı kötü amaçlı yazılımlardan korumak için Aileler için 1.1.1.1 kullanıyorum. Kurulumu 2 dakikadan daha kısa sürede yapabilirsiniz. https://one.one.one.one/family",
+  "family.share.facebook.body" : "Ev İnternet bağlantımızı kötü amaçlı yazılımlardan korumak için Aileler için 1.1.1.1 kullanıyorum. Kurulumu 2 dakikadan daha kısa sürede yapabilirsiniz. https://one.one.one.one/family",
+  "family.share.email.subject" : "1.1.1.1 for Families",
+  "family.share.email.body" : "Ev İnternet bağlantımızı kötü amaçlı yazılımlardan korumak için Aileler için 1.1.1.1 kullanıyorum. Kurulumu 2 dakikadan daha kısa sürede yapabilirsiniz. https://one.one.one.one/family",
+  "home.privacyimportant" : "<a href='https://www.cloudflare.com/privacypolicy/' class='CopyLink'>Gizliliğiniz</a> bizim için önemlidir.",
+  "beta.name" : "Beta",
+  "beta.title" : "1.1.1.1'i indirin macOs ve Windows için Beta",
+  "beta.section.title" : "Masaüstü için daha güvenli ve daha hızlı bir internet yapmamıza yardımcı olduğunuz için teşekkür ederiz.",
+  "beta.section.description" : "Sisteminize uygun masaüstü uygulamasını indirmek için ilgili bağlantıyı seçin. Bu bir Beta sürümüdür, bu nedenle aşağıdaki bağlantıyı kullanarak geri bildirim sağlamayı ve bilinen sorunlar hakkında bilgi edinmeyi unutmayın.",
+  "beta.section.feedback.text" : "Geri bildirim sağlayın",
+  "beta.section.feedback.link" : "/",
+  "beta.section.learn.more" : "Bilinen sorunlar hakkında daha fazla bilgi edinin",
+  "beta.tag" : "Beta masaüstü sürümü",
+  "beta.mac" : "macOS",
+  "beta.button.text" : "Şunlar için İndirin:",
+  "beta.windows" : "Windows",
+  "beta.linux" : "Linux",
+  "beta.category1" : "macOS Catalina",
+  "beta.category2" : "Windows 10",
+  "beta.category3" : " ",
+  "beta.min.req" : "Minimum sistem <br> gereksinimleri",
+  "beta.version.category1" : "10.15 veya üzeri <br> yalnızca 64 bit",
+  "beta.version.category2" : "1909 veya üzeri <br> yalnızca 64 bit",
+  "beta.mac.instructions" : "macOS Kurulum Talimatları",
+  "beta.windows.instructions" : "Windows Kurulum Talimatları",
+  "teams.devices.title" : "Yeni: WARP'ı ekibinizle birlikte kullanın",
+  "teams.devices.description" : "WARP'ı Gateway ile entegre ederek WARP'ın gücünü işinize getirin. Kullanıcı cihazlarını kuruluşunuza kaydedin ve uzaktaki iş gücünüzü çevrimiçi tehditlerden koruyun.",
+  "faq" : "Sık sorulan sorular",
+  "terms" : "Şartlar",
+  "privacyPolicy" : "Gizlilik Politikası",
+  "purgeCache" : "Önbelleği Temizle"
 }

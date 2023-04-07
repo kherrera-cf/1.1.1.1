@@ -66,11 +66,20 @@
   background: var(--nav-link-background-color-hover);
 }
 
+html[class="dir-rtl"] .InstallSection--panel {
+  direction: rtl;
+}
+
 .InstallSection--panel-title {
   text-align: center;
   font-weight: 700;
   margin-bottom: 1em;
   min-height: 3em;
+}
+
+html[class="dir-rtl"] .InstallSection--panel-title,
+html[class="dir-rtl"] .install-instructions {
+  text-align: unset;
 }
 
 .InstallSection--panel-description {

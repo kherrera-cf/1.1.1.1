@@ -1,19 +1,18 @@
-import { port } from "./source/utilities/routes";
-// import * as defaultsDeep from 'lodash.defaultsdeep'
-const defaultsDeep = require("lodash.defaultsdeep");
+import * as CleanWebpackPlugin from "clean-webpack-plugin";
+import * as CopyWebpackPlugin from "copy-webpack-plugin";
+import * as HtmlWebpackPlugin from "html-webpack-plugin";
+import * as OptimizeCSSAssetsPlugin from "optimize-css-assets-webpack-plugin";
+import { format as formatURL } from "url";
 import webpack, {
   DefinePlugin,
   NamedModulesPlugin,
-  HotModuleReplacementPlugin,
   NoEmitOnErrorsPlugin,
-  SourceMapDevToolPlugin
+  SourceMapDevToolPlugin,
 } from "webpack";
-import * as HtmlWebpackPlugin from "html-webpack-plugin";
-import * as CleanWebpackPlugin from "clean-webpack-plugin";
-import * as CopyWebpackPlugin from "copy-webpack-plugin";
-import * as OptimizeCSSAssetsPlugin from "optimize-css-assets-webpack-plugin";
-import { format as formatURL } from "url";
 import localeDefinitions from "./source/utilities/i18n/lang";
+import { localizePath, normalizePath } from "./source/utilities/link";
+// import * as defaultsDeep from 'lodash.defaultsdeep'
+const defaultsDeep = require("lodash.defaultsdeep");
 
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
@@ -44,14 +43,14 @@ const $: CustomConfiguration = {
     purgeCache: ["./source/pages/purge-cache.ts"],
     faq: ["./source/pages/faq.ts"],
     family: ["./source/pages/family.ts"],
-    beta: ["./source/pages/beta.ts"]
+    beta: ["./source/pages/beta.ts"],
   },
-  plugins: []
+  plugins: [],
 };
 
 $.resolve = {
   extensions: [".js", ".json", ".ts", ".tsx"],
-  modules: [joinP("source"), joinP("node_modules")]
+  modules: [joinP("source"), joinP("node_modules")],
 };
 
 $.output = {
@@ -60,7 +59,7 @@ $.output = {
   path: joinP("build"),
   filename: "[name]-[hash].js",
   library: "[name]-[hash]",
-  libraryTarget: "umd"
+  libraryTarget: "umd",
 };
 
 export interface BundleDefinition {
@@ -69,21 +68,21 @@ export interface BundleDefinition {
 
 const bundleDefinitions: BundleDefinition = {
   "process.env": {
-    NODE_ENV: JSON.stringify(environment)
-  }
+    NODE_ENV: JSON.stringify(environment),
+  },
 };
 
 $.plugins = [
   new DefinePlugin(bundleDefinitions),
   new ForkTsCheckerWebpackPlugin({
-    tsconfig: joinP("source/tsconfig.json")
+    tsconfig: joinP("source/tsconfig.json"),
   }),
   new CopyWebpackPlugin([
     {
       to: "media",
-      from: joinP("source/media")
-    }
-  ])
+      from: joinP("source/media"),
+    },
+  ]),
 ];
 
 if (environment === "development") {
@@ -95,8 +94,8 @@ if (environment === "development") {
 let styleLoader = {
   loader: "style-loader",
   options: {
-    sourceMap: true
-  }
+    sourceMap: true,
+  },
 };
 
 if (environment === "production") {
@@ -106,11 +105,11 @@ if (environment === "production") {
 
   $.plugins.push(
     new SourceMapDevToolPlugin({
-      filename: "[name]-[hash].map"
+      filename: "[name]-[hash].map",
     }),
     new MiniCssExtractPlugin({
       filename: "[name]-[hash].css",
-      chunkFilename: "[id].css"
+      chunkFilename: "[id].css",
     }),
     new UglifyJsPlugin({
       sourceMap: true,
@@ -118,9 +117,9 @@ if (environment === "production") {
       parallel: true,
       uglifyOptions: {
         output: {
-          comments: false
-        }
-      }
+          comments: false,
+        },
+      },
     }),
     new OptimizeCSSAssetsPlugin()
   );
@@ -135,7 +134,7 @@ if (environment !== "development") {
     minifyCSS: true,
     collapseWhitespace: true,
     preserveLineBreaks: false,
-    removeComments: false
+    removeComments: false,
   };
 }
 
@@ -143,68 +142,88 @@ const locales = [
   {
     path: "",
     code: "en-US",
-    label: "English"
+    label: "English",
   },
   {
     path: "es-ES/",
     code: "es-ES",
-    label: "Español"
+    label: "Español",
   },
   {
     path: "fr-FR/",
     code: "fr-FR",
-    label: "Français"
+    label: "Français",
   },
   {
     path: "de-DE/",
     code: "de-DE",
-    label: "Deutsch"
+    label: "Deutsch",
   },
   {
     path: "pt-BR/",
     code: "pt-BR",
-    label: "Português"
+    label: "Português",
   },
   {
     path: "nl-NL/",
     code: "nl-NL",
-    label: "Nederlands"
+    label: "Nederlands",
   },
   {
     path: "tr-TR/",
     code: "tr-TR",
-    label: "Türkçe"
+    label: "Türkçe",
   },
   {
     path: "zh-Hans/",
     code: "zh-Hans",
-    label: "简体中文"
+    label: "简体中文",
   },
   {
     path: "zh-Hant/",
     code: "zh-Hant",
-    label: "繁體中文"
+    label: "繁體中文",
   },
   {
     path: "ja-JP/",
     code: "ja-JP",
-    label: "日本語"
+    label: "日本語",
   },
   {
     path: "ko-KR/",
     code: "ko-KR",
-    label: "한국어"
+    label: "한국어",
   },
   {
     path: "id-ID/",
     code: "id-ID",
-    label: "Indonesian"
-  }
+    label: "Indonesia",
+  },
+  {
+    path: "fa-IR/",
+    code: "fa-IR",
+    label: "فارسی",
+  },
+  {
+    path: "it-IT/",
+    code: "it-IT",
+    label: "Italiano",
+  },
+  {
+    path: "pl-PL/",
+    code: "pl-PL",
+    label: "Polski",
+  },
+  {
+    path: "ru-RU/",
+    code: "ru-RU",
+    label: "Русский",
+  },
 ];
 
 // HACK: For many many reasons, Pug, html-loader, and html-webpack-plugin are incompatible.
 
-const pugLoaders = locales.map(locale => {
+const pugLoaders = locales.map((locale) => {
   const mergedDefinitions = defaultsDeep(
     localeDefinitions[locale.code],
     localeDefinitions["en-US"]
@@ -219,8 +238,8 @@ const pugLoaders = locales.map(locale => {
         loader: "html-loader",
         options: {
           minimize: htmlMinify,
-          attrs: ["img:src", "video:src"]
-        }
+          attrs: ["img:src", "video:src"],
+        },
       },
       {
         loader: "pug-html-loader",
@@ -232,90 +251,93 @@ const pugLoaders = locales.map(locale => {
                 t: (key: string) => mergedDefinitions[key],
                 locale,
                 locales,
+                localizePath: (path: string) => localizePath(locale, path),
+                normalizePath,
                 formatURL,
-                NODE_ENV: environment
-              }
-            }
-          }
-        }
-      }
-    ]
+                NODE_ENV: environment,
+                isRTL: ['fa-IR'].includes(locale.code)
+              },
+            },
+          },
+        },
+      },
+    ],
   };
 });
 
 $.plugins.push(
-  ...locales.map(locale => {
+  ...locales.map((locale) => {
     return new HtmlWebpackPlugin({
       favicon: "source/media/favicon.ico",
       template: joinP(`source/pages/${locale.code}/index.pug`),
       filename: `${locale.path}index.html`,
-      chunks: ["site"]
+      chunks: ["site"],
     });
   })
 );
 
 $.plugins.push(
-  ...locales.map(locale => {
+  ...locales.map((locale) => {
     return new HtmlWebpackPlugin({
       favicon: "source/media/favicon.ico",
       template: joinP(`source/pages/${locale.code}/faq/index.pug`),
       filename: `${locale.path}faq/index.html`,
-      chunks: ["faq"]
+      chunks: ["faq"],
     });
   })
 );
 
 $.plugins.push(
-  ...locales.map(locale => {
+  ...locales.map((locale) => {
     return new HtmlWebpackPlugin({
       favicon: "source/media/favicon.ico",
       template: joinP(`source/pages/${locale.code}/dns/index.pug`),
       filename: `${locale.path}dns/index.html`,
-      chunks: ["dns"]
+      chunks: ["dns"],
     });
   })
 );
 
 $.plugins.push(
-  ...locales.map(locale => {
+  ...locales.map((locale) => {
     return new HtmlWebpackPlugin({
       favicon: "source/media/favicon.ico",
       template: joinP(`source/pages/${locale.code}/family/index.pug`),
       filename: `${locale.path}family/index.html`,
-      chunks: ["family"]
+      chunks: ["family"],
     });
   })
 );
 
 $.plugins.push(
-  ...locales.map(locale => {
+  ...locales.map((locale) => {
     return new HtmlWebpackPlugin({
       favicon: "source/media/favicon.ico",
       template: joinP(`source/pages/${locale.code}/beta/index.pug`),
       filename: `${locale.path}beta/index.html`,
-      chunks: ["beta"]
+      chunks: ["beta"],
     });
   })
 );
 
 $.plugins.push(
-  ...locales.map(locale => {
+  ...locales.map((locale) => {
     return new HtmlWebpackPlugin({
       favicon: "source/media/favicon.ico",
       template: joinP(`source/pages/${locale.code}/help/index.pug`),
       filename: `${locale.path}help/index.html`,
-      chunks: ["help"]
+      chunks: ["help"],
     });
   })
 );
 
 $.plugins.push(
-  ...locales.map(locale => {
+  ...locales.map((locale) => {
     return new HtmlWebpackPlugin({
       favicon: "source/media/favicon.ico",
       template: joinP(`source/pages/${locale.code}/purge-cache/index.pug`),
       filename: `${locale.path}purge-cache/index.html`,
-      chunks: ["purgeCache"]
+      chunks: ["purgeCache"],
     });
   })
 );
@@ -323,7 +345,7 @@ $.plugins.push(
 $.plugins.push(
   new HtmlWebpackPlugin({
     template: "source/pages/404.html",
-    filename: "404.html"
+    filename: "404.html",
   })
 );
 
@@ -337,10 +359,10 @@ $.module = {
           loader: "ts-loader",
           options: {
             transpileOnly: true, // Type checking done via plugin.
-            configFile: joinP("source/tsconfig.json")
-          }
-        }
-      ]
+            configFile: joinP("source/tsconfig.json"),
+          },
+        },
+      ],
     },
     ...pugLoaders,
     {
@@ -350,14 +372,14 @@ $.module = {
           loader: "file-loader",
           options: {
             // name: '[path][name].[ext]'
-          }
-        }
-      ]
+          },
+        },
+      ],
     },
     {
       test: /\.svg$/,
       loader: "svg-inline-loader",
-      exclude
+      exclude,
     },
     {
       test: /\.css$/,
@@ -366,11 +388,11 @@ $.module = {
         {
           loader: "css-loader",
           options: {
-            sourceMap: true
-          }
-        }
+            sourceMap: true,
+          },
+        },
       ],
-      exclude
+      exclude,
     },
     {
       test: /\.styl$/,
@@ -380,18 +402,18 @@ $.module = {
         {
           loader: "css-loader",
           options: {
-            sourceMap: true
-          }
+            sourceMap: true,
+          },
         },
         {
           loader: "stylus-loader",
           options: {
-            sourceMap: true
-          }
-        }
-      ]
-    }
-  ]
+            sourceMap: true,
+          },
+        },
+      ],
+    },
+  ],
 };
 
 export default $;
