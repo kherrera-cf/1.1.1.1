@@ -63,7 +63,7 @@ html[class="dir-rtl"] .HeroSection--title-wrapper {
 .HeroSection--actions {
   font-size: 1.125em;
   display: flex;
-  align-items: center;
+  align-items: top;
   justify-content: center;
   margin-bottom: 1em;
 }
@@ -131,4 +131,8 @@ html[class="dir-rtl"] .HeroSection--title-wrapper {
 
 html[class="dir-rtl"] .family-page .HeroSection--content {
   direction: rtl;
+}
+
+html[lang="ru-RU"] .HeroSection--title {
+  font-size: 2em;
 }
