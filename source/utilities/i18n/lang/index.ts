@@ -16,5 +16,6 @@ locales["it-IT"] = require("./it_it/it_it.json");
 locales["ru-RU"] = require("./ru_ru/ru_ru.json");
 locales["pl-PL"] = require("./pl_pl/pl_pl.json");
 locales["fa-IR"] = require("./fa_ir/fa_ir.json");
+locales["ar-EG"] = require("./ar_eg/ar_eg.json");
 
 export default locales;
