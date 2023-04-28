@@ -5,23 +5,7 @@ section(data-section="purge-cache")
 
     h1.title!=htmlWebpackPlugin.options.t('purgeCache.title')
 
-  p.description
-    b!=htmlWebpackPlugin.options.t('warp.nav.name')
-    span!=htmlWebpackPlugin.options.t('purgeCache.description.1')
-      span &nbsp;
-    b!=htmlWebpackPlugin.options.t('warp.nav.name')
-    span!=htmlWebpackPlugin.options.t('purgeCache.description.2')
-      span &nbsp;
-    i!=htmlWebpackPlugin.options.t('purgeCache.description.3')
-      span &nbsp;
-    span!=htmlWebpackPlugin.options.t('purgeCache.description.4')
-      span &nbsp;
-    i!=htmlWebpackPlugin.options.t('purgeCache.description.5')
-      span &nbsp;
-    span!=htmlWebpackPlugin.options.t('purgeCache.description.6')
-      span &nbsp;
-    i!=htmlWebpackPlugin.options.t('purgeCache.description.7')
-    span .
+  p.description!=htmlWebpackPlugin.options.t('purgeCache.description')
 
   .title-container
     h3.title!=htmlWebpackPlugin.options.t('purgeCache.form.title')
