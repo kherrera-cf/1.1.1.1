@@ -661,5 +661,12 @@
   "faq" : "Preguntas frecuentes",
   "terms" : "Condiciones",
   "privacyPolicy" : "Política de privacidad",
-  "purgeCache" : "Depurar caché"
+  "purgeCache" : "Depurar caché",
+  "purgeCache.title" : "Depurar caché",
+  "purgeCache.description" : "La herramienta Depurar Caché de <strong>1.1.1.1</strong> te permite renovar la caché de DNS de <b>1.1.1.1</b> para los nombres de dominio. Para renovar la caché para un nombre de dominio, especifica el nombre del <i>dominio</i> a continuación, selecciona el <i>tipo de registro DNS</i> y pulsa <i>Depurar Cache</i>.",
+  "purgeCache.form.title" : "Depurar Caché para dominio",
+  "purgeCache.field.domainName" : "Nombre de dominio",
+  "purgeCache.field.recordType" : "Tipo de registro",
+  "purgeCache.field.submit" : "Depurar caché",
+  "purgeCache.logoAlt" : "1.1.1.1 Resolución DNS"
 }

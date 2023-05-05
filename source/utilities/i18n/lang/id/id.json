@@ -661,5 +661,12 @@
   "faq" : "Pertanyaan Umum",
   "terms" : "Syarat",
   "privacyPolicy" : "Kebijakan Privasi",
-  "purgeCache" : "Cache Pembersihan"
+  "purgeCache" : "Cache Pembersihan",
+  "purgeCache.title" : "Cache Pembersihan",
+  "purgeCache.description" : "<b>1.1.1.1</b> Alat Chache Pembersihan memungkinkan Anda menyegarkan  <b>1.1.1.1</b> cache DNS untuk nama-nama domain. Guna menyegarkan cache untuk suatu nama domain, masukkan nama untuk  <i>domain</i> tersebut di bawah ini, pilih <i>tipe catatan DNS</i> , kemudian tekan <i>Cache Pembersihan</i>.",
+  "purgeCache.form.title" : "Cache pembersihan untuk domain",
+  "purgeCache.field.domainName" : "Nama Domain",
+  "purgeCache.field.recordType" : "Tipe Catatan",
+  "purgeCache.field.submit" : "Cache Pembersihan",
+  "purgeCache.logoAlt" : "1.1.1.1 Penyelesai DNS"
 }

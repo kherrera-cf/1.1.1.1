@@ -661,5 +661,12 @@
   "faq" : "Często zadawane pytania",
   "terms" : "Warunki",
   "privacyPolicy" : "Polityka prywatności",
-  "purgeCache" : "Wyczyść pamięć podręczną"
+  "purgeCache" : "Wyczyść pamięć podręczną",
+  "purgeCache.title" : "Wyczyść pamięć podręczną",
+  "purgeCache.description" : "<b>1.1.1.1</b> Narzędzie Wyczyść pamięć podręczną opracowane przez umożliwia odświeżenie  <b>1.1.1.1</b> pamięci podręcznej DNS dla nazw domen. Aby odświeżyć pamięć podręczną dla nazwy domeny, wprowadź nazwę <i>domeny </i>poniżej, wybierz typ <i>rekordu DNS</i>, a następnie naciśnij przycisk <i>Wyczyść pamięć podręczną</i>.",
+  "purgeCache.form.title" : "Wyczyść pamięć podręczną dla domeny",
+  "purgeCache.field.domainName" : "Nazwa domeny",
+  "purgeCache.field.recordType" : "Typ rekordu",
+  "purgeCache.field.submit" : "Wyczyść pamięć podręczną",
+  "purgeCache.logoAlt" : "1.1.1.1 resolver DNS"
 }

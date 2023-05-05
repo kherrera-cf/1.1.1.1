@@ -661,5 +661,12 @@
   "faq" : "Perguntas frequentes",
   "terms" : "Termos",
   "privacyPolicy" : "Política de privacidade",
-  "purgeCache" : "Limpar Cache"
+  "purgeCache" : "Limpar Cache",
+  "purgeCache.title" : "Limpar Cache",
+  "purgeCache.description" : "A ferramenta Limpar Cache do <b>1.1.1.1</b> permite que você atualize o cache de DNS do <b>1.1.1.1</b> para nomes de domínio. Para atualizar o cache de um nome de domínio, digite o nome do <i>domínio</i> abaixo, escolha o <i>tipo de registro de DNS</i> e clique em <i>Limpar Cache</i>.",
+  "purgeCache.form.title" : "Limpar Cache para domínio",
+  "purgeCache.field.domainName" : "Nome de domínio",
+  "purgeCache.field.recordType" : "Tipo de Registro",
+  "purgeCache.field.submit" : "Limpar Cache",
+  "purgeCache.logoAlt" : "Resolvedor de DNS 1.1.1.1"
 }

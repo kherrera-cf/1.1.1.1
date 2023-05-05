@@ -661,5 +661,12 @@
   "faq" : "Domande frequenti",
   "terms" : "Termini",
   "privacyPolicy" : "Informativa sulla privacy",
-  "purgeCache" : "Cancella cache"
+  "purgeCache" : "Cancella cache",
+  "purgeCache.title" : "Cancella cache",
+  "purgeCache.description" : "Lo strumento Cancella cache di <b>1.1.1.1</b> consente di aggiornare la cache DNS di <b>1.1.1.1</b> per i nomi di dominio. Per aggiornare la cache per un nome di dominio, inserisci il nome per il <i>dominio</i> di seguito, seleziona il <i>tipo di record DNS</i> quindi seleziona <i>Cancella cache</i>.",
+  "purgeCache.form.title" : "Cancella cache per il dominio",
+  "purgeCache.field.domainName" : "Nome del dominio",
+  "purgeCache.field.recordType" : "Tipo di dominio",
+  "purgeCache.field.submit" : "Cancella cache",
+  "purgeCache.logoAlt" : "1.1.1.1 Resolver DNS"
 }

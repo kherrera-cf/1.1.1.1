@@ -661,5 +661,12 @@
   "faq" : "FAQ",
   "terms" : "Allgemeinen Geschäftsbedingungen von Cloudflare zu",
   "privacyPolicy" : "Datenschutzrichtlinie",
-  "purgeCache" : "Purge Cache"
+  "purgeCache" : "Purge Cache",
+  "purgeCache.title" : "Purge Cache",
+  "purgeCache.description" : "Mit dem <b>1.1.1.1</b>-Tool Purge Cache können Sie den DNS-Zwischenspeicher von <b>1.1.1.1</b> für Domainnamen aktualisieren. Geben Sie dafür unten den Namen der <i>Domain</i> ein, wählen Sie die <i>Kategorie des DNS-Eintrags</i> aus und klicken Sie anschließend auf <i>Cache leeren</i>.",
+  "purgeCache.form.title" : "Cache leeren für Domain",
+  "purgeCache.field.domainName" : "Domainname",
+  "purgeCache.field.recordType" : "Eintragskategorie",
+  "purgeCache.field.submit" : "Purge Cache",
+  "purgeCache.logoAlt" : "DNS-Resolver 1.1.1.1"
 }

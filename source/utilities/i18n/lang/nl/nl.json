@@ -661,5 +661,12 @@
   "faq" : "Veelgestelde vragen",
   "terms" : "Voorwaarden",
   "privacyPolicy" : "Privacybeleid",
-  "purgeCache" : "Cache opschonen"
+  "purgeCache" : "Cache opschonen",
+  "purgeCache.title" : "Cache opschonen",
+  "purgeCache.description" : "<b>1.1.1.11</b> Met de tool Cache opschonen kunt u <b>1.1.1.1</b> de DNS-cache voor domeinnamen vernieuwen. Om de cache voor een domeinnaam te vernieuwen, voert u de naam voor het  <i>domein</i>  hieronder in, kiest u het  <i>DNS-recordtype</i>  en drukt u vervolgens op <i>Cache opschonen</i>.",
+  "purgeCache.form.title" : "Cache voor domein opschonen",
+  "purgeCache.field.domainName" : "Domeinnaam",
+  "purgeCache.field.recordType" : "Type record",
+  "purgeCache.field.submit" : "Cache opschonen",
+  "purgeCache.logoAlt" : "1.1.1.1 DNS-oplosser"
 }

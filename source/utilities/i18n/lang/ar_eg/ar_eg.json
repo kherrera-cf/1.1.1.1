@@ -602,5 +602,12 @@
   "faq": "الأسئلة المتداولة",
   "terms": "الشروط",
   "privacyPolicy": "سياسة الخصوصية",
-  "purgeCache": "مسح ذاكرة التخزين المؤقت"
+  "purgeCache": "مسح ذاكرة التخزين المؤقت",
+  "purgeCache.title": "مسح ذاكرة التخزين المؤقت",
+  "purgeCache.description": "<b>1.1.1.1</b>'s تسمح لك أداة مسح ذاكرة التخزين المؤقت بتحديث&nbsp;<b>1.1.1.1</b>'s ذاكرة التخزين المؤقت لـ DNS لأسماء المجالات. لتحديث ذاكرة التخزين المؤقت لاسم مجال، أدخل اسم&nbsp;<i>المجال&nbsp;</i>أدناه، واختر&nbsp;<i>نوع سجل DNS‏&nbsp;</i>ثم اضغط على&nbsp;<i>مسح ذاكرة التخزين المؤقت</i>.",
+  "purgeCache.form.title": "مسح ذاكرة التخزين المؤقت للمجال",
+  "purgeCache.field.domainName": "اسم المجال",
+  "purgeCache.field.recordType": "نوع السجل",
+  "purgeCache.field.submit": "مسح ذاكرة التخزين المؤقت",
+  "purgeCache.logoAlt": "1.1.1.1 محلل DNS"
 }

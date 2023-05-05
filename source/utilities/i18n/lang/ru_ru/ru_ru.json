@@ -661,5 +661,12 @@
   "faq" : "Вопросы и ответы",
   "terms" : "Условия",
   "privacyPolicy" : "Политика конфиденциальности",
-  "purgeCache" : "Очистка кэша"
+  "purgeCache" : "Очистка кэша",
+  "purgeCache.title" : "Очистка кэша",
+  "purgeCache.description" : "Инструмент очистки кэша <b>1.1.1.1</b> позволяет обновлять DNS-кэш <b>1.1.1.1</b> для доменных имен. Чтобы обновить кэш для доменного имени, введите имя <i>домена</i> ниже, выберите <i>тип записи DNS</i> , затем нажмите кнопку <i>Очистка кэша</i>.",
+  "purgeCache.form.title" : "Очистка кэша для домена",
+  "purgeCache.field.domainName" : "Доменное имя",
+  "purgeCache.field.recordType" : "Тип записи",
+  "purgeCache.field.submit" : "Очистка кэша",
+  "purgeCache.logoAlt" : "1.1.1.1 DNS-резолвер"
 }

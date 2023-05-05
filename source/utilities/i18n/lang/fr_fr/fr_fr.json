@@ -661,5 +661,12 @@
   "faq" : "FAQ",
   "terms" : "Conditions",
   "privacyPolicy" : "Politique de confidentialité",
-  "purgeCache" : "Purge du cache"
+  "purgeCache" : "Purge du cache",
+  "purgeCache.title" : "Purge du cache",
+  "purgeCache.description" : "L'outil de purge du cache de <b>1.1.1.1</b> vous permet d'actualiser le cache DNS du résolveur pour les noms de domaines. Pour actualiser le cache d'un nom de domaine, saisissez le nom du <i>domaine</i> ci-dessous, sélectionnez le <i>type d'enregistrement DNS</i>, puis cliquez sur <i>Purge du Cache</i>.",
+  "purgeCache.form.title" : "Purger le cache d'un domaine",
+  "purgeCache.field.domainName" : "Nom de domaine",
+  "purgeCache.field.recordType" : "Type d’enregistrement",
+  "purgeCache.field.submit" : "Purge du cache",
+  "purgeCache.logoAlt" : "1.1.1.1 Résolveur DNS"
 }
