@@ -604,7 +604,7 @@
   "privacyPolicy": "Gizlilik Politikası",
   "purgeCache": "Önbelleği Temizle",
   "purgeCache.title": "Önbelleği Temizle",
-  "purgeCache.description": "<b>1.1.1.1</b> Önbelleği Temizle aracı, alan adları için <b>1.1.1.1</b> ’in DNS önbelleğini yenilemenizi sağlar. Bir alan adının önbelleğini yenilemek için, aşağıdaki  <i>alan adını</i> girin, sonra  <i>DNS kayıt türünü</i> seçin ve ardından <i>Önbelleği Temizle</i> 'ye basın.",
+  "purgeCache.description": "<b>1.1.1.1</b>’in Önbelleği Temizle aracı, alan adları için <b>1.1.1.1</b>’in DNS önbelleğini yenilemenizi sağlar. Bir alan adının önbelleğini yenilemek için, aşağıdaki <i>alan adını</i> girin, sonra <i>DNS kayıt türünü</i> seçin ve ardından <i>Önbelleği Temizle</i> 'ye basın.",
   "purgeCache.form.title": "Alan için önbelleği temizle",
   "purgeCache.field.domainName": "Alan Adı",
   "purgeCache.field.recordType": "Kayıt Türü",
