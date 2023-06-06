@@ -50,7 +50,7 @@ interface ResolverInfo {
 }
 
 function getRefElement (ref: string) {
-  return <HTMLElement> document.querySelector(`[data-ref="${ref}"]`)!
+  return <HTMLElement> document.querySelector(`[data-ref="${CSS.escape(ref)}"]`)!
 }
 
 function setRef (ref: string, value: any) {
