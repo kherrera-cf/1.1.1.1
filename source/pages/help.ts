@@ -98,7 +98,7 @@ const resolverTests = {
   'resolverIp-1.1.1.1': '1.1.1.1',
   'resolverIp-1.0.0.1': '1.0.0.1',
   'resolverIp-2606:4700:4700::1111': 'ipv6b.cloudflare-dns.com',
-  'resolverIp-2606:4700:4700::1001': 'ipv6a.cloudflare-dns.com'
+  'resolverIp-2606:4700:4700::1001': 'ipv6a.cloudflare-dns.com',
 }
 
 async function init () {
@@ -122,13 +122,13 @@ async function init () {
     .keys(resolverTests)
     .reduce((resolverTestResults, key) => Object.assign(resolverTestResults, { [key]: false }), {} as any)
 
-  for (let ref in resolverTests) {
-    const host = resolverTests[ref as keyof typeof resolverTests]
+  for (const [ref, host] of Object.entries(resolverTests)) {
     try {
-      const res = await fetch(`https://${host}/resolvertest`)
+      const res = await fetch(`https://${host}/cdn-cgi/trace`)
       resolverTestResults[ref as keyof typeof resolverTests] = res.ok
       setRef(ref, res.ok)
     } catch (error) {
+      resolverTestResults[ref as keyof typeof resolverTests] = false
       setRef(ref, false)
     }
   }
