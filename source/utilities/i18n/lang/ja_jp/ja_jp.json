@@ -661,5 +661,12 @@
   "faq" : "よくある質問",
   "terms" : "用語",
   "privacyPolicy" : "プライバシーポリシー",
-  "purgeCache" : "キャッシュをパージ"
+  "purgeCache" : "キャッシュをパージ",
+  "purgeCache.title" : "キャッシュをパージ",
+  "purgeCache.description" : "<b>1.1.1.1</b>のキャッシュパージツールを使えば、ドメイン名ごとに<b>1.1.1.1</b>のDNSキャッシュを更新できます。ドメイン名でキャッシュを更新するには、下欄に<i>ドメイン</i>を入力し、<i>DNSレコードタイプ</i>を選択してから<i>[キャッシュをパージ]</i>ボタンを押します。",
+  "purgeCache.form.title" : "ドメインごとのキャッシュパージ",
+  "purgeCache.field.domainName" : "ドメイン名",
+  "purgeCache.field.recordType" : "レコードタイプ",
+  "purgeCache.field.submit" : "キャッシュをパージ",
+  "purgeCache.logoAlt" : "1.1.1.1 DNSリゾルバー"
 }

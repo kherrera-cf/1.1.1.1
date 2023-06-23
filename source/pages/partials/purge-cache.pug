@@ -1,30 +1,20 @@
 section(data-section="purge-cache")
   header
-    .logo(alt="1.1.1.1 DNS resolver")
+    .logo(alt=htmlWebpackPlugin.options.t('purgeCache.logoAlt'))
       include ../../media/logo.svg
 
-    h1.title Purge Cache
+    h1.title!=htmlWebpackPlugin.options.t('purgeCache.title')
 
-  p.description
-    b 1.1.1.1
-    span 's Purge Cache tool allows you to refresh&nbsp;
-    b 1.1.1.1
-    span 's DNS cache for domain names. To refresh the cache for a domain name, enter the name for the&nbsp;
-    i domain&nbsp;
-    span below, pick the&nbsp;
-    i DNS record type&nbsp;
-    span and then hit the&nbsp;
-    i Purge Cache
-    span .
+  p.description!=htmlWebpackPlugin.options.t('purgeCache.description')
 
   .title-container
-    h3.title Purge cache for domain
+    h3.title!=htmlWebpackPlugin.options.t('purgeCache.form.title')
   .form-container
 
     form#purge-cache-form
-      .label.required Domain Name
+      .label.required!=htmlWebpackPlugin.options.t('purgeCache.field.domainName')
       input.input-field(name="domain" type="text" placeholder="example.com" required)
-      .label Record Type
+      .label!=htmlWebpackPlugin.options.t('purgeCache.field.recordType')
       select.input-field(name="type")
         option(value="A") A
         option(value="AAAA") AAAA
@@ -45,6 +35,6 @@ section(data-section="purge-cache")
         option(value="TLSA") TLSA
         option(value="TXT") TXT
       br
-      input#submit-button(type="submit" value="Purge Cache")
+      input#submit-button(type="submit" value=htmlWebpackPlugin.options.t('purgeCache.field.submit'))
 
     #info-message

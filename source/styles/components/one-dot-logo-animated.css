@@ -41,3 +41,7 @@
   text-transform: uppercase;
   letter-spacing: 0.5em;
 }
+
+html[class="dir-rtl"]  .OneDotLogoAnimated--subtext {
+  letter-spacing: unset;
+}

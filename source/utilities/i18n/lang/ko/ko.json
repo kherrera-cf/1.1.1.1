@@ -661,5 +661,12 @@
   "faq" : "FAQ",
   "terms" : "약관",
   "privacyPolicy" : "개인정보 취급방침",
-  "purgeCache" : "캐시 삭제"
+  "purgeCache" : "캐시 삭제",
+  "purgeCache.title" : "캐시 삭제",
+  "purgeCache.description" : "<b>1.1.1.1</b> 캐시 삭제 도구를 사용하여 도메인 이름의 <b>1.1.1.1</b> DNS 캐시를 새로고침할 수 있습니다. 도메인 이름의 캐시를 새로고침하려면, 아래에서 <i>도메인</i>의 이름을 입력하고, <i>DNS 레코드 유형</i>을 선택한 후 <i>캐시 삭제</i>를 누르세요.",
+  "purgeCache.form.title" : "도메인의 캐시 삭제",
+  "purgeCache.field.domainName" : "도메인 이름",
+  "purgeCache.field.recordType" : "레코드 유형",
+  "purgeCache.field.submit" : "캐시 삭제",
+  "purgeCache.logoAlt" : "1.1.1.1 DNS 확인자"
 }

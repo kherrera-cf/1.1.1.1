@@ -602,5 +602,12 @@
   "faq": "FAQ",
   "terms": "Terms",
   "privacyPolicy": "Privacy Policy",
-  "purgeCache": "Purge Cache"
+  "purgeCache": "Purge Cache",
+  "purgeCache.title": "Purge Cache",
+  "purgeCache.description": "<b>1.1.1.1</b>'s Purge Cache tool allows you to refresh&nbsp;<b>1.1.1.1</b>'s DNS cache for domain names. To refresh the cache for a domain name, enter the name for the&nbsp;<i>domain&nbsp;</i>below, pick the&nbsp;<i>DNS record type&nbsp;</i>and then hit the&nbsp;<i>Purge Cache</i>.",
+  "purgeCache.form.title": "Purge cache for domain",
+  "purgeCache.field.domainName": "Domain Name",
+  "purgeCache.field.recordType": "Record Type",
+  "purgeCache.field.submit": "Purge Cache",
+  "purgeCache.logoAlt": "1.1.1.1 DNS resolver"
 }

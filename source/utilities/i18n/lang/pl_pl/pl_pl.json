@@ -1,665 +1,613 @@
 {
-  "title" : "1.1.1.1 — Najszybszy w internecie resolver DNS, stawiający na pierwszym miejscu prywatność",
-  "description" : "✌️✌️ Przeszukuj internet szybciej, a przy tym chroń swoją prywatność.",
-  "warp.nav.name" : "1.1.1.1",
-  "warp.title" : "1.1.1.1 — Bezpłatna aplikacja, dzięki której Twój internet jest szybszy.",
-  "warp.description" : "Zainstaluj bezpłatną aplikację, dzięki której internet w telefonie będzie szybszy, bezpieczniejszy i bardziej niezawodny.",
-  "hero.description" : "Jesteś o krok od sprawienia, aby internet w Twoim telefonie był szybszy i bezpieczniejszy",
-  "hero.getStarted" : "Instaluj",
-  "hero.info" : "Więcej informacji",
-  "explanation.dnsHeader" : "DNS: katalog internetowy",
-  "explanation.dnsExplanation" : "Prawie wszystko w internecie zaczyna się od zapytania DNS. DNS jest internetowym katalogiem. Gdy klikasz łącze, otwierasz aplikację czy wysyłasz wiadomość e-mail, Twoje urządzenie zaczyna od zadania pytania katalogowi: <strong class=\"subtle\">gdzie mogę to znaleźć?</strong>",
-  "explanation.dnsSlowInsecure" : "Niestety, w wersji standardowej DNS jest zwykle powolny i niezbyt bezpieczny. Twój dostawca internetowy i każda osoba czyhająca w internecie może widzieć każdą stronę, którą oglądasz, i każdą aplikację, której używasz — nawet jeśli treść jest zaszyfrowana. Niepokojące jest to, że niektórzy dostawcy DNS sprzedają dane dotyczące Twojej aktywności w internecie lub wykorzystują je do reklam ukierunkowanych.",
-  "explanation.dnsAlternative" : "Uważamy, że to okropne. Jeśli też tak uważasz, możesz teraz korzystać z rozwiązania alternatywnego: <strong class=\"code\">1.1.1.1</strong>",
-  "explanation.privacyHeader" : "Prywatność na pierwszym miejscu: to jest gwarantowane.",
-  "explanation.privacyExplanation" : "Zmieniamy podejście do protokołu DNS z 1983 r. <strong class=\"code\">1.1.1.1</strong> obsługuje szyfrowane DNS, a także protokół DNS over HTTPS.",
-  "explanation.privacyGuaranteeData" : "<span class=\"mobile-emphasis\">Nigdy nie będziemy sprzedawać Twoich danych ani wykorzystywać ich do ukierunkowanych reklam.</span> Kropka.",
-  "explanation.privacyGuaranteeLogs" : "<span class=\"mobile-emphasis\">Nigdy nie będziemy rejestrować Twojego adresu IP</span> (w ten sposób identyfikują Cię inne firmy). To nie tylko obietnice. Zaangażowaliśmy jedną z firm księgowych z wielkiej czwórki do przeprowadzania corocznego audytu naszych zapewnień, aby mieć gwarancję, że dotrzymujemy słowa.",
-  "explanation.privacyConclusion" : "Szczerze mówiąc, nie chcemy wiedzieć, co robisz w internecie — to nie nasza sprawa — i podjęliśmy kroki techniczne, aby zapewnić, że nie będziemy mogli się tego dowiedzieć.",
-  "explanation.performanceHeader" : "Rozwiązanie szybsze niż inne.",
-  "explanation.fastestDNS" : "Stworzyliśmy 1.1.1.1 z myślą, aby był to najszybszy katalog DNS w internecie. Nie musisz wierzyć nam na słowo. Niezależna organizacja monitorująca DNS, <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a>, uznała 1.1.1.1 za najszybszą na świecie usługę DNS.",
-  "explanation.speedContinued" : "Ponieważ prawie wszystko, co robisz w internecie, zaczyna się od zapytania DNS, wybranie najszybszego katalogu DNS na wszystkich urządzeniach przyspieszy wszelkie Twoje działania w internecie.",
-  "explanation.timeStamp" : "* marzec 2020 r.",
-  "instructions" : {
-    "header" : "Konfiguracja – {{device}}",
-    "explanation" : "Skonfigurowanie <strong>1.1.1.1</strong> zajmuje dwie minuty i nie wymaga żadnych umiejętności technicznych ani specjalnego oprogramowania. Nawet jeśli jesteś komputerowym nowicjuszem, wybierz swoje urządzenie poniżej i skorzystaj z łatwej instrukcji konfiguracji.",
-    "debug" : "Potrzebujesz więcej informacji na temat swojego połączenia internetowego? Zapoznaj się z naszą <a target=\"_blank\" href=\"./help\">stroną debugowania</a>.",
-    "questions" : "Masz jeszcze pytania? Odwiedź nasze <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">forum społecznościowe</a>",
-    "mac-os" : {
-      "steps" : [
-      {
-        "tag" : "li",
-        "content" : "Otwórz preferencje systemu."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Wyszukaj <strong>Serwery DNS</strong> i wybierz z listy rozwijanej."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Kliknij przycisk <strong>+</strong>, aby dodać serwer DNS i wprowadź <strong class=\"code\">1.1.1.1</strong>"
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Ponownie kliknij <strong>+</strong> i wprowadź <strong class=\"code\">1.0.0.1</strong> (w celu zapewnienia redundancji)."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Ponownie kliknij <strong>+</strong> i wprowadź <strong class=\"code\">2606:4700:4700::1111</strong> (w celu zapewnienia redundancji)."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Ponownie kliknij <strong>+</strong> i wprowadź <strong class=\"code\">2606:4700:4700::1001</strong> (w celu zapewnienia redundancji)."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Kliknij <strong>Ok</strong>, następnie kliknij <strong>Zastosuj</strong>."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Konfiguracja zakończona! Twoje urządzenie może teraz korzystać z szybszych, lepiej chronionych serwerów DNS ✌✌"
-      }]
-    },
-    "windows" : {
-      "steps" : [
-      {
-        "tag" : "li",
-        "content" : "Kliknij menu Start, następnie kliknij <strong>Panel sterowania</strong>."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Kliknij <strong>Sieć i Internet</strong>."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Kliknij <strong>Zmień ustawienia karty sieciowej</strong>."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Kliknij prawym przyciskiem myszy sieć Wi-Fi, z którą jest połączone Twoje urządzenie, następnie kliknij <strong>Właściwości</strong>."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Wybierz <strong>Protokół internetowy w wersji 4</strong> (lub w wersji 6, jeśli wolisz)."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Kliknij <strong>Właściwości</strong>."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Zanotuj wszystkie istniejące wpisy serwera DNS na wypadek, gdyby były potrzebne w przyszłości."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Kliknij <strong>Użyj następujących adresów serwerów DNS</strong>."
-      },
-
-      {
-        "tag" : "li",
-        "children" : [
+  "title": "1.1.1.1 — Najszybszy w internecie resolver DNS, stawiający na pierwszym miejscu prywatność",
+  "description": "✌️✌️ Przeszukuj internet szybciej, a przy tym chroń swoją prywatność.",
+  "warp.nav.name": "1.1.1.1",
+  "warp.title": "1.1.1.1 — Bezpłatna aplikacja, dzięki której Twój internet jest szybszy.",
+  "warp.description": "Zainstaluj bezpłatną aplikację, dzięki której internet w telefonie będzie szybszy, bezpieczniejszy i bardziej niezawodny.",
+  "hero.description": "Jesteś o krok od sprawienia, aby internet w Twoim telefonie był szybszy i bezpieczniejszy",
+  "hero.getStarted": "Instaluj",
+  "hero.info": "Więcej informacji",
+  "explanation.dnsHeader": "DNS: katalog internetowy",
+  "explanation.dnsExplanation": "Prawie wszystko w internecie zaczyna się od zapytania DNS. DNS jest internetowym katalogiem. Gdy klikasz łącze, otwierasz aplikację czy wysyłasz wiadomość e-mail, Twoje urządzenie zaczyna od zadania pytania katalogowi: <strong class=\"subtle\">gdzie mogę to znaleźć?</strong>",
+  "explanation.dnsSlowInsecure": "Niestety, w wersji standardowej DNS jest zwykle powolny i niezbyt bezpieczny. Twój dostawca internetowy i każda osoba czyhająca w internecie może widzieć każdą stronę, którą oglądasz, i każdą aplikację, której używasz — nawet jeśli treść jest zaszyfrowana. Niepokojące jest to, że niektórzy dostawcy DNS sprzedają dane dotyczące Twojej aktywności w internecie lub wykorzystują je do reklam ukierunkowanych.",
+  "explanation.dnsAlternative": "Uważamy, że to okropne. Jeśli też tak uważasz, możesz teraz korzystać z rozwiązania alternatywnego: <strong class=\"code\">1.1.1.1</strong>",
+  "explanation.privacyHeader": "Prywatność na pierwszym miejscu: to jest gwarantowane.",
+  "explanation.privacyExplanation": "Zmieniamy podejście do protokołu DNS z 1983 r. <strong class=\"code\">1.1.1.1</strong> obsługuje szyfrowane DNS, a także protokół DNS over HTTPS.",
+  "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">Nigdy nie będziemy sprzedawać Twoich danych ani wykorzystywać ich do ukierunkowanych reklam.</span> Kropka.",
+  "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">Nigdy nie będziemy rejestrować Twojego adresu IP</span> (w ten sposób identyfikują Cię inne firmy). To nie tylko obietnice. Zaangażowaliśmy jedną z firm księgowych z wielkiej czwórki do przeprowadzania corocznego audytu naszych zapewnień, aby mieć gwarancję, że dotrzymujemy słowa.",
+  "explanation.privacyConclusion": "Szczerze mówiąc, nie chcemy wiedzieć, co robisz w internecie — to nie nasza sprawa — i podjęliśmy kroki techniczne, aby zapewnić, że nie będziemy mogli się tego dowiedzieć.",
+  "explanation.performanceHeader": "Rozwiązanie szybsze niż inne.",
+  "explanation.fastestDNS": "Stworzyliśmy 1.1.1.1 z myślą, aby był to najszybszy katalog DNS w internecie. Nie musisz wierzyć nam na słowo. Niezależna organizacja monitorująca DNS, <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a>, uznała 1.1.1.1 za najszybszą na świecie usługę DNS.",
+  "explanation.speedContinued": "Ponieważ prawie wszystko, co robisz w internecie, zaczyna się od zapytania DNS, wybranie najszybszego katalogu DNS na wszystkich urządzeniach przyspieszy wszelkie Twoje działania w internecie.",
+  "explanation.timeStamp": "* marzec 2020 r.",
+  "instructions": {
+    "header": "Konfiguracja – {{device}}",
+    "explanation": "Skonfigurowanie <strong>1.1.1.1</strong> zajmuje dwie minuty i nie wymaga żadnych umiejętności technicznych ani specjalnego oprogramowania. Nawet jeśli jesteś komputerowym nowicjuszem, wybierz swoje urządzenie poniżej i skorzystaj z łatwej instrukcji konfiguracji.",
+    "debug": "Potrzebujesz więcej informacji na temat swojego połączenia internetowego? Zapoznaj się z naszą <a target=\"_blank\" href=\"./help\">stroną debugowania</a>.",
+    "questions": "Masz jeszcze pytania? Odwiedź nasze <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">forum społecznościowe</a>",
+    "mac-os": {
+      "steps": [
         {
-          "tag" : "span",
-          "content" : "Zamień te adresy na adresy DNS 1.1.1.1"
+          "tag": "li",
+          "content": "Otwórz preferencje systemu."
         },
-
         {
-          "tag" : "ul",
-          "children" : [
-          {
-            "tag" : "li",
-            "content" : "W przypadku IPv4: <strong class=\"code\">1.1.1.1</strong> i <strong class=\"code\">1.0.0.1</strong>"
-          },
-
-          {
-            "tag" : "li",
-            "content" : "W przypadku IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> i <strong class=\"code\">2606:4700:4700::1001</strong>"
-          }]
-        }]
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Kliknij <strong>OK</strong>, następnie <strong>Zamknij</strong>."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Uruchom ponownie przeglądarkę."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Konfiguracja zakończona! Twoje urządzenie może teraz korzystać z szybszych, lepiej chronionych serwerów DNS ✌✌"
-      }]
-    },
-    "linux" : {
-      "notice" : "Opisana procedura dotyczy systemu Ubuntu, ale w większości dystrybucji Linux ustawienia są wprowadzane za pośrednictwem menedżera sieci. Alternatywnym rozwiązaniem jest podanie ustawień DNS w <code class=\"inline\">/etc/resolv.conf</code>",
-      "steps" : [
-      {
-        "content" : "Kliknij ikonę Aplikacje <i class=\"fas fa-th\"></i> na lewym pasku menu.",
-        "tag" : "li"
-      },
-
-      {
-        "content" : "Kliknij <strong>Ustawienia</strong>, następnie <strong>Sieć</strong>.",
-        "tag" : "li"
-      },
-
-      {
-        "content" : "Odszukaj swoje połączenie internetowe na prawym panelu, następnie kliknij ikonę zębatki <i class=\"fas fa-cog\"></i>.",
-        "tag" : "li"
-      },
-
-      {
-        "content" : "Kliknij zakładkę <strong>IPv4</strong> lub <strong>IPv6</strong>, aby wyświetlić ustawienia DNS.",
-        "tag" : "li"
-      },
-
-      {
-        "content" : "Ustaw przełącznik „Automatyczne” we wpisie DNS na <strong>Wył.</strong>.",
-        "tag" : "li"
-      },
-
-      {
-        "children" : [
-        {
-          "tag" : "span",
-          "content" : "Wprowadź adresy DNS 1.1.1.1 w polu wpisów DNS:"
+          "tag": "li",
+          "content": "Wyszukaj <strong>Serwery DNS</strong> i wybierz z listy rozwijanej."
         },
-
         {
-          "tag" : "ul",
-          "children" : [
-          {
-            "tag" : "li",
-            "content" : "W przypadku IPv4: <strong class=\"code\">1.1.1.1</strong> i <strong class=\"code\">1.0.0.1</strong>"
-          },
-
-          {
-            "tag" : "li",
-            "content" : "W przypadku IPv6: <strong>2606:4700:4700::1111,2606:4700:4700::1001</strong>"
-          }]
-        }]
-      },
-
-      {
-        "content" : "Kliknij <strong>Zastosuj</strong>, następnie uruchom ponownie przeglądarkę.",
-        "tag" : "li"
-      },
-
-      {
-        "content" : "Konfiguracja zakończona! Twoje urządzenie może teraz korzystać z szybszych, lepiej chronionych serwerów DNS ✌✌",
-        "tag" : "li"
-      }]
-    },
-    "iphone" : {
-      "steps" : [
-      {
-        "tag" : "li",
-        "content" : "Na ekranie swojego iPhone'a otwórz <strong>Ustawienia</strong>."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Dotknij <strong>Wi-Fi</strong>, następnie wybierz z listy swoją preferowaną sieć."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Dotknij <strong>Konfiguruj DNS</strong>, następnie dotknij <strong>Ręcznie</strong>."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Jeśli już są jakieś wpisy, dotknij przycisku <strong>-</strong> i <strong>Usuń</strong> obok każdego z nich."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Dotknij przycisku <strong>+ Dodaj serwer</strong>, następnie wpisz <strong class=\"code\">1.1.1.1</strong>"
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Ponownie dotknij przycisku <strong>+ Dodaj serwer</strong>, następnie wpisz <strong class=\"code\">1.0.0.1</strong>. Służy to zapewnieniu redundancji."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Ponownie dotknij przycisku <strong>1+ Dodaj serwer</strong>, następnie wpisz <strong class=\"code\">2606:4700:4700::1111</strong>. Służy to zapewnieniu redundancji."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Ponownie dotknij przycisku <strong>+ Dodaj serwer</strong>, następnie wpisz <strong class=\"code\">2606:4700:4700::1111</strong>. Służy to zapewnieniu redundancji."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Dotknij przycisku <strong>Zapisz</strong> w prawym górnym rogu."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Konfiguracja zakończona! Twoje urządzenie może teraz korzystać z szybszych, lepiej chronionych serwerów DNS ✌✌"
-      }]
-    },
-    "android" : {
-      "message" : "Należy pamiętać, że w przypadku Androida użycie niestandardowych serwerów DNS wymaga statycznego IP. Konfiguracja ta wymaga dodatkowych ustawień routera, co ma wpływ na sieciową strategię dodawania nowych urządzeń do sieci. Zalecamy zamiast tego konfigurację <button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">DNS routera</button>. Ta procedura pozwoli wszystkim urządzeniom w Twojej sieci osiągnąć pełną prędkość i ochronę prywatności zapewniane przez DNS 1.1.1.1.",
-      "steps" : [
-      {
-        "tag" : "li",
-        "content" : "Na liście aplikacji urządzenia z systemem Android otwórz <strong>Ustawienia</strong>."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Pod sekcją <strong>Połączenia bezprzewodowe i sieci</strong> dotknij <strong>Wi-Fi</strong>."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Przytrzymaj dłużej preferowaną sieć z listy, dopóki nie pojawi się menu kontekstowe."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Dotknij <strong>Modyfikuj sieć</strong>, następnie dotknij <strong>Opcje zaawansowane</strong>."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Dotknij <strong>Opcje zaawansowane</strong>, następnie dotknij <strong>Ustawienia IP</strong>."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Zmień <strong>Dynamiczny</strong> na <strong>Statyczny</strong>."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Opierając się na konfiguracji swojego routera, wprowadź adres IP urządzenia i bramkę."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Dotknij pola <strong>DNS</strong>, następnie usuń liczbę w tym polu."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "W polu <strong>DNS 1</strong> wprowadź <strong class=\"code\">1.1.1.1</strong>"
-      },
-
-      {
-        "tag" : "li",
-        "content" : "W polu <strong>DNS 2</strong> wprowadź <strong class=\"code\">1.0.0.1</strong> (w celu zapewnienia redundancji)."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Dotknij <strong>Zapisz</strong>"
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Konfiguracja zakończona! Twoje urządzenie może teraz korzystać z szybszych, lepiej chronionych serwerów DNS ✌✌"
-      }]
-    },
-    "router" : {
-      "message" : "Konfiguracja Twojego routera może być różna. Więcej informacji znajdziesz w instrukcji.",
-      "steps" : [
-      {
-        "tag" : "li",
-        "content" : "Połącz urządzenie z preferowaną siecią."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "W przeglądarce wprowadź adres IP bramki."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Jeśli będzie to wymagane, wpisz swoją nazwę użytkownika i hasło. Te dane mogą być umieszczone na routerze."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Na stronie konfiguracji routera odszukaj ustawienia <strong>serwera DNS</strong>."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Zanotuj wszystkie istniejące wpisy serwera DNS na wypadek, gdyby były potrzebne w przyszłości."
-      },
-
-      {
-        "tag" : "li",
-        "children" : [
-        {
-          "tag" : "span",
-          "content" : "Zamień te adresy na adresy DNS 1.1.1.1:"
+          "tag": "li",
+          "content": "Kliknij przycisk <strong>+</strong>, aby dodać serwer DNS i wprowadź <strong class=\"code\">1.1.1.1</strong>"
         },
-
         {
-          "tag" : "ul",
-          "children" : [
-          {
-            "tag" : "li",
-            "content" : "W przypadku IPv4: <strong class=\"code\">1.1.1.1</strong> i <strong class=\"code\">1.0.0.1</strong>"
-          },
-
-          {
-            "tag" : "li",
-            "content" : "W przypadku IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> i <strong class=\"code\">2606:4700:4700::1001</strong>"
-          }]
-        }]
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Zapisz swoje ustawienia, następnie uruchom ponownie przeglądarkę."
-      },
-
-      {
-        "tag" : "li",
-        "content" : "Konfiguracja zakończona! Twoje urządzenie może teraz korzystać z szybszych, lepiej chronionych serwerów DNS ✌✌"
-      }]
+          "tag": "li",
+          "content": "Ponownie kliknij <strong>+</strong> i wprowadź <strong class=\"code\">1.0.0.1</strong> (w celu zapewnienia redundancji)."
+        },
+        {
+          "tag": "li",
+          "content": "Ponownie kliknij <strong>+</strong> i wprowadź <strong class=\"code\">2606:4700:4700::1111</strong> (w celu zapewnienia redundancji)."
+        },
+        {
+          "tag": "li",
+          "content": "Ponownie kliknij <strong>+</strong> i wprowadź <strong class=\"code\">2606:4700:4700::1001</strong> (w celu zapewnienia redundancji)."
+        },
+        {
+          "tag": "li",
+          "content": "Kliknij <strong>Ok</strong>, następnie kliknij <strong>Zastosuj</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Konfiguracja zakończona! Twoje urządzenie może teraz korzystać z szybszych, lepiej chronionych serwerów DNS ✌✌"
+        }
+      ]
     },
-    "downloadmobile" : "Pobierz aplikację mobilną"
+    "windows": {
+      "steps": [
+        {
+          "tag": "li",
+          "content": "Kliknij menu Start, następnie kliknij <strong>Panel sterowania</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Kliknij <strong>Sieć i Internet</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Kliknij <strong>Zmień ustawienia karty sieciowej</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Kliknij prawym przyciskiem myszy sieć Wi-Fi, z którą jest połączone Twoje urządzenie, następnie kliknij <strong>Właściwości</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Wybierz <strong>Protokół internetowy w wersji 4</strong> (lub w wersji 6, jeśli wolisz)."
+        },
+        {
+          "tag": "li",
+          "content": "Kliknij <strong>Właściwości</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Zanotuj wszystkie istniejące wpisy serwera DNS na wypadek, gdyby były potrzebne w przyszłości."
+        },
+        {
+          "tag": "li",
+          "content": "Kliknij <strong>Użyj następujących adresów serwerów DNS</strong>."
+        },
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "span",
+              "content": "Zamień te adresy na adresy DNS 1.1.1.1"
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "content": "W przypadku IPv4: <strong class=\"code\">1.1.1.1</strong> i <strong class=\"code\">1.0.0.1</strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "W przypadku IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> i <strong class=\"code\">2606:4700:4700::1001</strong>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "li",
+          "content": "Kliknij <strong>OK</strong>, następnie <strong>Zamknij</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Uruchom ponownie przeglądarkę."
+        },
+        {
+          "tag": "li",
+          "content": "Konfiguracja zakończona! Twoje urządzenie może teraz korzystać z szybszych, lepiej chronionych serwerów DNS ✌✌"
+        }
+      ]
+    },
+    "linux": {
+      "notice": "Opisana procedura dotyczy systemu Ubuntu, ale w większości dystrybucji Linux ustawienia są wprowadzane za pośrednictwem menedżera sieci. Alternatywnym rozwiązaniem jest podanie ustawień DNS w <code class=\"inline\">/etc/resolv.conf</code>",
+      "steps": [
+        {
+          "content": "Kliknij ikonę Aplikacje <i class=\"fas fa-th\"></i> na lewym pasku menu.",
+          "tag": "li"
+        },
+        {
+          "content": "Kliknij <strong>Ustawienia</strong>, następnie <strong>Sieć</strong>.",
+          "tag": "li"
+        },
+        {
+          "content": "Odszukaj swoje połączenie internetowe na prawym panelu, następnie kliknij ikonę zębatki <i class=\"fas fa-cog\"></i>.",
+          "tag": "li"
+        },
+        {
+          "content": "Kliknij zakładkę <strong>IPv4</strong> lub <strong>IPv6</strong>, aby wyświetlić ustawienia DNS.",
+          "tag": "li"
+        },
+        {
+          "content": "Ustaw przełącznik „Automatyczne” we wpisie DNS na <strong>Wył.</strong>.",
+          "tag": "li"
+        },
+        {
+          "children": [
+            {
+              "tag": "span",
+              "content": "Wprowadź adresy DNS 1.1.1.1 w polu wpisów DNS:"
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "content": "W przypadku IPv4: <strong class=\"code\">1.1.1.1</strong> i <strong class=\"code\">1.0.0.1</strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "W przypadku IPv6: <strong>2606:4700:4700::1111,2606:4700:4700::1001</strong>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "content": "Kliknij <strong>Zastosuj</strong>, następnie uruchom ponownie przeglądarkę.",
+          "tag": "li"
+        },
+        {
+          "content": "Konfiguracja zakończona! Twoje urządzenie może teraz korzystać z szybszych, lepiej chronionych serwerów DNS ✌✌",
+          "tag": "li"
+        }
+      ]
+    },
+    "iphone": {
+      "steps": [
+        {
+          "tag": "li",
+          "content": "Na ekranie swojego iPhone'a otwórz <strong>Ustawienia</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Dotknij <strong>Wi-Fi</strong>, następnie wybierz z listy swoją preferowaną sieć."
+        },
+        {
+          "tag": "li",
+          "content": "Dotknij <strong>Konfiguruj DNS</strong>, następnie dotknij <strong>Ręcznie</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Jeśli już są jakieś wpisy, dotknij przycisku <strong>-</strong> i <strong>Usuń</strong> obok każdego z nich."
+        },
+        {
+          "tag": "li",
+          "content": "Dotknij przycisku <strong>+ Dodaj serwer</strong>, następnie wpisz <strong class=\"code\">1.1.1.1</strong>"
+        },
+        {
+          "tag": "li",
+          "content": "Ponownie dotknij przycisku <strong>+ Dodaj serwer</strong>, następnie wpisz <strong class=\"code\">1.0.0.1</strong>. Służy to zapewnieniu redundancji."
+        },
+        {
+          "tag": "li",
+          "content": "Ponownie dotknij przycisku <strong>1+ Dodaj serwer</strong>, następnie wpisz <strong class=\"code\">2606:4700:4700::1111</strong>. Służy to zapewnieniu redundancji."
+        },
+        {
+          "tag": "li",
+          "content": "Ponownie dotknij przycisku <strong>+ Dodaj serwer</strong>, następnie wpisz <strong class=\"code\">2606:4700:4700::1111</strong>. Służy to zapewnieniu redundancji."
+        },
+        {
+          "tag": "li",
+          "content": "Dotknij przycisku <strong>Zapisz</strong> w prawym górnym rogu."
+        },
+        {
+          "tag": "li",
+          "content": "Konfiguracja zakończona! Twoje urządzenie może teraz korzystać z szybszych, lepiej chronionych serwerów DNS ✌✌"
+        }
+      ]
+    },
+    "android": {
+      "message": "Należy pamiętać, że w przypadku Androida użycie niestandardowych serwerów DNS wymaga statycznego IP. Konfiguracja ta wymaga dodatkowych ustawień routera, co ma wpływ na sieciową strategię dodawania nowych urządzeń do sieci. Zalecamy zamiast tego konfigurację <button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">DNS routera</button>. Ta procedura pozwoli wszystkim urządzeniom w Twojej sieci osiągnąć pełną prędkość i ochronę prywatności zapewniane przez DNS 1.1.1.1.",
+      "steps": [
+        {
+          "tag": "li",
+          "content": "Na liście aplikacji urządzenia z systemem Android otwórz <strong>Ustawienia</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Pod sekcją <strong>Połączenia bezprzewodowe i sieci</strong> dotknij <strong>Wi-Fi</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Przytrzymaj dłużej preferowaną sieć z listy, dopóki nie pojawi się menu kontekstowe."
+        },
+        {
+          "tag": "li",
+          "content": "Dotknij <strong>Modyfikuj sieć</strong>, następnie dotknij <strong>Opcje zaawansowane</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Dotknij <strong>Opcje zaawansowane</strong>, następnie dotknij <strong>Ustawienia IP</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Zmień <strong>Dynamiczny</strong> na <strong>Statyczny</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Opierając się na konfiguracji swojego routera, wprowadź adres IP urządzenia i bramkę."
+        },
+        {
+          "tag": "li",
+          "content": "Dotknij pola <strong>DNS</strong>, następnie usuń liczbę w tym polu."
+        },
+        {
+          "tag": "li",
+          "content": "W polu <strong>DNS 1</strong> wprowadź <strong class=\"code\">1.1.1.1</strong>"
+        },
+        {
+          "tag": "li",
+          "content": "W polu <strong>DNS 2</strong> wprowadź <strong class=\"code\">1.0.0.1</strong> (w celu zapewnienia redundancji)."
+        },
+        {
+          "tag": "li",
+          "content": "Dotknij <strong>Zapisz</strong>"
+        },
+        {
+          "tag": "li",
+          "content": "Konfiguracja zakończona! Twoje urządzenie może teraz korzystać z szybszych, lepiej chronionych serwerów DNS ✌✌"
+        }
+      ]
+    },
+    "router": {
+      "message": "Konfiguracja Twojego routera może być różna. Więcej informacji znajdziesz w instrukcji.",
+      "steps": [
+        {
+          "tag": "li",
+          "content": "Połącz urządzenie z preferowaną siecią."
+        },
+        {
+          "tag": "li",
+          "content": "W przeglądarce wprowadź adres IP bramki."
+        },
+        {
+          "tag": "li",
+          "content": "Jeśli będzie to wymagane, wpisz swoją nazwę użytkownika i hasło. Te dane mogą być umieszczone na routerze."
+        },
+        {
+          "tag": "li",
+          "content": "Na stronie konfiguracji routera odszukaj ustawienia <strong>serwera DNS</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Zanotuj wszystkie istniejące wpisy serwera DNS na wypadek, gdyby były potrzebne w przyszłości."
+        },
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "span",
+              "content": "Zamień te adresy na adresy DNS 1.1.1.1:"
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "content": "W przypadku IPv4: <strong class=\"code\">1.1.1.1</strong> i <strong class=\"code\">1.0.0.1</strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "W przypadku IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> i <strong class=\"code\">2606:4700:4700::1001</strong>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "li",
+          "content": "Zapisz swoje ustawienia, następnie uruchom ponownie przeglądarkę."
+        },
+        {
+          "tag": "li",
+          "content": "Konfiguracja zakończona! Twoje urządzenie może teraz korzystać z szybszych, lepiej chronionych serwerów DNS ✌✌"
+        }
+      ]
+    },
+    "downloadmobile": "Pobierz aplikację mobilną"
   },
-  "share.header" : "✌️✌️ Podziel się ze swoimi przyjaciółmi szybszym, stawiającym prywatność na pierwszym planie internetem.",
-  "share.emailSubject" : "✌️✌️ Ciesz się szybszym i bezpieczniejszym internetem — 1.1.1.1, resolver DNS",
-  "share.emailBody" : "„1.1.1.1” sprawia, że nawigacja w internecie jest szybsza i bezpieczniejsza. Odwiedź https://1.1.1.1, aby uzyskać więcej informacji i dowiedzieć się, jak skonfigurować urządzenie w mniej niż 2 minuty!",
-  "share.tweetBody" : "✌️✌️ Oto szybki, bezpieczny i chroniący prywatność internet. Skonfiguruj resolver DNS 1.1.1.1 w mniej niż dwie minuty.",
-  "faq.whosBehindThis" : "Kto za tym stoi?",
-  "faq.partnership" : "<strong class=\"code\">1.1.1.1</strong> jest owocem partnerstwa Cloudflare i APNIC.",
-  "faq.network" : "Cloudflare zarządza jedną z największych i najszybszych sieci na świecie. APNIC jest organizacją non-profit, zarządzającą alokacją adresów IP w regionach Azji-Pacyfiku i Oceanii.",
-  "faq.networkContinued" : "Organizacja Cloudflare miała sieć. Organizacja APNIC miała adres IP (1.1.1.1). Obie organizacje były zmotywowane misją budowania lepszego internetu. Więcej informacji o motywacjach obu organizacji można znaleźć w naszych postach: <a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Blog Cloudflare</a> / <a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">Blog APNIC</a>. Więcej informacji można znaleźć w: <a href=\"https://cloudflare.com/learning/dns/what-is-1.1.1.1/\" target=\"_blank\">Czym jest 1.1.1.1?</a>",
-  "faq.canIintegrate" : "Czy mogę dokonać integracji z 1.1.1.1?",
-  "faq.integrationInfo" : "Jeśli jesteś dostawcą przeglądarki, systemu operacyjnego, aplikacji, routera lub VPN i potrzebujesz zapewniającej prywatność, szybkiej i nowoczesnej usługi DNS, to <strong class=\"subtle\">tak!</strong>",
-  "faq.integrationDocs" : "Korzystając z protokołu DNS over HTTPS (DoH), możesz w transparentny sposób oferować swoim klientom zwiększone bezpieczeństwo, a przy tym poprawić szybkość swoich urządzeń. A co najlepsze, możesz to zrobić, nie ponosząc żadnych kosztów, zarówno w odniesieniu do licencji, jak i <a href=\"https://developers.cloudflare.com/1.1.1.1/privacy/\" target=\"_blank\">ochrony prywatności klientów</a>. Więcej informacji o 1.1.1.1 i obsłudze protokołu DNS over HTTPS (DoH) można znaleźć w <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">dokumentacji dla deweloperów</a>.",
-  "faq.warpVsDNS" : "Czy Warp zastępuje usługę DNS 1.1.1.1?",
-  "faq.warpVsDNSAnswer" : "Nie, Cloudflare głęboko wierzy w wartość bezpłatnego, szybkiego i dobrze chronionego DNS i ma zamiar dostarczać usługę 1.1.1.1 DNS w przewidywalnej przyszłości. Warp jest funkcją dodatkową, uzupełniającą nasze aplikacje mobilne, ale zawsze pozostanie elementem opcjonalnym.",
-  "faqpage.header" : "Często zadawane pytania",
-  "faqpage.general" : "Informacje ogólne",
-  "faqpage.whatIsQ" : "Czym jest 1.1.1.1?",
-  "faqpage.whatIsA1" : "Jeśli zgłaszasz żądanie skorzystania z aplikacji, takiej jak cloudflare.com, Twój komputer musi wiedzieć, z którym serwerem Cię połączyć, aby umożliwić pobranie aplikacji. Komputery nie wiedzą, jak przełożyć tę nazwę na adres, a zatem zwracają się do wyspecjalizowanego serwera, aby to za nie zrobił.",
-  "faqpage.whatIsA2" : "Ten wyspecjalizowany serwer jest nazywany rekurencyjnym resolverem DNS. Zadaniem resolvera jest odszukanie adresu odpowiadającego danej nazwie, np. 2400:cb00:2048:1::c629:d7a2 w przypadku cloudflare.com i zwrócenia go do komputera, który go zażądał.",
-  "faqpage.whatIsA3" : "Komputery sa skonfigurowane tak, aby porozumiewać się z określonymi resolverami DNS, rozpoznawanymi na podstawie adresu IP. Zwykle konfiguracją zarządza Twój dostawca internetowy (w przypadku internetu domowego lub bezprzewodowego) albo Twój administrator (w przypadku połączenia z internetem służbowym). Możesz także samodzielnie zmienić skonfigurowany resolver DNS, z którym komunikuje się Twój komputer.",
-  "faqpage.whatDoDNSQ" : "Co robią resolvery DNS?",
-  "faqpage.whatDoDNSA1" : "Skąd resolvery DNS wiedzą, jak znaleźć adres domeny o danej nazwie? Działają one wstecz, od góry.",
-  "faqpage.whatDoDNSA2" : "Każdy resolver DNS potrafi znaleźć niewidoczne „.” na końcu nazw domen (np. cloudflare.com.). Na całym świecie są <a href='http://www.root-servers.org/' target='_blank'>setki serwerów</a>, na których znajduje się plik „.”. Same firma Cloudflare hostuje <a href='https://www.internic.net/domain/root.zone' target='_blank'>taki plik</a> na wszystkich swoich serwerach na całym świecie dzięki <a href='https://blog.cloudflare.com/f-root/' target='_blank'>partnerstwu z ISC</a>. Resolvery są <a href='https://www.internic.net/domain/named.root' target='_blank'>zakodowane tak, aby znały adresy IP tych serwerów</a>.",
-  "faqpage.whatDoDNSA3" : "Resolver DNS pyta jeden z serwerów głównych, gdzie znaleźć następne ogniwo łańcucha, TLD lub końcówkę domeny. Przykładowymi TLD są .com lub .org. Na szczęście serwery główne przechowują lokalizacje wszystkich serwerów TLD, mogą więc zwracać informację, o które adresy IP resolver powinien pytać w następnej kolejności.",
-  "faqpage.whatDoDNSA4" : "Resolver pyta wtedy serwery TLD, gdzie może znaleźć szukaną domenę – na przykład resolver może zapytać .com, gdzie znaleźć cloudflare.com. TLD hostują plik zawierający lokalizacje wszystkich domen wykorzystujących TLD. Po uzyskaniu adresu IP resolver przesyła odpowiedź do komputera, który wysłał zapytanie.",
-  "faqpage.whatDoDNSA5" : "Cały ten system – z serwerami przechowującymi informacje (są one nazywane autorytatywnymi serwerami DNS) oraz serwerami wyszukującymi informacje (czyli resolverami DNS) – nazywany jest systemem nazw domen (Domain Name System, DNS). DNS jest jak Google Maps dla internetu. Przekłada nazwę obiektu na adresy, dzięki czemu można trafić na miejsce.",
-  "faqpage.ipv6Q" : "Czy 1.1.1.1 jest obsługiwane przez IPv6?",
-  "faqpage.ipv6A" : "Tak, 1.1.1.1 jest w pełni obsługiwane przez IPv6.",
-  "faqpage.clearCacheQ" : "W jaki sposób mogę wyczyścić pamięć podręczną DNS 1.1.1.1?",
-  "faqpage.clearCacheA" : "Możesz odświeżyć pamięć podręczną DNS 1.1.1.1 dla nazw domen, korzystając z <a href='https://cloudflare-dns.com/purge-cache/' target='_blank'>narzędzia czyszczenia pamięci podręcznej</a>. Należy wprowadzić nazwę domeny, wybrać typ (lub typy) rekordu DNS i nacisnąć przycisk „Wyczyść pamięć podręczną”.",
-  "faqpage.insideChinaQ" : "Czy 1.1.1.1 działa na terenie Chin?",
-  "faqpage.insideChinaA" : "Niezupełnie. Można skonfigurować swój DNS, aby wskazywał 1.1.1.1, ale nie dotrze on do jednego z naszych centrów danych w Chinach. Zamiast tego zapytanie zostanie skierowane do jednego z naszych centrów danych poza Chinami kontynentalnymi.",
-  "faqpage.devDocsQ" : "Gdzie mogę znaleźć dokumentację dewelopera 1.1.1.1.?",
-  "faqpage.devDocsA" : "Tutaj",
-  "faqpage.mobileApp" : "Aplikacja mobilna",
-  "faqpage.mobileAppWorkQ" : "Jak działa aplikacja mobilna?",
-  "faqpage.mobileAppWorkA" : "Aplikacja uruchamia lokalny resolver DNS w Twoim telefonie, który prosi pozostałe aplikacje o wysyłanie zapytań DNS na adres tego resolvera. Gdy te zapytania DNS dotrą do lokalnego resolvera, zostaną one przez niego zaszyfrowane i wysłane do 1.1.1.1.",
-  "faqpage.vpnQ" : "Czy aplikacja 1.1.1.1 to VPN?",
-  "faqpage.vpnA" : "Nie. Aplikacja VPN zwykle pośredniczy w całym Twoim ruchu w sieci. Aplikacja 1.1.1.1 jedynie przekierowuje i zabezpiecza ruch DNS generowany w Twoim telefonie.",
-  "faqpage.dnsLogsQ" : "Co to są dzienniki DNS?",
-  "faqpage.dnsLogsA" : "Dzienniki DNS w iOS zawierają wszystkie zapytania DNS, które wysyła telefon. Te zapytania DNS są zwykle generowane przez Twoje aplikacje i przeglądarkę.",
-  "faqpage.logsForQ" : "Do czego służą dzienniki konsoli?",
-  "faqpage.logsForA" : "Dzienniki konsoli ułatwiają Cloudflare debugowanie połączenia.",
-  "faqpage.suggestQ" : "W jaki sposób mogę zgłosić propozycję usprawnienia?",
-  "faqpage.suggestA" : "Czytamy wszystkie propozycje. Możesz potrząsnąć telefonem, kiedy otwarta jest aplikacja, i wysłać swoje propozycje dotyczące usprawniania. Jeśli chcesz wysłać swoje uwagi, możesz także przejść do menu aplikacji i dotknąć „Pomoc”.",
-  "faqpage.diffDnsTlsQ" : "Czym różni się protokół DNS over TLS od protokołu DNS over HTTPS?",
-  "faqpage.diffDnsTlsA1" : "Zarówno protokół DNS over TLS, jak i protokół DNS over HTTPS szyfrują zwykłe zapytania DNS kierowane z telefonu.",
-  "faqpage.diffDnsTlsA2" : "Protokół DNS over HTTPS korzysta z portu 443, a DNS over TLS z portu 853. W niektórych sieciach jeden z tych portów może być zablokowany. Jeśli zablokowany jest port 443, należy używać protokołu DNS over TLS. Jeśli zablokowany jest port 853, należy używać protokołu DNS over HTTPS. W niektórych przypadkach protokół DNS over TLS może być szybszy niż DNS over HTTPS lub odwrotnie.",
-  "faqpage.bugQ" : "W jaki sposób mogę przesłać raport o błędach?",
-  "faqpage.bugA" : "Możesz potrząsnąć telefonem z aplikacją i wysłać raport. Kiedy to zrobisz, aplikacja dołącza do raportu o błędach zrzut ekranu i dzienniki konsoli. Dziennik konsoli ułatwia nam debugowanie Twojego połączenia i usprawnienie działanie aplikacji.",
-  "faqpage.internetStoppedQ" : "W czasie używania aplikacji 1.1.1.1 mój internet przestał działać. Co należy zrobić?",
-  "faqpage.internetStoppedA" : "Jeśli do tego dojdzie, spróbuj wyłączyć aplikację i włączyć ją ponownie, korzystając z przełącznika na stronie głównej aplikacji. Jeśli problem nie zniknie, wyłącz aplikację i prześlij nam raport o błędach.",
-  "faqpage.appStuckQ" : "Aplikacja 1.1.11 blokuje się przy łączeniu lub potwierdzaniu. Co należy zrobić?",
-  "faqpage.appStuckA1" : "Może do tego dojść, jeśli Twoje połączenie zostanie tymczasowo przerwane lub jeśli połączenie danych blokuje połączenie 1.1.1.:",
-  "faqpage.appStuckList" : [
-  {
-    "tag" : "li",
-    "content" : "Wyłącz aplikację, korzystając z przełącznika na stronie domowej aplikacji."
-  },
-
-  {
-    "tag" : "li",
-    "content" : "Otwórz aplikację Ustawienia w iOS i przejdź do Ustawienia > Ogólne > Resetuj"
-  },
-
-  {
-    "tag" : "li",
-    "content" : "Wybierz opcję przywrócenia fabrycznych ustawień sieciowych."
-  },
-
-  {
-    "tag" : "li",
-    "content" : "Zrestartuj urządzenie; sprawdź połączenie z WiFi."
-  },
-
-  {
-    "tag" : "li",
-    "content" : "Spróbuj ponownie połączyć aplikację."
-  }],
-  "faqpage.appStuckA2" : "Jeśli to nie umożliwi połączenia, wyłącz aplikację 1.1.1.1 i wyślij nam raport błędów.",
-  "faqpage.cannotClickQ" : "Nie mogę kliknąć „OK” w oknie dialogowym instalacji profilu VPN. Co należy zrobić?",
-  "faqpage.cannotClickA" : "Jeżeli nie możesz kliknąć przycisku OK, prawdopodobnie działa inna aplikacja, która blokuje okno dialogowe. Do znanych aplikacji, które mogą powodować taki problem, należą Lux Brightness, Night Mode, Twilight, FileManager itp. Aby uniknąć tego problemu, należy zamknąć lub odinstalować wszystkie aplikacje, które mogą powodować ten problem.",
-  "faqpage.appenabledQ" : "Pozostawiam włączoną aplikację, ale widzę, że po jakimś czasie się wyłącza. Co się stało?",
-  "faqpage.appenabledA1" : "Twój telefon próbuje zarządzać baterią, wyłączając aplikację. Na przykład większość urządzeń Huawei jest znanych z agresywnego sposobu zarządzania pamięcią i zasilaniem.",
-  "faqpage.appenabledA2" : "Możesz rozwiązać ten problem, wykonując wymienione poniżej czynności:",
-  "faqpage.appenabledList" : [
-  {
-    "tag" : "li",
-    "content" : "Przejdź do „Ustawień” w swoim telefonie."
-  },
-
-  {
-    "tag" : "li",
-    "content" : "Wybierz „Zaawansowane”"
-  },
-
-  {
-    "tag" : "li",
-    "content" : "Przejdź do „Menadżera baterii”"
-  },
-
-  {
-    "tag" : "li",
-    "content" : "Otwórz „Aplikacje chronione”"
-  },
-
-  {
-    "tag" : "li",
-    "content" : "Możesz wybrać dla aplikacji 1.1.1.1 opcję „Pozwól aplikacjom działać po wyłączeniu ekranu”."
-  }],
-  "faqpage.persistentnotificationQ" : "Dlaczego ciągle jest widoczne powiadomienie dotyczące aplikacji 1.1.1.1?",
-  "faqpage.persistentnotificationA1" : "Jeśli korzystasz z systemu Android 8 lub wyższego, będziesz ciągłe widzieć powiadomienie wysyłane przez aplikację 1.1.1.1: „Twoje zapytania DNS są prywatne i szybsze”.",
-  "faqpage.persistentnotificationA2" : "Jest to wymaganie systemu Android OS (8.0+) wobec wszystkich działających w tle aplikacji.",
-  "faqpage.persistentnotificationA3" : "Ustawiliśmy priorytet powiadomień na „Niski”, aby nie przeszkadzały w wyświetlaniu innych ważnych powiadomień w Twoim telefonie.",
-  "faqpage.persistentnotificationA4" : "Oto jeden sposób na ukrycie tego powiadomienia. Należy pamiętać, że to zablokuje wysyłanie innych powiadomień przez aplikację 1.1.1.1 Aby to zrobić:",
-  "faqpage.persistentnotificationList" : [
-  {
-    "tag" : "li",
-    "content" : "Przejdź do Ustawień:"
-  },
-
-  {
-    "tag" : "li",
-    "content" : "Aplikacje i powiadomienia"
-  },
-
-  {
-    "tag" : "li",
-    "content" : "Na liście aplikacji wybierz ustawienia aplikacji 1.1.1.1"
-  },
-
-  {
-    "tag" : "li",
-    "content" : "Dotknij „Powiadomienia” i wyłącz je."
-  }],
-  "faqpage.disablednotificationQ" : "Powiadomienia w aplikacji 1.1.1.1 zostały wyłączone, ale teraz widzę inne powiadomienie z informacją, że 1.1.1.1 zużywa baterię. Czy mam się martwić? Jak mogę je usunąć?",
-  "faqpage.disablednotificationA1" : "Nie należy się martwić. Ponieważ zostały wyłączone powiadomienia związane z aplikacją, system Android OS wysyła teraz inne powiadomienie, ostrzegające użytkownika o wykorzystywaniu baterii nie dlatego, że aplikacja zużywa dużo energii, ale ponieważ działa w tle (w tym przypadku zabezpieczając wszystkie Twoje zapytania DNS!).",
-  "faqpage.disablednotificationA2" : "Oto, jak można się go pozbyć:",
-  "faqpage.disablednotificationList" : [
-  {
-    "tag" : "li",
-    "content" : "Przyciśnij dłużej powiadomienie, dopóki nie zmieni się jego wygląd i nie pojawi się przełącznik."
-  },
-
-  {
-    "tag" : "li",
-    "content" : "Dotknij przełącznika, upewniając się, że jest wyszarzony."
-  },
-
-  {
-    "tag" : "li",
-    "content" : "Kliknij „Gotowe”, aby wyłączyć powiadomienia."
-  }],
-  "faqpage.vpnprofileQ" : "Nie mogę dodać profilu VPN. Jak mogę rozwiązać ten problem?",
-  "faqpage.vpnprofileA1" : "Prawdopodobnie korzystasz z innego VPN, w którym ustawiono „Zawsze włączony”. Wyłącz, a następnie włącz 1.1.1.1",
-  "faqpage.vpnprofileA2" : "Możesz przejść na tę stronę, wykonując następujące czynności:",
-  "faqpage.vpnprofileList" : [
-  {
-    "tag" : "li",
-    "content" : "Ustawienia"
-  },
-
-  {
-    "tag" : "li",
-    "content" : "Sieć i internet"
-  },
-
-  {
-    "tag" : "li",
-    "content" : "Zaawansowane"
-  },
-
-  {
-    "tag" : "li",
-    "content" : "VPN"
-  },
-
-  {
-    "tag" : "li",
-    "content" : "Przycisk zębatki 1.1.1.1"
-  },
-
-  {
-    "tag" : "li",
-    "content" : "Ustaw 1.1.1.1 na „Zawsze włączone”"
-  }],
-  "subscribe" : "Zasubskrybuj",
-  "appstore" : "App Store",
-  "googleplay" : "Google Play",
-  "windows" : "Windows (beta)",
-  "macos" : "macOS (beta)",
-  "windows.comingsoon" : "Windows <br> (wkrótce)",
-  "macos.comingsoon" : "macOS <br> (wkrótce)",
-  "downloadfor.windows" : "Windows",
-  "downloadfor.macos" : "<span style='font-size: 14px'> Pobierz wersję na </span> <br>macOS",
-  "windows.installationinstructions" : "Instrukcja instalacji w Windows",
-  "macos.installationinstructions" : "Instrukcja instalacji w macOS",
-  "linux.installationinstructions" : "Instrukcja instalacji w systemie Linux",
-  "home.herotitle" : "Bezpłatna aplikacja, dzięki której Twój internet jest bezpieczniejszy.",
-  "home.herosubtitle" : "Dostępna na jeszcze więcej urządzeń.",
-  "home.overviewtitle" : "Jedno dotknięcie dzieli Cię od bezpieczniejszego internetu.",
-  "home.overviewdesc1" : "Kiedy tworzono internet, komputery nie były mobilne. Spoczywały w biurach, w pobliżu centrów danych. Internet zmienił się, ale przyjęte 30 lat temu założenia sprawiają, że jest on wolniejszy i mniej bezpieczny dla użytkowników.",
-  "home.overviewdesc2" : "1.1.1.1 z WARP zastępuje połączenie między Twoim urządzeniem a internetem nowoczesnym, zoptymalizowanym protokołem.",
-  "learnmore" : "Dowiedz się więcej",
-  "downloadnow" : "Pobierz teraz",
-  "home.desktop.title" : "Teraz dostępne w wersji macOS i Windows",
-  "home.desktop.description" : "<p>Miliony ludzi zabezpieczają połączenia internetowe swoich telefonów za pomocą aplikacji WARP.</p><p>Rozszerzyliśmy tę samą ochronę na systemy macOS i Windows.</p>",
-  "home.performancetitle" : "Usługa oparta na ogromnej sieci.",
-  "home.performancedesc1" : "Usługę WARP oparto na tej samej sieci, dzięki której 1.1.1.1 jest <a class='CopyLink' href='https://www.dnsperf.com/#!dns-resolvers' target='_blank' rel='noreferrer'>najszybszym resolverem na świecie</a>.",
-  "home.performancedesc2" : "Twoje połączenie WARP jest szybkie i niezawodne niezależnie od miejsca zamieszkania i miejsca, z którym się łączysz.",
-  "home.performancedate" : "październik 2020 r.",
-  "home.privacytitle" : "Szybka. Bezpłatna. Chroniąca prywatność.",
-  "home.privacydesc1" : "Twój dostawca internetu może obserwować, które strony odwiedzasz i których aplikacji używasz — nawet jeśli stosowane jest szyfrowanie. Niektórzy dostawcy nawet sprzedają te dane lub wykorzystują je do reklam ukierunkowanych.",
-  "home.privacydesc2" : "Dzięki szyfrowaniu ruchu wychodzącego z Twojego urządzenia 1.1.1.1 razem z WARP uniemożliwiają grzebanie w Twoich danych.",
-  "home.privacydesc3" : "Uważamy, że każdy ma prawo do ochrony prywatności. Nigdy nie będziemy sprzedawać Twoich danych.",
-  "sharewithtwitter" : "Opublikuj na Twitterze",
-  "home.warptitle" : "Skorzystaj z szybkiego pasa internetu",
-  "home.warpdesc" : "Oprócz pełnej usługi WARP subskrybenci WARP+ mają dostęp do większej sieci. Więcej połączonych miast oznacza, że możesz być bliżej centrum danych Cloudflare – co może zmniejszyć opóźnienia między Twoim urządzeniem a Cloudflare i zwiększyć szybkość przeglądania.",
-  "home.warpdesc2" : "Obecni subskrybenci WARP+ dodający kolejne urządzenia do swojego planu mogą uzyskać rabat.",
-  "home.sharewarp" : "Udostępnij informacje o WARP",
-  "home.footertitle" : "Usługa zapewniana przez Cloudflare.",
-  "home.footerdesc1" : "<a class='CopyLink' href='https://cloudflare.com' target='_blank'>Cloudflare</a> gwarantuje bezpieczeństwo i sprawność działania ponad 25 milionom adresów — a teraz ta technologia jest dostępna dla każdego.",
-  "home.footerdesc2mobile" : "Pobierz aplikację 1.1.1.1, aby dołączyć do listy oczekujących.",
-  "home.footerdesc2desktop" : "Wyszukaj „1.1.11” w sklepie z aplikacjami w Twoim telefonie, aby otrzymać miejsce na liście oczekujących.",
-  "home.subscribe.title" : "Zarejestruj się, aby uzyskać wczesny dostęp",
-  "home.subscribe.description" : "Dokonaj subskrypcji, aby otrzymać powiadomienie, kiedy dostępne będą wersje na macOS i Windows.",
-  "dns" : "DNS",
-  "family.name" : "Families",
-  "family.for" : "for Families",
-  "family.herotitle" : "Bezpłatna ochrona Twojego domowego internetu",
-  "family.section.performance.description" : "<p>1.1.1.1 z Families wykorzystuje najszybszy na świecie publiczny resolver DNS, aby zwiększyć szybkość połączeń internetowych.</p><p>Nie musisz wierzyć nam na słowo. Niezależna organizacja monitorująca DNS, DNSPerf, uznała 1.1.1.1 za najszybszą na świecie usługę DNS. Ponieważ niemal wszystko, co robisz w Internecie, zaczyna się od zapytania DNS, wybranie najszybszego katalogu DNS we wszystkich urządzeniach przyspieszy niemal wszystko, co robisz online.</p>",
-  "family.section.protection.title" : "Ochrona domowego internetu przed złośliwym oprogramowaniem",
-  "family.section.protection.description" : "<p>Wobec coraz powszechniejszego korzystania z domowego internetu ochrona Twojej rodziny przed niebezpiecznymi i złośliwymi stronami jest ważniejsza niż kiedykolwiek wcześniej.</p><p>Aplikację 1.1.1.1 for Families stworzono z wykorzystaniem tej samej technologii kategoryzacji stron i ich filtrowania, która stanowi podstawę produktów Cloudflare dla przedsiębiorstw. Aplikacja wykorzystuje internetową inteligencję Cloudflare do filtrowania treści w domowej sieci internetowej.</p>",
-  "family.section.adultcontent.title" : "Filtrowanie treści tylko dla dorosłych",
-  "family.section.adultcontent.description" : "<p>Zadbaj, aby w Twojej sieci treści tylko dla dorosłych były niedostępne dla dzieci dzięki zawsze włączonym mechanizmom kontrolnym.</p>",
-  "family.section.malware.title" : "Automatyczna ochrona przed złośliwym oprogramowaniem",
-  "family.section.malware.description" : "<p>Atakujący często ukrywają szkodliwe kody na stronach i w wiadomościach e-mail, które wydają się całkiem zwyczajne. Takie ataki mogą spowodować, że prywatne dane Twojej rodziny znajdą się w niepowołanych rękach.</p><p>1.1.1.1 for Families stanowi dodatkową ochronę Twojego domowego Wi-Fi, automatycznie blokując dostęp do znanych złośliwych stron.</p>",
-  "family.section.privacy.title" : "Bezpieczna. Chroniąca prywatność. Bezpłatna.",
-  "family.section.privacy.description" : "<p>Każde urządzenie, które łączy się z internetem, potrzebuje resolvera DNS, ale reolvery te często są powolne i nie dbają o prywatność użytkownika.</p><p>1.1.1.1 for Families stawia prywatność na pierwszym miejscu i każdy może z niego korzystać bezpłatnie. Cloudflare nigdy nie sprzeda ani nie upubliczni danych dotyczących korzystania z internetu przez członków Twojej rodziny.</p>",
-  "family.section.privacy.link" : "Dowiedz się więcej",
-  "family.section.setup.title" : "Rozpocznij teraz",
-  "family.section.setup.description" : "Usługa 1.1.1.1 for Families ma dwie opcje: jedna blokuje tylko złośliwe oprogramowanie, a druga blokuje zarówno złośliwe oprogramowanie, jak i treści tylko dla dorosłych. Możesz ją zainstalować, zmieniając ustawienia adresu IP w swoim domowym routerze.",
-  "family.section.setup.malware.title" : "Blokowanie wyłącznie złośliwego oprogramowania",
-  "family.section.setup.malware.description" : "<p>Zmień DNS swojego routera na:</p><ul><li>1.1.1.2</li><li>1.0.0.2</li></ul> <p class='install-instructions'>Gotowi do konfiguracji? Przystępny przewodnik dotyczący wszystkich urządzeń można znaleźć na stronie <a href='https://developers.cloudflare.com/1.1.1.1/1.1.1.1-for-families/setup-instructions/' class='CopyLink' target='_blank'>instrukcji konfiguracji</a>.</p>",
-  "family.section.setup.all.title" : "Blokowanie zarówno złośliwego oprogramowania, jak i treści tylko dla dorosłych",
-  "family.section.setup.all.description" : "<p>Zmień DNS swojego routera na:</p><ul><li>1.1.1.3</li><li>1.0.0.3</li></ul> <p class='install-instructions'>Gotowi do konfiguracji? Przystępny przewodnik dotyczący wszystkich urządzeń można znaleźć na stronie <a href='https://developers.cloudflare.com/1.1.1.1/1.1.1.1-for-families/setup-instructions/' class='CopyLink' target='_blank'>instrukcji konfiguracji</a>.</p>",
-  "family.cloudflare.tagline" : "Szybkość, niezawodność i sprawność działania dla każdego użytkownika internetu",
-  "family.share.tweet.body" : "Używam 1.1.1.1 for Families do ochrony mojego domowego połączenia internetowego przed złośliwym oprogramowaniem. Konfigurację można przeprowadzić w mniej niż 2 minuty. https://one.one.one.one/family",
-  "family.share.facebook.body" : "Używam 1.1.1.1 for Families do ochrony mojego domowego połączenia internetowego przed złośliwym oprogramowaniem. Konfigurację można przeprowadzić w mniej niż 2 minuty. https://one.one.one.one/family",
-  "family.share.email.subject" : "1.1.1.1 for Families",
-  "family.share.email.body" : "Używam 1.1.1.1 for Families do ochrony mojego domowego połączenia internetowego przed złośliwym oprogramowaniem. Konfigurację można przeprowadzić w mniej niż 2 minuty. https://one.one.one.one/family",
-  "home.privacyimportant" : "Cenimy Twoją <a href='https://www.cloudflare.com/privacypolicy/' class='CopyLink'>prywatność</a>.",
-  "beta.name" : "Beta",
-  "beta.title" : "Pobierz 1.1.1.1 Beta na macOS i Windows",
-  "beta.section.title" : "Dziękujemy za pomoc w zapewnianiu bezpieczniejszego i szybszego internetu w urządzeniach stacjonarnych",
-  "beta.section.description" : "Wybierz odpowiednie łącze, aby pobrać aplikację na urządzenia stacjonarne. Jest to wersja beta, a zatem pamiętaj, by przekazać swoją opinię. Dowiedz się, o jakich problemach już wiadomo, korzystając z łącza poniżej.",
-  "beta.section.feedback.text" : "Przekaż swoją opinię",
-  "beta.section.feedback.link" : "/",
-  "beta.section.learn.more" : "Dowiedz się więcej o znanych problemach",
-  "beta.tag" : "Wersja beta na urządzenia stacjonarne",
-  "beta.mac" : "macOS",
-  "beta.button.text" : "Pobierz na:",
-  "beta.windows" : "Windows",
-  "beta.linux" : "Linux",
-  "beta.category1" : "macOS Catalina",
-  "beta.category2" : "Windows 10",
-  "beta.category3" : " ",
-  "beta.min.req" : "Minimalne wymagania <br>systemowe",
-  "beta.version.category1" : "wersja 10.15 lub wyższa <br>tylko 64 bity",
-  "beta.version.category2" : "wersja 1909 lub wyższa <br>tylko 64 bity",
-  "beta.mac.instructions" : "Instrukcja instalacji w macOS",
-  "beta.windows.instructions" : "Instrukcja instalacji w Windows",
-  "teams.devices.title" : "Nowość: używaj WARP w swoim zespole",
-  "teams.devices.description" : "Wnieś moc WARP do swojej firmy, integrując WARP z Gateway. Dołącz urządzenia użytkowników w Twojej organizacji i chroń pracujących zdalnie pracowników przed internetowymi zagrożeniami.",
-  "faq" : "Często zadawane pytania",
-  "terms" : "Warunki",
-  "privacyPolicy" : "Polityka prywatności",
-  "purgeCache" : "Wyczyść pamięć podręczną"
+  "share.header": "✌️✌️ Podziel się ze swoimi przyjaciółmi szybszym, stawiającym prywatność na pierwszym planie internetem.",
+  "share.emailSubject": "✌️✌️ Ciesz się szybszym i bezpieczniejszym internetem — 1.1.1.1, resolver DNS",
+  "share.emailBody": "„1.1.1.1” sprawia, że nawigacja w internecie jest szybsza i bezpieczniejsza. Odwiedź https://1.1.1.1, aby uzyskać więcej informacji i dowiedzieć się, jak skonfigurować urządzenie w mniej niż 2 minuty!",
+  "share.tweetBody": "✌️✌️ Oto szybki, bezpieczny i chroniący prywatność internet. Skonfiguruj resolver DNS 1.1.1.1 w mniej niż dwie minuty.",
+  "faq.whosBehindThis": "Kto za tym stoi?",
+  "faq.partnership": "<strong class=\"code\">1.1.1.1</strong> jest owocem partnerstwa Cloudflare i APNIC.",
+  "faq.network": "Cloudflare zarządza jedną z największych i najszybszych sieci na świecie. APNIC jest organizacją non-profit, zarządzającą alokacją adresów IP w regionach Azji-Pacyfiku i Oceanii.",
+  "faq.networkContinued": "Organizacja Cloudflare miała sieć. Organizacja APNIC miała adres IP (1.1.1.1). Obie organizacje były zmotywowane misją budowania lepszego internetu. Więcej informacji o motywacjach obu organizacji można znaleźć w naszych postach: <a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Blog Cloudflare</a> / <a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">Blog APNIC</a>. Więcej informacji można znaleźć w: <a href=\"https://cloudflare.com/learning/dns/what-is-1.1.1.1/\" target=\"_blank\">Czym jest 1.1.1.1?</a>",
+  "faq.canIintegrate": "Czy mogę dokonać integracji z 1.1.1.1?",
+  "faq.integrationInfo": "Jeśli jesteś dostawcą przeglądarki, systemu operacyjnego, aplikacji, routera lub VPN i potrzebujesz zapewniającej prywatność, szybkiej i nowoczesnej usługi DNS, to <strong class=\"subtle\">tak!</strong>",
+  "faq.integrationDocs": "Korzystając z protokołu DNS over HTTPS (DoH), możesz w transparentny sposób oferować swoim klientom zwiększone bezpieczeństwo, a przy tym poprawić szybkość swoich urządzeń. A co najlepsze, możesz to zrobić, nie ponosząc żadnych kosztów, zarówno w odniesieniu do licencji, jak i <a href=\"https://developers.cloudflare.com/1.1.1.1/privacy/\" target=\"_blank\">ochrony prywatności klientów</a>. Więcej informacji o 1.1.1.1 i obsłudze protokołu DNS over HTTPS (DoH) można znaleźć w <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">dokumentacji dla deweloperów</a>.",
+  "faq.warpVsDNS": "Czy Warp zastępuje usługę DNS 1.1.1.1?",
+  "faq.warpVsDNSAnswer": "Nie, Cloudflare głęboko wierzy w wartość bezpłatnego, szybkiego i dobrze chronionego DNS i ma zamiar dostarczać usługę 1.1.1.1 DNS w przewidywalnej przyszłości. Warp jest funkcją dodatkową, uzupełniającą nasze aplikacje mobilne, ale zawsze pozostanie elementem opcjonalnym.",
+  "faqpage.header": "Często zadawane pytania",
+  "faqpage.general": "Informacje ogólne",
+  "faqpage.whatIsQ": "Czym jest 1.1.1.1?",
+  "faqpage.whatIsA1": "Jeśli zgłaszasz żądanie skorzystania z aplikacji, takiej jak cloudflare.com, Twój komputer musi wiedzieć, z którym serwerem Cię połączyć, aby umożliwić pobranie aplikacji. Komputery nie wiedzą, jak przełożyć tę nazwę na adres, a zatem zwracają się do wyspecjalizowanego serwera, aby to za nie zrobił.",
+  "faqpage.whatIsA2": "Ten wyspecjalizowany serwer jest nazywany rekurencyjnym resolverem DNS. Zadaniem resolvera jest odszukanie adresu odpowiadającego danej nazwie, np. 2400:cb00:2048:1::c629:d7a2 w przypadku cloudflare.com i zwrócenia go do komputera, który go zażądał.",
+  "faqpage.whatIsA3": "Komputery sa skonfigurowane tak, aby porozumiewać się z określonymi resolverami DNS, rozpoznawanymi na podstawie adresu IP. Zwykle konfiguracją zarządza Twój dostawca internetowy (w przypadku internetu domowego lub bezprzewodowego) albo Twój administrator (w przypadku połączenia z internetem służbowym). Możesz także samodzielnie zmienić skonfigurowany resolver DNS, z którym komunikuje się Twój komputer.",
+  "faqpage.whatDoDNSQ": "Co robią resolvery DNS?",
+  "faqpage.whatDoDNSA1": "Skąd resolvery DNS wiedzą, jak znaleźć adres domeny o danej nazwie? Działają one wstecz, od góry.",
+  "faqpage.whatDoDNSA2": "Każdy resolver DNS potrafi znaleźć niewidoczne „.” na końcu nazw domen (np. cloudflare.com.). Na całym świecie są <a href='http://www.root-servers.org/' target='_blank'>setki serwerów</a>, na których znajduje się plik „.”. Same firma Cloudflare hostuje <a href='https://www.internic.net/domain/root.zone' target='_blank'>taki plik</a> na wszystkich swoich serwerach na całym świecie dzięki <a href='https://blog.cloudflare.com/f-root/' target='_blank'>partnerstwu z ISC</a>. Resolvery są <a href='https://www.internic.net/domain/named.root' target='_blank'>zakodowane tak, aby znały adresy IP tych serwerów</a>.",
+  "faqpage.whatDoDNSA3": "Resolver DNS pyta jeden z serwerów głównych, gdzie znaleźć następne ogniwo łańcucha, TLD lub końcówkę domeny. Przykładowymi TLD są .com lub .org. Na szczęście serwery główne przechowują lokalizacje wszystkich serwerów TLD, mogą więc zwracać informację, o które adresy IP resolver powinien pytać w następnej kolejności.",
+  "faqpage.whatDoDNSA4": "Resolver pyta wtedy serwery TLD, gdzie może znaleźć szukaną domenę – na przykład resolver może zapytać .com, gdzie znaleźć cloudflare.com. TLD hostują plik zawierający lokalizacje wszystkich domen wykorzystujących TLD. Po uzyskaniu adresu IP resolver przesyła odpowiedź do komputera, który wysłał zapytanie.",
+  "faqpage.whatDoDNSA5": "Cały ten system – z serwerami przechowującymi informacje (są one nazywane autorytatywnymi serwerami DNS) oraz serwerami wyszukującymi informacje (czyli resolverami DNS) – nazywany jest systemem nazw domen (Domain Name System, DNS). DNS jest jak Google Maps dla internetu. Przekłada nazwę obiektu na adresy, dzięki czemu można trafić na miejsce.",
+  "faqpage.ipv6Q": "Czy 1.1.1.1 jest obsługiwane przez IPv6?",
+  "faqpage.ipv6A": "Tak, 1.1.1.1 jest w pełni obsługiwane przez IPv6.",
+  "faqpage.clearCacheQ": "W jaki sposób mogę wyczyścić pamięć podręczną DNS 1.1.1.1?",
+  "faqpage.clearCacheA": "Możesz odświeżyć pamięć podręczną DNS 1.1.1.1 dla nazw domen, korzystając z <a href='https://cloudflare-dns.com/purge-cache/' target='_blank'>narzędzia czyszczenia pamięci podręcznej</a>. Należy wprowadzić nazwę domeny, wybrać typ (lub typy) rekordu DNS i nacisnąć przycisk „Wyczyść pamięć podręczną”.",
+  "faqpage.insideChinaQ": "Czy 1.1.1.1 działa na terenie Chin?",
+  "faqpage.insideChinaA": "Niezupełnie. Można skonfigurować swój DNS, aby wskazywał 1.1.1.1, ale nie dotrze on do jednego z naszych centrów danych w Chinach. Zamiast tego zapytanie zostanie skierowane do jednego z naszych centrów danych poza Chinami kontynentalnymi.",
+  "faqpage.devDocsQ": "Gdzie mogę znaleźć dokumentację dewelopera 1.1.1.1.?",
+  "faqpage.devDocsA": "Tutaj",
+  "faqpage.mobileApp": "Aplikacja mobilna",
+  "faqpage.mobileAppWorkQ": "Jak działa aplikacja mobilna?",
+  "faqpage.mobileAppWorkA": "Aplikacja uruchamia lokalny resolver DNS w Twoim telefonie, który prosi pozostałe aplikacje o wysyłanie zapytań DNS na adres tego resolvera. Gdy te zapytania DNS dotrą do lokalnego resolvera, zostaną one przez niego zaszyfrowane i wysłane do 1.1.1.1.",
+  "faqpage.vpnQ": "Czy aplikacja 1.1.1.1 to VPN?",
+  "faqpage.vpnA": "Nie. Aplikacja VPN zwykle pośredniczy w całym Twoim ruchu w sieci. Aplikacja 1.1.1.1 jedynie przekierowuje i zabezpiecza ruch DNS generowany w Twoim telefonie.",
+  "faqpage.dnsLogsQ": "Co to są dzienniki DNS?",
+  "faqpage.dnsLogsA": "Dzienniki DNS w iOS zawierają wszystkie zapytania DNS, które wysyła telefon. Te zapytania DNS są zwykle generowane przez Twoje aplikacje i przeglądarkę.",
+  "faqpage.logsForQ": "Do czego służą dzienniki konsoli?",
+  "faqpage.logsForA": "Dzienniki konsoli ułatwiają Cloudflare debugowanie połączenia.",
+  "faqpage.suggestQ": "W jaki sposób mogę zgłosić propozycję usprawnienia?",
+  "faqpage.suggestA": "Czytamy wszystkie propozycje. Możesz potrząsnąć telefonem, kiedy otwarta jest aplikacja, i wysłać swoje propozycje dotyczące usprawniania. Jeśli chcesz wysłać swoje uwagi, możesz także przejść do menu aplikacji i dotknąć „Pomoc”.",
+  "faqpage.diffDnsTlsQ": "Czym różni się protokół DNS over TLS od protokołu DNS over HTTPS?",
+  "faqpage.diffDnsTlsA1": "Zarówno protokół DNS over TLS, jak i protokół DNS over HTTPS szyfrują zwykłe zapytania DNS kierowane z telefonu.",
+  "faqpage.diffDnsTlsA2": "Protokół DNS over HTTPS korzysta z portu 443, a DNS over TLS z portu 853. W niektórych sieciach jeden z tych portów może być zablokowany. Jeśli zablokowany jest port 443, należy używać protokołu DNS over TLS. Jeśli zablokowany jest port 853, należy używać protokołu DNS over HTTPS. W niektórych przypadkach protokół DNS over TLS może być szybszy niż DNS over HTTPS lub odwrotnie.",
+  "faqpage.bugQ": "W jaki sposób mogę przesłać raport o błędach?",
+  "faqpage.bugA": "Możesz potrząsnąć telefonem z aplikacją i wysłać raport. Kiedy to zrobisz, aplikacja dołącza do raportu o błędach zrzut ekranu i dzienniki konsoli. Dziennik konsoli ułatwia nam debugowanie Twojego połączenia i usprawnienie działanie aplikacji.",
+  "faqpage.internetStoppedQ": "W czasie używania aplikacji 1.1.1.1 mój internet przestał działać. Co należy zrobić?",
+  "faqpage.internetStoppedA": "Jeśli do tego dojdzie, spróbuj wyłączyć aplikację i włączyć ją ponownie, korzystając z przełącznika na stronie głównej aplikacji. Jeśli problem nie zniknie, wyłącz aplikację i prześlij nam raport o błędach.",
+  "faqpage.appStuckQ": "Aplikacja 1.1.11 blokuje się przy łączeniu lub potwierdzaniu. Co należy zrobić?",
+  "faqpage.appStuckA1": "Może do tego dojść, jeśli Twoje połączenie zostanie tymczasowo przerwane lub jeśli połączenie danych blokuje połączenie 1.1.1.:",
+  "faqpage.appStuckList": [
+    {
+      "tag": "li",
+      "content": "Wyłącz aplikację, korzystając z przełącznika na stronie domowej aplikacji."
+    },
+    {
+      "tag": "li",
+      "content": "Otwórz aplikację Ustawienia w iOS i przejdź do Ustawienia > Ogólne > Resetuj"
+    },
+    {
+      "tag": "li",
+      "content": "Wybierz opcję przywrócenia fabrycznych ustawień sieciowych."
+    },
+    {
+      "tag": "li",
+      "content": "Zrestartuj urządzenie; sprawdź połączenie z WiFi."
+    },
+    {
+      "tag": "li",
+      "content": "Spróbuj ponownie połączyć aplikację."
+    }
+  ],
+  "faqpage.appStuckA2": "Jeśli to nie umożliwi połączenia, wyłącz aplikację 1.1.1.1 i wyślij nam raport błędów.",
+  "faqpage.cannotClickQ": "Nie mogę kliknąć „OK” w oknie dialogowym instalacji profilu VPN. Co należy zrobić?",
+  "faqpage.cannotClickA": "Jeżeli nie możesz kliknąć przycisku OK, prawdopodobnie działa inna aplikacja, która blokuje okno dialogowe. Do znanych aplikacji, które mogą powodować taki problem, należą Lux Brightness, Night Mode, Twilight, FileManager itp. Aby uniknąć tego problemu, należy zamknąć lub odinstalować wszystkie aplikacje, które mogą powodować ten problem.",
+  "faqpage.appenabledQ": "Pozostawiam włączoną aplikację, ale widzę, że po jakimś czasie się wyłącza. Co się stało?",
+  "faqpage.appenabledA1": "Twój telefon próbuje zarządzać baterią, wyłączając aplikację. Na przykład większość urządzeń Huawei jest znanych z agresywnego sposobu zarządzania pamięcią i zasilaniem.",
+  "faqpage.appenabledA2": "Możesz rozwiązać ten problem, wykonując wymienione poniżej czynności:",
+  "faqpage.appenabledList": [
+    {
+      "tag": "li",
+      "content": "Przejdź do „Ustawień” w swoim telefonie."
+    },
+    {
+      "tag": "li",
+      "content": "Wybierz „Zaawansowane”"
+    },
+    {
+      "tag": "li",
+      "content": "Przejdź do „Menadżera baterii”"
+    },
+    {
+      "tag": "li",
+      "content": "Otwórz „Aplikacje chronione”"
+    },
+    {
+      "tag": "li",
+      "content": "Możesz wybrać dla aplikacji 1.1.1.1 opcję „Pozwól aplikacjom działać po wyłączeniu ekranu”."
+    }
+  ],
+  "faqpage.persistentnotificationQ": "Dlaczego ciągle jest widoczne powiadomienie dotyczące aplikacji 1.1.1.1?",
+  "faqpage.persistentnotificationA1": "Jeśli korzystasz z systemu Android 8 lub wyższego, będziesz ciągłe widzieć powiadomienie wysyłane przez aplikację 1.1.1.1: „Twoje zapytania DNS są prywatne i szybsze”.",
+  "faqpage.persistentnotificationA2": "Jest to wymaganie systemu Android OS (8.0+) wobec wszystkich działających w tle aplikacji.",
+  "faqpage.persistentnotificationA3": "Ustawiliśmy priorytet powiadomień na „Niski”, aby nie przeszkadzały w wyświetlaniu innych ważnych powiadomień w Twoim telefonie.",
+  "faqpage.persistentnotificationA4": "Oto jeden sposób na ukrycie tego powiadomienia. Należy pamiętać, że to zablokuje wysyłanie innych powiadomień przez aplikację 1.1.1.1 Aby to zrobić:",
+  "faqpage.persistentnotificationList": [
+    {
+      "tag": "li",
+      "content": "Przejdź do Ustawień:"
+    },
+    {
+      "tag": "li",
+      "content": "Aplikacje i powiadomienia"
+    },
+    {
+      "tag": "li",
+      "content": "Na liście aplikacji wybierz ustawienia aplikacji 1.1.1.1"
+    },
+    {
+      "tag": "li",
+      "content": "Dotknij „Powiadomienia” i wyłącz je."
+    }
+  ],
+  "faqpage.disablednotificationQ": "Powiadomienia w aplikacji 1.1.1.1 zostały wyłączone, ale teraz widzę inne powiadomienie z informacją, że 1.1.1.1 zużywa baterię. Czy mam się martwić? Jak mogę je usunąć?",
+  "faqpage.disablednotificationA1": "Nie należy się martwić. Ponieważ zostały wyłączone powiadomienia związane z aplikacją, system Android OS wysyła teraz inne powiadomienie, ostrzegające użytkownika o wykorzystywaniu baterii nie dlatego, że aplikacja zużywa dużo energii, ale ponieważ działa w tle (w tym przypadku zabezpieczając wszystkie Twoje zapytania DNS!).",
+  "faqpage.disablednotificationA2": "Oto, jak można się go pozbyć:",
+  "faqpage.disablednotificationList": [
+    {
+      "tag": "li",
+      "content": "Przyciśnij dłużej powiadomienie, dopóki nie zmieni się jego wygląd i nie pojawi się przełącznik."
+    },
+    {
+      "tag": "li",
+      "content": "Dotknij przełącznika, upewniając się, że jest wyszarzony."
+    },
+    {
+      "tag": "li",
+      "content": "Kliknij „Gotowe”, aby wyłączyć powiadomienia."
+    }
+  ],
+  "faqpage.vpnprofileQ": "Nie mogę dodać profilu VPN. Jak mogę rozwiązać ten problem?",
+  "faqpage.vpnprofileA1": "Prawdopodobnie korzystasz z innego VPN, w którym ustawiono „Zawsze włączony”. Wyłącz, a następnie włącz 1.1.1.1",
+  "faqpage.vpnprofileA2": "Możesz przejść na tę stronę, wykonując następujące czynności:",
+  "faqpage.vpnprofileList": [
+    {
+      "tag": "li",
+      "content": "Ustawienia"
+    },
+    {
+      "tag": "li",
+      "content": "Sieć i internet"
+    },
+    {
+      "tag": "li",
+      "content": "Zaawansowane"
+    },
+    {
+      "tag": "li",
+      "content": "VPN"
+    },
+    {
+      "tag": "li",
+      "content": "Przycisk zębatki 1.1.1.1"
+    },
+    {
+      "tag": "li",
+      "content": "Ustaw 1.1.1.1 na „Zawsze włączone”"
+    }
+  ],
+  "subscribe": "Zasubskrybuj",
+  "appstore": "App Store",
+  "googleplay": "Google Play",
+  "windows": "Windows (beta)",
+  "macos": "macOS (beta)",
+  "windows.comingsoon": "Windows <br> (wkrótce)",
+  "macos.comingsoon": "macOS <br> (wkrótce)",
+  "downloadfor.windows": "Windows",
+  "downloadfor.macos": "<span style='font-size: 14px'> Pobierz wersję na </span> <br>macOS",
+  "windows.installationinstructions": "Instrukcja instalacji w Windows",
+  "macos.installationinstructions": "Instrukcja instalacji w macOS",
+  "linux.installationinstructions": "Instrukcja instalacji w systemie Linux",
+  "home.herotitle": "Bezpłatna aplikacja, dzięki której Twój internet jest bezpieczniejszy.",
+  "home.herosubtitle": "Dostępna na jeszcze więcej urządzeń.",
+  "home.overviewtitle": "Jedno dotknięcie dzieli Cię od bezpieczniejszego internetu.",
+  "home.overviewdesc1": "Kiedy tworzono internet, komputery nie były mobilne. Spoczywały w biurach, w pobliżu centrów danych. Internet zmienił się, ale przyjęte 30 lat temu założenia sprawiają, że jest on wolniejszy i mniej bezpieczny dla użytkowników.",
+  "home.overviewdesc2": "1.1.1.1 z WARP zastępuje połączenie między Twoim urządzeniem a internetem nowoczesnym, zoptymalizowanym protokołem.",
+  "learnmore": "Dowiedz się więcej",
+  "downloadnow": "Pobierz teraz",
+  "home.desktop.title": "Teraz dostępne w wersji macOS i Windows",
+  "home.desktop.description": "<p>Miliony ludzi zabezpieczają połączenia internetowe swoich telefonów za pomocą aplikacji WARP.</p><p>Rozszerzyliśmy tę samą ochronę na systemy macOS i Windows.</p>",
+  "home.performancetitle": "Usługa oparta na ogromnej sieci.",
+  "home.performancedesc1": "Usługę WARP oparto na tej samej sieci, dzięki której 1.1.1.1 jest <a class='CopyLink' href='https://www.dnsperf.com/#!dns-resolvers' target='_blank' rel='noreferrer'>najszybszym resolverem na świecie</a>.",
+  "home.performancedesc2": "Twoje połączenie WARP jest szybkie i niezawodne niezależnie od miejsca zamieszkania i miejsca, z którym się łączysz.",
+  "home.performancedate": "październik 2020 r.",
+  "home.privacytitle": "Szybka. Bezpłatna. Chroniąca prywatność.",
+  "home.privacydesc1": "Twój dostawca internetu może obserwować, które strony odwiedzasz i których aplikacji używasz — nawet jeśli stosowane jest szyfrowanie. Niektórzy dostawcy nawet sprzedają te dane lub wykorzystują je do reklam ukierunkowanych.",
+  "home.privacydesc2": "Dzięki szyfrowaniu ruchu wychodzącego z Twojego urządzenia 1.1.1.1 razem z WARP uniemożliwiają grzebanie w Twoich danych.",
+  "home.privacydesc3": "Uważamy, że każdy ma prawo do ochrony prywatności. Nigdy nie będziemy sprzedawać Twoich danych.",
+  "sharewithtwitter": "Opublikuj na Twitterze",
+  "home.warptitle": "Skorzystaj z szybkiego pasa internetu",
+  "home.warpdesc": "Oprócz pełnej usługi WARP subskrybenci WARP+ mają dostęp do większej sieci. Więcej połączonych miast oznacza, że możesz być bliżej centrum danych Cloudflare – co może zmniejszyć opóźnienia między Twoim urządzeniem a Cloudflare i zwiększyć szybkość przeglądania.",
+  "home.warpdesc2": "Obecni subskrybenci WARP+ dodający kolejne urządzenia do swojego planu mogą uzyskać rabat.",
+  "home.sharewarp": "Udostępnij informacje o WARP",
+  "home.footertitle": "Usługa zapewniana przez Cloudflare.",
+  "home.footerdesc1": "<a class='CopyLink' href='https://cloudflare.com' target='_blank'>Cloudflare</a> gwarantuje bezpieczeństwo i sprawność działania ponad 25 milionom adresów — a teraz ta technologia jest dostępna dla każdego.",
+  "home.footerdesc2mobile": "Pobierz aplikację 1.1.1.1, aby dołączyć do listy oczekujących.",
+  "home.footerdesc2desktop": "Wyszukaj „1.1.11” w sklepie z aplikacjami w Twoim telefonie, aby otrzymać miejsce na liście oczekujących.",
+  "home.subscribe.title": "Zarejestruj się, aby uzyskać wczesny dostęp",
+  "home.subscribe.description": "Dokonaj subskrypcji, aby otrzymać powiadomienie, kiedy dostępne będą wersje na macOS i Windows.",
+  "dns": "DNS",
+  "family.name": "Families",
+  "family.for": "for Families",
+  "family.herotitle": "Bezpłatna ochrona Twojego domowego internetu",
+  "family.section.performance.description": "<p>1.1.1.1 z Families wykorzystuje najszybszy na świecie publiczny resolver DNS, aby zwiększyć szybkość połączeń internetowych.</p><p>Nie musisz wierzyć nam na słowo. Niezależna organizacja monitorująca DNS, DNSPerf, uznała 1.1.1.1 za najszybszą na świecie usługę DNS. Ponieważ niemal wszystko, co robisz w Internecie, zaczyna się od zapytania DNS, wybranie najszybszego katalogu DNS we wszystkich urządzeniach przyspieszy niemal wszystko, co robisz online.</p>",
+  "family.section.protection.title": "Ochrona domowego internetu przed złośliwym oprogramowaniem",
+  "family.section.protection.description": "<p>Wobec coraz powszechniejszego korzystania z domowego internetu ochrona Twojej rodziny przed niebezpiecznymi i złośliwymi stronami jest ważniejsza niż kiedykolwiek wcześniej.</p><p>Aplikację 1.1.1.1 for Families stworzono z wykorzystaniem tej samej technologii kategoryzacji stron i ich filtrowania, która stanowi podstawę produktów Cloudflare dla przedsiębiorstw. Aplikacja wykorzystuje internetową inteligencję Cloudflare do filtrowania treści w domowej sieci internetowej.</p>",
+  "family.section.adultcontent.title": "Filtrowanie treści tylko dla dorosłych",
+  "family.section.adultcontent.description": "<p>Zadbaj, aby w Twojej sieci treści tylko dla dorosłych były niedostępne dla dzieci dzięki zawsze włączonym mechanizmom kontrolnym.</p>",
+  "family.section.malware.title": "Automatyczna ochrona przed złośliwym oprogramowaniem",
+  "family.section.malware.description": "<p>Atakujący często ukrywają szkodliwe kody na stronach i w wiadomościach e-mail, które wydają się całkiem zwyczajne. Takie ataki mogą spowodować, że prywatne dane Twojej rodziny znajdą się w niepowołanych rękach.</p><p>1.1.1.1 for Families stanowi dodatkową ochronę Twojego domowego Wi-Fi, automatycznie blokując dostęp do znanych złośliwych stron.</p>",
+  "family.section.privacy.title": "Bezpieczna. Chroniąca prywatność. Bezpłatna.",
+  "family.section.privacy.description": "<p>Każde urządzenie, które łączy się z internetem, potrzebuje resolvera DNS, ale reolvery te często są powolne i nie dbają o prywatność użytkownika.</p><p>1.1.1.1 for Families stawia prywatność na pierwszym miejscu i każdy może z niego korzystać bezpłatnie. Cloudflare nigdy nie sprzeda ani nie upubliczni danych dotyczących korzystania z internetu przez członków Twojej rodziny.</p>",
+  "family.section.privacy.link": "Dowiedz się więcej",
+  "family.section.setup.title": "Rozpocznij teraz",
+  "family.section.setup.description": "Usługa 1.1.1.1 for Families ma dwie opcje: jedna blokuje tylko złośliwe oprogramowanie, a druga blokuje zarówno złośliwe oprogramowanie, jak i treści tylko dla dorosłych. Możesz ją zainstalować, zmieniając ustawienia adresu IP w swoim domowym routerze.",
+  "family.section.setup.malware.title": "Blokowanie wyłącznie złośliwego oprogramowania",
+  "family.section.setup.malware.description": "<p>Zmień DNS swojego routera na:</p><ul><li>1.1.1.2</li><li>1.0.0.2</li></ul> <p class='install-instructions'>Gotowi do konfiguracji? Przystępny przewodnik dotyczący wszystkich urządzeń można znaleźć na stronie <a href='https://developers.cloudflare.com/1.1.1.1/1.1.1.1-for-families/setup-instructions/' class='CopyLink' target='_blank'>instrukcji konfiguracji</a>.</p>",
+  "family.section.setup.all.title": "Blokowanie zarówno złośliwego oprogramowania, jak i treści tylko dla dorosłych",
+  "family.section.setup.all.description": "<p>Zmień DNS swojego routera na:</p><ul><li>1.1.1.3</li><li>1.0.0.3</li></ul> <p class='install-instructions'>Gotowi do konfiguracji? Przystępny przewodnik dotyczący wszystkich urządzeń można znaleźć na stronie <a href='https://developers.cloudflare.com/1.1.1.1/1.1.1.1-for-families/setup-instructions/' class='CopyLink' target='_blank'>instrukcji konfiguracji</a>.</p>",
+  "family.cloudflare.tagline": "Szybkość, niezawodność i sprawność działania dla każdego użytkownika internetu",
+  "family.share.tweet.body": "Używam 1.1.1.1 for Families do ochrony mojego domowego połączenia internetowego przed złośliwym oprogramowaniem. Konfigurację można przeprowadzić w mniej niż 2 minuty. https://one.one.one.one/family",
+  "family.share.facebook.body": "Używam 1.1.1.1 for Families do ochrony mojego domowego połączenia internetowego przed złośliwym oprogramowaniem. Konfigurację można przeprowadzić w mniej niż 2 minuty. https://one.one.one.one/family",
+  "family.share.email.subject": "1.1.1.1 for Families",
+  "family.share.email.body": "Używam 1.1.1.1 for Families do ochrony mojego domowego połączenia internetowego przed złośliwym oprogramowaniem. Konfigurację można przeprowadzić w mniej niż 2 minuty. https://one.one.one.one/family",
+  "home.privacyimportant": "Cenimy Twoją <a href='https://www.cloudflare.com/privacypolicy/' class='CopyLink'>prywatność</a>.",
+  "beta.name": "Beta",
+  "beta.title": "Pobierz 1.1.1.1 Beta na macOS i Windows",
+  "beta.section.title": "Dziękujemy za pomoc w zapewnianiu bezpieczniejszego i szybszego internetu w urządzeniach stacjonarnych",
+  "beta.section.description": "Wybierz odpowiednie łącze, aby pobrać aplikację na urządzenia stacjonarne. Jest to wersja beta, a zatem pamiętaj, by przekazać swoją opinię. Dowiedz się, o jakich problemach już wiadomo, korzystając z łącza poniżej.",
+  "beta.section.feedback.text": "Przekaż swoją opinię",
+  "beta.section.feedback.link": "/",
+  "beta.section.learn.more": "Dowiedz się więcej o znanych problemach",
+  "beta.tag": "Wersja beta na urządzenia stacjonarne",
+  "beta.mac": "macOS",
+  "beta.button.text": "Pobierz na:",
+  "beta.windows": "Windows",
+  "beta.linux": "Linux",
+  "beta.category1": "macOS Catalina",
+  "beta.category2": "Windows 10",
+  "beta.category3": " ",
+  "beta.min.req": "Minimalne wymagania <br>systemowe",
+  "beta.version.category1": "wersja 10.15 lub wyższa <br>tylko 64 bity",
+  "beta.version.category2": "wersja 1909 lub wyższa <br>tylko 64 bity",
+  "beta.mac.instructions": "Instrukcja instalacji w macOS",
+  "beta.windows.instructions": "Instrukcja instalacji w Windows",
+  "teams.devices.title": "Nowość: używaj WARP w swoim zespole",
+  "teams.devices.description": "Wnieś moc WARP do swojej firmy, integrując WARP z Gateway. Dołącz urządzenia użytkowników w Twojej organizacji i chroń pracujących zdalnie pracowników przed internetowymi zagrożeniami.",
+  "faq": "Często zadawane pytania",
+  "terms": "Warunki",
+  "privacyPolicy": "Polityka prywatności",
+  "purgeCache": "Wyczyść pamięć podręczną",
+  "purgeCache.title": "Wyczyść pamięć podręczną",
+  "purgeCache.description": "Narzędzie Wyczyść pamięć podręczną opracowane przez <b>1.1.1.1</b> umożliwia odświeżenie pamięci podręcznej DNS <b>1.1.1.1</b> dla nazw domen. Aby odświeżyć pamięć podręczną dla nazwy domeny, wprowadź nazwę <i>domeny</i> poniżej, wybierz typ <i>rekordu DNS</i>, a następnie naciśnij przycisk <i>Wyczyść pamięć podręczną</i>.",
+  "purgeCache.form.title": "Wyczyść pamięć podręczną dla domeny",
+  "purgeCache.field.domainName": "Nazwa domeny",
+  "purgeCache.field.recordType": "Typ rekordu",
+  "purgeCache.field.submit": "Wyczyść pamięć podręczną",
+  "purgeCache.logoAlt": "1.1.1.1 resolver DNS"
 }

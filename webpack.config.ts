@@ -205,6 +205,11 @@ const locales = [
     label: "فارسی",
   },
   {
+    path: "ar-EG/",
+    code: "ar-EG",
+    label: "العربية",
+  },
+  {
     path: "it-IT/",
     code: "it-IT",
     label: "Italiano",
@@ -255,7 +260,7 @@ const pugLoaders = locales.map((locale) => {
                 normalizePath,
                 formatURL,
                 NODE_ENV: environment,
-                isRTL: ['fa-IR'].includes(locale.code)
+                isRTL: ['fa-IR', 'ar-EG'].includes(locale.code)
               },
             },
           },
