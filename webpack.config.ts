@@ -145,6 +145,16 @@ const locales = [
     label: "English",
   },
   {
+    path: "id-ID/",
+    code: "id-ID",
+    label: "Bahasa Indonesia",
+  },
+  {
+    path: "de-DE/",
+    code: "de-DE",
+    label: "Deutsch",
+  },
+  {
     path: "es-ES/",
     code: "es-ES",
     label: "Español",
@@ -155,14 +165,9 @@ const locales = [
     label: "Français",
   },
   {
-    path: "de-DE/",
-    code: "de-DE",
-    label: "Deutsch",
-  },
-  {
-    path: "pt-BR/",
-    code: "pt-BR",
-    label: "Português",
+    path: "it-IT/",
+    code: "it-IT",
+    label: "Italiano",
   },
   {
     path: "nl-NL/",
@@ -170,19 +175,29 @@ const locales = [
     label: "Nederlands",
   },
   {
+    path: "pl-PL/",
+    code: "pl-PL",
+    label: "Polski",
+  },
+  {
+    path: "pt-BR/",
+    code: "pt-BR",
+    label: "Português",
+  },
+  {
     path: "tr-TR/",
     code: "tr-TR",
     label: "Türkçe",
   },
   {
-    path: "zh-Hans/",
-    code: "zh-Hans",
-    label: "简体中文",
+    path: "ar-EG/",
+    code: "ar-EG",
+    label: "العربية",
   },
   {
-    path: "zh-Hant/",
-    code: "zh-Hant",
-    label: "繁體中文",
+    path: "fa-IR/",
+    code: "fa-IR",
+    label: "فارسی",
   },
   {
     path: "ja-JP/",
@@ -195,34 +210,19 @@ const locales = [
     label: "한국어",
   },
   {
-    path: "id-ID/",
-    code: "id-ID",
-    label: "Indonesia",
-  },
-  {
-    path: "fa-IR/",
-    code: "fa-IR",
-    label: "فارسی",
-  },
-  {
-    path: "ar-EG/",
-    code: "ar-EG",
-    label: "العربية",
-  },
-  {
-    path: "it-IT/",
-    code: "it-IT",
-    label: "Italiano",
-  },
-  {
-    path: "pl-PL/",
-    code: "pl-PL",
-    label: "Polski",
-  },
-  {
     path: "ru-RU/",
     code: "ru-RU",
     label: "Русский",
+  },
+  {
+    path: "zh-Hans/",
+    code: "zh-Hans",
+    label: "简体中文",
+  },
+  {
+    path: "zh-Hant/",
+    code: "zh-Hant",
+    label: "繁體中文",
   },
 ];
 
